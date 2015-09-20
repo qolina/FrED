@@ -1,0 +1,15 @@
+python statisticFrmOfSeg.py 01 ~/corpus/data_twitter201301/201301_skl/eventskl01 &
+python statisticFrmOfSeg.py 02 ~/corpus/data_twitter201301/201301_skl/eventskl02 &
+python statisticFrmOfSeg.py 03 ~/corpus/data_twitter201301/201301_skl/eventskl03 &
+python statisticFrmOfSeg.py 04 ~/corpus/data_twitter201301/201301_skl/eventskl04 &
+python statisticFrmOfSeg.py 05 ~/corpus/data_twitter201301/201301_skl/eventskl05 &
+python statisticFrmOfSeg.py 06 ~/corpus/data_twitter201301/201301_skl/eventskl06 &
+python statisticFrmOfSeg.py 07 ~/corpus/data_twitter201301/201301_skl/eventskl07 &
+python statisticFrmOfSeg.py 08 ~/corpus/data_twitter201301/201301_skl/eventskl08 &
+python statisticFrmOfSeg.py 09 ~/corpus/data_twitter201301/201301_skl/eventskl09 &
+python statisticFrmOfSeg.py 10 ~/corpus/data_twitter201301/201301_skl/eventskl10 &
+python statisticFrmOfSeg.py 11 ~/corpus/data_twitter201301/201301_skl/eventskl11 &
+python statisticFrmOfSeg.py 12 ~/corpus/data_twitter201301/201301_skl/eventskl12 &
+python statisticFrmOfSeg.py 13 ~/corpus/data_twitter201301/201301_skl/eventskl13 &
+python statisticFrmOfSeg.py 14 ~/corpus/data_twitter201301/201301_skl/eventskl14 &
+python statisticFrmOfSeg.py 15 ~/corpus/data_twitter201301/201301_skl/eventskl15 &

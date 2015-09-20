@@ -1,0 +1,15 @@
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText01 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText01 > ../output_preprocess/out01.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText02 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText02 > ../output_preprocess/out02.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText03 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText03 > ../output_preprocess/out03.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText04 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText04 > ../output_preprocess/out04.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText05 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText05 > ../output_preprocess/out05.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText06 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText06 > ../output_preprocess/out06.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText07 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText07 > ../output_preprocess/out07.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText08 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText08 > ../output_preprocess/out08.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText09 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText09 > ../output_preprocess/out09.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText10 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText10 > ../output_preprocess/out10.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText11 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText11 > ../output_preprocess/out11.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText12 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText12 > ../output_preprocess/out12.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText13 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText13 > ../output_preprocess/out13.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText14 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText14 > ../output_preprocess/out14.clean &
+python preProcessTweetText.py -text ~/corpus/data_twitter201301/201301_nonEng/tweetText15 -out ~/corpus/data_twitter201301/201301_clean/tweetCleanText15 > ../output_preprocess/out15.clean &

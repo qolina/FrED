@@ -1,0 +1,148 @@
+#! /usr/bin/env python
+#coding=utf-8
+import time
+import re
+import os
+import sys
+
+print "###program starts at " + str(time.asctime())
+dataFilePath = r"../parsedTweet/"
+
+args = sys.argv
+UNIT = "skl"
+unitHash = {} #unit:df_hash
+#df_hash --> timeSliceIdStr:df_t_hash
+#df_t_hash --> tweetIDStr:1
+unitAppHash = {} #unit:apphash
+windowHash = {} # timeSliceIdStr:tweetNum
+psFile = file(dataFilePath + UNIT + "_ps", "w")
+#dfFile = file(dataFilePath + UNIT + "_df", "w")
+fileList = os.listdir(dataFilePath)
+fileList = sorted(fileList)
+for item in fileList:
+    if item.find("relSkl_2013") != 0:
+        continue
+    sklFile = file(dataFilePath + item)
+    print "### Processing " + sklFile.name
+    tStr = item[-2:]
+    print "Time window: " + tStr
+    tweetNum_t = 0
+    while 1:
+        #[GUA] seggedFile name: * + TimeWindow, format: twitterID, twitterText(segment|segment|...), ...
+        lineStr = sklFile.readline()
+        lineStr = re.sub(r'\n', " ", lineStr)
+        lineStr = lineStr.strip()
+        if len(lineStr) <= 0:
+            break
+        contentArr = lineStr.split("\t")
+        if len(contentArr) < 2:
+            continue
+        tweetIDstr = contentArr[0]
+        tweetText = contentArr[1]
+        tweetNum_t += 1
+        textArr = tweetText.split(" ")
+        # for frame structure
+        # make record of location v6
+        newTextArr = []
+        for seg in textArr:
+            eleArr = seg.split("|")
+            #newEle = [eleArr[i]+"_"+str(i) for i in range(3) if len(eleArr[i])>1]
+
+            # only distinguish verb and arg v7
+            newEle = [eleArr[0], eleArr[1]+"_1", eleArr[2]]
+
+            newTextArr.extend(newEle)
+        textArr = newTextArr
+        #print newTextArr
+        for segment in textArr:
+            unit = segment
+            if len(unit) < 1:
+                continue
+
+            # statistic segment df
+            '''
+            apphash = {}
+            if unit in unitAppHash:
+                apphash = unitAppHash[unit]
+            apphash[tweetIDstr] = 1
+            unitAppHash[unit] = apphash 
+            '''
+
+            # statistic segment ps
+            if unit in unitHash:
+                df_hash = unitHash[unit]
+                if tStr in df_hash:
+                    df_t_hash = df_hash[tStr]
+                else:
+                    df_t_hash = {}
+            else:
+                df_hash = {}
+                df_t_hash = {}
+            df_t_hash[tweetIDstr] = 1
+            df_hash[tStr] = df_t_hash
+            unitHash[unit] = df_hash
+            '''
+            if unit not in unitLengthHash:
+                wordArr = segment.split("_")
+                wordNum = len(wordArr)
+                unitLengthHash[unit] = wordNum
+            '''
+
+        if tweetNum_t % 100000 == 0:
+            print "### " + str(time.asctime()) + " " + str(tweetNum_t) + " tweets are processed!"
+    windowHash[tStr] = tweetNum_t
+    sklFile.close()
+    # extra step: decrease memory cost
+    for unit in unitHash:
+        df_hash = unitHash[unit]
+        if tStr not in df_hash:
+            continue
+        df_t_hash = df_hash[tStr]
+        df_hash[tStr] = len(df_t_hash)*1.0/windowHash[tStr]
+        unitHash[unit] = df_hash
+    print "### " + str(time.asctime()) + " " + UNIT + "s in " + item + " are loaded. unitNum: " + str(len(unitHash))
+print "### In total " + str(len(unitHash)) + " " + UNIT + "s are loaded!"
+
+# writing to dffile
+# write each day's tweetNumber into first line of df file
+# Format:01 num1#02 num2#...#15 num15
+sortedTweetNumList = sorted(windowHash.items(), key = lambda a:a[0])
+tweetNumStr = ""
+for item in sortedTweetNumList:
+    tStr = item[0]
+    tweetNum = item[1]
+    tweetNumStr += tStr + " " + str(tweetNum) + "#"
+'''
+dfFile.write(tweetNumStr[:-1] + "\n")
+itemNum = 0
+for unit in sorted(unitAppHash.keys()):
+    itemNum += 1
+    apphash = unitAppHash[unit]
+    df = len(apphash)
+    dfFile.write(str(df) + "\t" + unit + "\n")
+dfFile.close()
+print "### " + UNIT + "s' df values are written to " + dfFile.name
+'''
+## writing to unit ps file
+unitNum = 0
+for unit in sorted(unitHash.keys()):
+    unitNum += 1
+    df_hash = unitHash[unit]
+    l = len(df_hash)
+    '''
+    probTemp = 0.0
+    for tStr in sorted(df_hash.keys()):
+        df_t_hash = df_hash[tStr]
+        fst = len(df_t_hash)
+        probTemp += (fst*1.0)/windowHash[tStr]
+    '''
+    probTemp = sum(df_hash.values())
+    prob = probTemp/l
+    psFile.write(str(prob) + "\t" + unit + "\n")
+    if unitNum % 100000 == 0:
+        print "### " + str(unitNum) + " units are processed at " + str(time.asctime())
+
+psFile.close()
+print "### " + UNIT + "s' ps values are written to " + psFile.name
+
+print "###program ends at " + str(time.asctime())

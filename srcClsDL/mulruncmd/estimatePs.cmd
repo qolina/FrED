@@ -1,0 +1,32 @@
+python estimatePs_day.py 01 > ../outputstr/out.esPsday01
+python estimatePs_day.py 02 > ../outputstr/out.esPsday02
+python estimatePs_day.py 03 > ../outputstr/out.esPsday03
+python estimatePs_day.py 04 > ../outputstr/out.esPsday04
+python estimatePs_day.py 05 > ../outputstr/out.esPsday05
+python estimatePs_day.py 06 > ../outputstr/out.esPsday06
+python estimatePs_day.py 07 > ../outputstr/out.esPsday07
+python estimatePs_day.py 08 > ../outputstr/out.esPsday08
+python estimatePs_day.py 09 > ../outputstr/out.esPsday09
+python estimatePs_day.py 10 > ../outputstr/out.esPsday10
+python estimatePs_day.py 11 > ../outputstr/out.esPsday11
+python estimatePs_day.py 12 > ../outputstr/out.esPsday12
+python estimatePs_day.py 13 > ../outputstr/out.esPsday13
+python estimatePs_day.py 14 > ../outputstr/out.esPsday14
+python estimatePs_day.py 15 > ../outputstr/out.esPsday15
+#sync
+python estimatePs_sum.py 01 > ../outputstr/out.esPssum01
+python estimatePs_sum.py 02 > ../outputstr/out.esPssum02
+python estimatePs_sum.py 03 > ../outputstr/out.esPssum03
+python estimatePs_sum.py 04 > ../outputstr/out.esPssum04
+python estimatePs_sum.py 05 > ../outputstr/out.esPssum05
+python estimatePs_sum.py 06 > ../outputstr/out.esPssum06
+python estimatePs_sum.py 07 > ../outputstr/out.esPssum07
+python estimatePs_sum.py 08 > ../outputstr/out.esPssum08
+python estimatePs_sum.py 09 > ../outputstr/out.esPssum09
+python estimatePs_sum.py 10 > ../outputstr/out.esPssum10
+python estimatePs_sum.py 11 > ../outputstr/out.esPssum11
+python estimatePs_sum.py 12 > ../outputstr/out.esPssum12
+python estimatePs_sum.py 13 > ../outputstr/out.esPssum13
+python estimatePs_sum.py 14 > ../outputstr/out.esPssum14
+python estimatePs_sum.py 15 > ../outputstr/out.esPssum15
+#exit

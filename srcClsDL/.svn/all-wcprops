@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/2/trunk/srcSklcls
+END
+getSubFile.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/srcSklcls/getSubFile.py
+END
+getEventSegDF.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/srcSklcls/getEventSegDF.py
+END
+getPrecision.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/6/trunk/srcSklcls/getPrecision.py
+END
+getEventSegPair.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/6/trunk/srcSklcls/getEventSegPair.py
+END
+cmdGetEvent.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/srcSklcls/cmdGetEvent.txt
+END
+analysisFE.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/srcSklcls/analysisFE.py
+END
+getRecall.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4/trunk/srcSklcls/getRecall.py
+END
+estimatePs_sum.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/4/trunk/srcSklcls/estimatePs_sum.py
+END
+getEventFrmPair.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/6/trunk/srcSklcls/getEventFrmPair.py
+END
+getbtyFrm.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/6/trunk/srcSklcls/getbtyFrm.py
+END
+getbtySkl.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/6/trunk/srcSklcls/getbtySkl.py
+END
+mergeSegSkl.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4/trunk/srcSklcls/mergeSegSkl.py
+END
+estimatePs_day.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/4/trunk/srcSklcls/estimatePs_day.py
+END
+statisticWordDF.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/6/trunk/srcSklcls/statisticWordDF.py
+END
+getHashtagFile.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/srcSklcls/getHashtagFile.py
+END
+getEventFeatureVector.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/6/trunk/srcSklcls/getEventFeatureVector.py
+END
+getEvent.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/6/trunk/srcSklcls/getEvent.py
+END
+statisticUsrNum.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/srcSklcls/statisticUsrNum.py
+END
+statisticSeggedCorpus.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/srcSklcls/statisticSeggedCorpus.py
+END
+estimatePs_smldata.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/6/trunk/srcSklcls/estimatePs_smldata.py
+END
+mergehashtosegged.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/srcSklcls/mergehashtosegged.py
+END
+getSocialInfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/4/trunk/srcSklcls/getSocialInfo.py
+END
+out_socialfeature
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/srcSklcls/out_socialfeature
+END
+getFrmEvent.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/6/trunk/srcSklcls/getFrmEvent.py
+END

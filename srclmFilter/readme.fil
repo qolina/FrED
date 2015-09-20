@@ -1,0 +1,20 @@
+version 1:
+    load existed language model, use self.written source file in fil1, take 201301_clean/tweetCleanText* as input, output lm_filtered_v2.1/tweetsText*
+
+
+version 2:
+    1. split 201301_clean/tweetCleanText* as clean/tweetText01 tweetId01, 
+     [yxqin@mit110 data_twitter201301]$ python split_text_tid.py -in 201301_clean/tweetCleanText01 -textOut 201301_clean/tweetText01 -tid 201301_clean/tweetId01
+
+    2. use ~/nlpTools/lm_cas/LanguageModel.cpp to get tweet sentence probability of clean/tweetText01, output lmProb.01
+    [yxqin@mit110 lm_cas]$
+    modify LanguageModel.cpp with tweetFilename
+    make clean
+    make
+    ./hiero > ~/fbes/srclmFilter/lmProb.all
+
+    use ~/Scripts/split_file_by_content.py split lmProb.all into lmProb.01-15
+
+    3. use ~/fbes/srclmFilter/filtering_by_lm.py to filter out meaningless tweets in lmProb*, together with 201301_clean/tweetId01, output ~/corpus/data_twitter201301/lm_filtered/tweetFiltered01. 
+    [yxqin@mit110 srclmFilter]$ python filtering_by_lmProb.py -prob lmProb.01 -tid ~/corpus/data_twitter201301/201301_clean/tweetId01 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered01
+

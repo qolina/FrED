@@ -1,0 +1,15 @@
+python getfrmofsegEvent.py 01 ~/corpus/data_twitter201301/201301_skl/frmOfele01 &
+python getfrmofsegEvent.py 02 ~/corpus/data_twitter201301/201301_skl/frmOfele02 &
+python getfrmofsegEvent.py 03 ~/corpus/data_twitter201301/201301_skl/frmOfele03 &
+python getfrmofsegEvent.py 04 ~/corpus/data_twitter201301/201301_skl/frmOfele04 &
+python getfrmofsegEvent.py 05 ~/corpus/data_twitter201301/201301_skl/frmOfele05 &
+python getfrmofsegEvent.py 06 ~/corpus/data_twitter201301/201301_skl/frmOfele06 &
+python getfrmofsegEvent.py 07 ~/corpus/data_twitter201301/201301_skl/frmOfele07 &
+python getfrmofsegEvent.py 08 ~/corpus/data_twitter201301/201301_skl/frmOfele08 &
+python getfrmofsegEvent.py 09 ~/corpus/data_twitter201301/201301_skl/frmOfele09 &
+python getfrmofsegEvent.py 10 ~/corpus/data_twitter201301/201301_skl/frmOfele10 &
+python getfrmofsegEvent.py 11 ~/corpus/data_twitter201301/201301_skl/frmOfele11 &
+python getfrmofsegEvent.py 12 ~/corpus/data_twitter201301/201301_skl/frmOfele12 &
+python getfrmofsegEvent.py 13 ~/corpus/data_twitter201301/201301_skl/frmOfele13 &
+python getfrmofsegEvent.py 14 ~/corpus/data_twitter201301/201301_skl/frmOfele14 &
+python getfrmofsegEvent.py 15 ~/corpus/data_twitter201301/201301_skl/frmOfele15 &

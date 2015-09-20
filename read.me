@@ -1,0 +1,30 @@
+
+Process of running fbes
+1. Preprocessing
+    > time correct of raw-data-201301
+    > read tweet from timeCorrectted-raw-data
+    > non-eng filtering and cleaning
+
+    > optional: [ tweet filtering by lm ]
+
+    > pos-tagging
+    > forparsing.py + chunking
+
+
+2. extract frames
+    > getSkl
+
+3. frame clustering
+    
+    > ~/corpus/data_twitter201301/idmap.cmd
+    > srcStat/getSocialInfo.py     tweetSocialFeature* > Tools/
+
+    > estimate_ps.py
+    > getbtySkl.py
+    > getEventSegPair.py
+    > getEvent.py
+
+
+4. frame event obtaining
+    > srcStat/statisticFrmOfSeg.py  (frmofele.cmd)
+    > getfrmofsegEvent.py

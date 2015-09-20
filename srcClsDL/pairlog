@@ -1,0 +1,257 @@
+###program starts at Sat Sep 13 15:59:22 2014
+### Sat Sep 13 16:00:26 201421861235 skls' df values are loaded from ../Tools/wordDF
+### Processing digitSklText-01
+Time window: 01
+### 770 event skls and f_st values are loaded from ../exp/w2v/eventskl01 with Involved tweet number: 6847
+Frmclusters are loaded from  ../exp/w2v/frmCluster  at  Sat Sep 13 16:00:27 2014
+## Sat Sep 13 16:01:39 2014 Loading done (hour of tweets). ../Tools/tweetSocialFeature01 tweetNum: 3654365
+## tweetNum in each hour: [(0, 176603), (1, 164447), (2, 163176), (3, 166384), (4, 168000), (5, 145233), (6, 163092), (7, 143906), (8, 131474), (9, 115108), (10, 113169), (11, 122044), (12, 136864), (13, 142728), (14, 155773), (15, 160590), (16, 167675), (17, 165782), (18, 162947), (19, 160734), (20, 157071), (21, 157125), (22, 156805), (23, 157635)]
+## Sat Sep 13 16:01:54 2014 Loading done. ../data/taggedTweet/IDmap/IDmap_2013-01-01  |IDmap|:  3026071
+## loading text done. Sat Sep 13 16:02:15 2014../data/201301_preprocess/text_2013-01-01  |unitTextHash|:  6848  unitInvolvedHash:  6847
+### Sat Sep 13 16:02:15 2014 10000 tweets are processed! segNum: 14
+### Sat Sep 13 16:02:15 2014 20000 tweets are processed! segNum: 30
+### Sat Sep 13 16:02:15 2014 30000 tweets are processed! segNum: 40
+### Sat Sep 13 16:02:15 2014 40000 tweets are processed! segNum: 50
+### Sat Sep 13 16:02:16 2014 50000 tweets are processed! segNum: 55
+### Sat Sep 13 16:02:16 2014 60000 tweets are processed! segNum: 61
+### Sat Sep 13 16:02:16 2014 70000 tweets are processed! segNum: 74
+### Sat Sep 13 16:02:16 2014 80000 tweets are processed! segNum: 80
+### Sat Sep 13 16:02:16 2014 90000 tweets are processed! segNum: 86
+### Sat Sep 13 16:02:16 2014 100000 tweets are processed! segNum: 96
+### Sat Sep 13 16:02:16 2014 110000 tweets are processed! segNum: 104
+### Sat Sep 13 16:02:16 2014 120000 tweets are processed! segNum: 116
+### Sat Sep 13 16:02:16 2014 130000 tweets are processed! segNum: 122
+### Sat Sep 13 16:02:16 2014 140000 tweets are processed! segNum: 128
+### Sat Sep 13 16:02:16 2014 150000 tweets are processed! segNum: 136
+### Sat Sep 13 16:02:16 2014 160000 tweets are processed! segNum: 140
+### new interval time slice in tStr: 2 with previous tweet Num: 167016 bursty seg number: 142
+Getting frm clusters:  7045  related dfhash from exactdfhash:  142
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  142
+segId:  40|36|5  oriTexts:  2  tweets:  942
+segId:  39|89|5  oriTexts:  0  tweets:  431
+Incorporate 9730 pairs into 0  with newNum/changedNum 9730/0
+### Sat Sep 13 16:02:25 2014 170000 tweets are processed! segNum: 7
+### Sat Sep 13 16:02:25 2014 180000 tweets are processed! segNum: 21
+### Sat Sep 13 16:02:25 2014 190000 tweets are processed! segNum: 32
+### Sat Sep 13 16:02:25 2014 200000 tweets are processed! segNum: 40
+### Sat Sep 13 16:02:25 2014 210000 tweets are processed! segNum: 55
+### Sat Sep 13 16:02:25 2014 220000 tweets are processed! segNum: 66
+### Sat Sep 13 16:02:25 2014 230000 tweets are processed! segNum: 72
+### Sat Sep 13 16:02:25 2014 240000 tweets are processed! segNum: 78
+### Sat Sep 13 16:02:25 2014 250000 tweets are processed! segNum: 86
+### Sat Sep 13 16:02:26 2014 260000 tweets are processed! segNum: 97
+### Sat Sep 13 16:02:26 2014 270000 tweets are processed! segNum: 102
+### Sat Sep 13 16:02:26 2014 280000 tweets are processed! segNum: 109
+### Sat Sep 13 16:02:26 2014 290000 tweets are processed! segNum: 119
+### Sat Sep 13 16:02:26 2014 300000 tweets are processed! segNum: 124
+### Sat Sep 13 16:02:26 2014 310000 tweets are processed! segNum: 129
+### Sat Sep 13 16:02:26 2014 320000 tweets are processed! segNum: 143
+### new interval time slice in tStr: 4 with previous tweet Num: 153696 bursty seg number: 143
+Getting frm clusters:  7045  related dfhash from exactdfhash:  143
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  143
+segId:  40|36|5  oriTexts:  2  tweets:  700
+segId:  39|89|5  oriTexts:  0  tweets:  307
+Incorporate 9870 pairs into 9730  with newNum/changedNum 8544/1326
+### Sat Sep 13 16:02:33 2014 330000 tweets are processed! segNum: 25
+### Sat Sep 13 16:02:34 2014 340000 tweets are processed! segNum: 35
+### Sat Sep 13 16:02:34 2014 350000 tweets are processed! segNum: 47
+### Sat Sep 13 16:02:34 2014 360000 tweets are processed! segNum: 50
+### Sat Sep 13 16:02:34 2014 370000 tweets are processed! segNum: 58
+### Sat Sep 13 16:02:34 2014 380000 tweets are processed! segNum: 66
+### Sat Sep 13 16:02:34 2014 390000 tweets are processed! segNum: 72
+### Sat Sep 13 16:02:34 2014 400000 tweets are processed! segNum: 82
+### Sat Sep 13 16:02:34 2014 410000 tweets are processed! segNum: 84
+### Sat Sep 13 16:02:34 2014 420000 tweets are processed! segNum: 89
+### Sat Sep 13 16:02:34 2014 430000 tweets are processed! segNum: 98
+### Sat Sep 13 16:02:34 2014 440000 tweets are processed! segNum: 105
+### Sat Sep 13 16:02:34 2014 450000 tweets are processed! segNum: 109
+### Sat Sep 13 16:02:34 2014 460000 tweets are processed! segNum: 113
+### new interval time slice in tStr: 6 with previous tweet Num: 145741 bursty seg number: 121
+Getting frm clusters:  7045  related dfhash from exactdfhash:  121
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  121
+segId:  40|36|5  oriTexts:  0  tweets:  940
+segId:  39|89|5  oriTexts:  0  tweets:  335
+Incorporate 7021 pairs into 18274  with newNum/changedNum 5290/1731
+### Sat Sep 13 16:02:39 2014 470000 tweets are processed! segNum: 8
+### Sat Sep 13 16:02:39 2014 480000 tweets are processed! segNum: 22
+### Sat Sep 13 16:02:39 2014 490000 tweets are processed! segNum: 30
+### Sat Sep 13 16:02:39 2014 500000 tweets are processed! segNum: 36
+### Sat Sep 13 16:02:39 2014 510000 tweets are processed! segNum: 44
+### Sat Sep 13 16:02:39 2014 520000 tweets are processed! segNum: 53
+### Sat Sep 13 16:02:40 2014 530000 tweets are processed! segNum: 58
+### Sat Sep 13 16:02:40 2014 540000 tweets are processed! segNum: 65
+### Sat Sep 13 16:02:40 2014 550000 tweets are processed! segNum: 74
+### Sat Sep 13 16:02:40 2014 560000 tweets are processed! segNum: 80
+### Sat Sep 13 16:02:40 2014 570000 tweets are processed! segNum: 86
+### Sat Sep 13 16:02:40 2014 580000 tweets are processed! segNum: 97
+### Sat Sep 13 16:02:40 2014 590000 tweets are processed! segNum: 101
+### Sat Sep 13 16:02:40 2014 600000 tweets are processed! segNum: 109
+### Sat Sep 13 16:02:40 2014 610000 tweets are processed! segNum: 124
+### new interval time slice in tStr: 8 with previous tweet Num: 144617 bursty seg number: 124
+Getting frm clusters:  7045  related dfhash from exactdfhash:  124
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  124
+segId:  2359|36|5  oriTexts:  1  tweets:  1
+segId:  39|89|5  oriTexts:  0  tweets:  313
+Incorporate 7381 pairs into 23564  with newNum/changedNum 6218/1163
+### Sat Sep 13 16:02:45 2014 620000 tweets are processed! segNum: 20
+### Sat Sep 13 16:02:45 2014 630000 tweets are processed! segNum: 27
+### Sat Sep 13 16:02:46 2014 640000 tweets are processed! segNum: 35
+### Sat Sep 13 16:02:46 2014 650000 tweets are processed! segNum: 49
+### Sat Sep 13 16:02:46 2014 660000 tweets are processed! segNum: 58
+### Sat Sep 13 16:02:46 2014 670000 tweets are processed! segNum: 65
+### Sat Sep 13 16:02:46 2014 680000 tweets are processed! segNum: 72
+### Sat Sep 13 16:02:46 2014 690000 tweets are processed! segNum: 84
+### Sat Sep 13 16:02:46 2014 700000 tweets are processed! segNum: 92
+### Sat Sep 13 16:02:46 2014 710000 tweets are processed! segNum: 100
+### new interval time slice in tStr: 10 with previous tweet Num: 105713 bursty seg number: 103
+Getting frm clusters:  7045  related dfhash from exactdfhash:  103
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  103
+segId:  40|36|5  oriTexts:  1  tweets:  600
+segId:  9662|36|5  oriTexts:  1  tweets:  1
+segId:  39|89|5  oriTexts:  0  tweets:  211
+Incorporate 4950 pairs into 29782  with newNum/changedNum 3737/1213
+### Sat Sep 13 16:02:49 2014 720000 tweets are processed! segNum: 10
+### Sat Sep 13 16:02:49 2014 730000 tweets are processed! segNum: 29
+### Sat Sep 13 16:02:49 2014 740000 tweets are processed! segNum: 39
+### Sat Sep 13 16:02:49 2014 750000 tweets are processed! segNum: 49
+### Sat Sep 13 16:02:49 2014 760000 tweets are processed! segNum: 58
+### Sat Sep 13 16:02:49 2014 770000 tweets are processed! segNum: 71
+### Sat Sep 13 16:02:49 2014 780000 tweets are processed! segNum: 76
+### Sat Sep 13 16:02:49 2014 790000 tweets are processed! segNum: 85
+### Sat Sep 13 16:02:49 2014 800000 tweets are processed! segNum: 94
+### new interval time slice in tStr: 12 with previous tweet Num: 85416 bursty seg number: 97
+Getting frm clusters:  7045  related dfhash from exactdfhash:  97
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  97
+segId:  40|36|5  oriTexts:  0  tweets:  303
+segId:  9662|36|5  oriTexts:  1  tweets:  1
+segId:  39|89|5  oriTexts:  0  tweets:  188
+Incorporate 4371 pairs into 33519  with newNum/changedNum 3297/1074
+### Sat Sep 13 16:02:52 2014 810000 tweets are processed! segNum: 14
+### Sat Sep 13 16:02:52 2014 820000 tweets are processed! segNum: 25
+### Sat Sep 13 16:02:52 2014 830000 tweets are processed! segNum: 41
+### Sat Sep 13 16:02:53 2014 840000 tweets are processed! segNum: 47
+### Sat Sep 13 16:02:53 2014 850000 tweets are processed! segNum: 56
+### Sat Sep 13 16:02:53 2014 860000 tweets are processed! segNum: 62
+### Sat Sep 13 16:02:53 2014 870000 tweets are processed! segNum: 69
+### Sat Sep 13 16:02:53 2014 880000 tweets are processed! segNum: 79
+### Sat Sep 13 16:02:53 2014 890000 tweets are processed! segNum: 90
+### new interval time slice in tStr: 14 with previous tweet Num: 95756 bursty seg number: 96
+Getting frm clusters:  7045  related dfhash from exactdfhash:  96
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  96
+segId:  2359|36|5  oriTexts:  2  tweets:  2
+segId:  40|36|5  oriTexts:  0  tweets:  308
+segId:  39|89|5  oriTexts:  0  tweets:  234
+segId:  0|36|31569  oriTexts:  2  tweets:  2
+Incorporate 4186 pairs into 36816  with newNum/changedNum 3142/1044
+### Sat Sep 13 16:02:56 2014 900000 tweets are processed! segNum: 5
+### Sat Sep 13 16:02:56 2014 910000 tweets are processed! segNum: 16
+### Sat Sep 13 16:02:56 2014 920000 tweets are processed! segNum: 30
+### Sat Sep 13 16:02:56 2014 930000 tweets are processed! segNum: 41
+### Sat Sep 13 16:02:56 2014 940000 tweets are processed! segNum: 47
+### Sat Sep 13 16:02:56 2014 950000 tweets are processed! segNum: 57
+### Sat Sep 13 16:02:56 2014 960000 tweets are processed! segNum: 64
+### Sat Sep 13 16:02:56 2014 970000 tweets are processed! segNum: 71
+### Sat Sep 13 16:02:56 2014 980000 tweets are processed! segNum: 79
+### Sat Sep 13 16:02:56 2014 990000 tweets are processed! segNum: 91
+### Sat Sep 13 16:02:56 2014 1000000 tweets are processed! segNum: 95
+### Sat Sep 13 16:02:57 2014 1010000 tweets are processed! segNum: 101
+### new interval time slice in tStr: 16 with previous tweet Num: 118197 bursty seg number: 106
+Getting frm clusters:  7045  related dfhash from exactdfhash:  106
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  106
+segId:  40|36|5  oriTexts:  0  tweets:  555
+segId:  5885|36|5  oriTexts:  2  tweets:  2
+segId:  9662|36|5  oriTexts:  2  tweets:  2
+segId:  39|89|5  oriTexts:  0  tweets:  261
+Incorporate 5151 pairs into 39958  with newNum/changedNum 3937/1214
+### Sat Sep 13 16:03:00 2014 1020000 tweets are processed! segNum: 10
+### Sat Sep 13 16:03:00 2014 1030000 tweets are processed! segNum: 30
+### Sat Sep 13 16:03:00 2014 1040000 tweets are processed! segNum: 36
+### Sat Sep 13 16:03:00 2014 1050000 tweets are processed! segNum: 53
+### Sat Sep 13 16:03:00 2014 1060000 tweets are processed! segNum: 70
+### Sat Sep 13 16:03:00 2014 1070000 tweets are processed! segNum: 76
+### Sat Sep 13 16:03:01 2014 1080000 tweets are processed! segNum: 89
+### Sat Sep 13 16:03:01 2014 1090000 tweets are processed! segNum: 98
+### Sat Sep 13 16:03:01 2014 1100000 tweets are processed! segNum: 109
+### Sat Sep 13 16:03:01 2014 1110000 tweets are processed! segNum: 119
+### Sat Sep 13 16:03:01 2014 1120000 tweets are processed! segNum: 131
+### Sat Sep 13 16:03:01 2014 1130000 tweets are processed! segNum: 137
+### Sat Sep 13 16:03:01 2014 1140000 tweets are processed! segNum: 145
+### Sat Sep 13 16:03:01 2014 1150000 tweets are processed! segNum: 149
+### Sat Sep 13 16:03:01 2014 1160000 tweets are processed! segNum: 154
+### new interval time slice in tStr: 18 with previous tweet Num: 153761 bursty seg number: 164
+Getting frm clusters:  7045  related dfhash from exactdfhash:  164
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  164
+segId:  40|36|5  oriTexts:  0  tweets:  602
+segId:  39|89|5  oriTexts:  0  tweets:  337
+Incorporate 13041 pairs into 43895  with newNum/changedNum 10081/2960
+### Sat Sep 13 16:03:13 2014 1170000 tweets are processed! segNum: 2
+### Sat Sep 13 16:03:13 2014 1180000 tweets are processed! segNum: 8
+### Sat Sep 13 16:03:13 2014 1190000 tweets are processed! segNum: 27
+### Sat Sep 13 16:03:13 2014 1200000 tweets are processed! segNum: 38
+### Sat Sep 13 16:03:13 2014 1210000 tweets are processed! segNum: 53
+### Sat Sep 13 16:03:13 2014 1220000 tweets are processed! segNum: 65
+### Sat Sep 13 16:03:13 2014 1230000 tweets are processed! segNum: 76
+### Sat Sep 13 16:03:13 2014 1240000 tweets are processed! segNum: 90
+### Sat Sep 13 16:03:13 2014 1250000 tweets are processed! segNum: 101
+### Sat Sep 13 16:03:13 2014 1260000 tweets are processed! segNum: 112
+### Sat Sep 13 16:03:13 2014 1270000 tweets are processed! segNum: 123
+### Sat Sep 13 16:03:13 2014 1280000 tweets are processed! segNum: 130
+### Sat Sep 13 16:03:13 2014 1290000 tweets are processed! segNum: 146
+### Sat Sep 13 16:03:13 2014 1300000 tweets are processed! segNum: 155
+### Sat Sep 13 16:03:13 2014 1310000 tweets are processed! segNum: 165
+### Sat Sep 13 16:03:14 2014 1320000 tweets are processed! segNum: 174
+### Sat Sep 13 16:03:14 2014 1330000 tweets are processed! segNum: 182
+### Sat Sep 13 16:03:14 2014 1340000 tweets are processed! segNum: 188
+### new interval time slice in tStr: 20 with previous tweet Num: 171449 bursty seg number: 189
+Getting frm clusters:  7045  related dfhash from exactdfhash:  189
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  189
+segId:  40|36|5  oriTexts:  1  tweets:  558
+segId:  39|89|5  oriTexts:  0  tweets:  335
+Incorporate 17391 pairs into 53976  with newNum/changedNum 13490/3901
+### Sat Sep 13 16:03:33 2014 1350000 tweets are processed! segNum: 17
+### Sat Sep 13 16:03:33 2014 1360000 tweets are processed! segNum: 28
+### Sat Sep 13 16:03:33 2014 1370000 tweets are processed! segNum: 37
+### Sat Sep 13 16:03:33 2014 1380000 tweets are processed! segNum: 50
+### Sat Sep 13 16:03:33 2014 1390000 tweets are processed! segNum: 60
+### Sat Sep 13 16:03:33 2014 1400000 tweets are processed! segNum: 64
+### Sat Sep 13 16:03:33 2014 1410000 tweets are processed! segNum: 78
+### Sat Sep 13 16:03:34 2014 1420000 tweets are processed! segNum: 84
+### Sat Sep 13 16:03:34 2014 1430000 tweets are processed! segNum: 90
+### Sat Sep 13 16:03:34 2014 1440000 tweets are processed! segNum: 100
+### Sat Sep 13 16:03:34 2014 1450000 tweets are processed! segNum: 104
+### Sat Sep 13 16:03:34 2014 1460000 tweets are processed! segNum: 114
+### Sat Sep 13 16:03:34 2014 1470000 tweets are processed! segNum: 128
+### Sat Sep 13 16:03:34 2014 1480000 tweets are processed! segNum: 139
+### Sat Sep 13 16:03:34 2014 1490000 tweets are processed! segNum: 148
+### Sat Sep 13 16:03:34 2014 1500000 tweets are processed! segNum: 158
+### Sat Sep 13 16:03:34 2014 1510000 tweets are processed! segNum: 174
+### new interval time slice in tStr: 22 with previous tweet Num: 169776 bursty seg number: 175
+Getting frm clusters:  7045  related dfhash from exactdfhash:  175
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  175
+segId:  40|36|5  oriTexts:  0  tweets:  532
+segId:  39|89|5  oriTexts:  0  tweets:  286
+Incorporate 14878 pairs into 67466  with newNum/changedNum 10986/3892
+### Sat Sep 13 16:03:47 2014 1520000 tweets are processed! segNum: 15
+### Sat Sep 13 16:03:47 2014 1530000 tweets are processed! segNum: 27
+### Sat Sep 13 16:03:48 2014 1540000 tweets are processed! segNum: 39
+### Sat Sep 13 16:03:48 2014 1550000 tweets are processed! segNum: 49
+### Sat Sep 13 16:03:48 2014 1560000 tweets are processed! segNum: 56
+### Sat Sep 13 16:03:48 2014 1570000 tweets are processed! segNum: 70
+### Sat Sep 13 16:03:48 2014 1580000 tweets are processed! segNum: 82
+### Sat Sep 13 16:03:48 2014 1590000 tweets are processed! segNum: 92
+### Sat Sep 13 16:03:48 2014 1600000 tweets are processed! segNum: 102
+### Sat Sep 13 16:03:48 2014 1610000 tweets are processed! segNum: 109
+### Sat Sep 13 16:03:48 2014 1620000 tweets are processed! segNum: 124
+### Sat Sep 13 16:03:48 2014 1630000 tweets are processed! segNum: 131
+### Sat Sep 13 16:03:48 2014 1640000 tweets are processed! segNum: 135
+### Sat Sep 13 16:03:48 2014 1650000 tweets are processed! segNum: 141
+### Sat Sep 13 16:03:48 2014 1660000 tweets are processed! segNum: 147
+### Sat Sep 13 16:03:48 2014 1670000 tweets are processed! segNum: 156
+Getting frm clusters:  7045  related dfhash from exactdfhash:  161
+Got frm clusters:  7045  related dfhash:  7045  from exactdfhash:  161
+segId:  40|36|5  oriTexts:  1  tweets:  669
+segId:  5885|36|5  oriTexts:  2  tweets:  2
+segId:  39|89|5  oriTexts:  0  tweets:  291
+Incorporate 12403 pairs into 78452  with newNum/changedNum 9113/3290
+### Sat Sep 13 16:04:01 2014 770 event segments in digitSklText-01 are loaded. With segment pairs Num: 87565
+###program ends at Sat Sep 13 16:04:02 2014

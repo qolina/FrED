@@ -1,0 +1,15 @@
+python getSocialInfo.py 01 > ~/fbes_expData/logs/out.socialFea01 &
+python getSocialInfo.py 02 > ~/fbes_expData/logs/out.socialFea02 &
+python getSocialInfo.py 03 > ~/fbes_expData/logs/out.socialFea03 &
+python getSocialInfo.py 04 > ~/fbes_expData/logs/out.socialFea04 &
+python getSocialInfo.py 05 > ~/fbes_expData/logs/out.socialFea05 &
+python getSocialInfo.py 06 > ~/fbes_expData/logs/out.socialFea06 &
+python getSocialInfo.py 07 > ~/fbes_expData/logs/out.socialFea07 &
+python getSocialInfo.py 08 > ~/fbes_expData/logs/out.socialFea08 &
+python getSocialInfo.py 09 > ~/fbes_expData/logs/out.socialFea09 &
+python getSocialInfo.py 10 > ~/fbes_expData/logs/out.socialFea10 &
+python getSocialInfo.py 11 > ~/fbes_expData/logs/out.socialFea11 &
+python getSocialInfo.py 12 > ~/fbes_expData/logs/out.socialFea12 &
+python getSocialInfo.py 13 > ~/fbes_expData/logs/out.socialFea13 &
+python getSocialInfo.py 14 > ~/fbes_expData/logs/out.socialFea14 &
+python getSocialInfo.py 15 > ~/fbes_expData/logs/out.socialFea15 &

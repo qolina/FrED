@@ -1,0 +1,15 @@
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText01 -out lm_filtered/tweetsText01 > ../output_preprocess/out01.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText02 -out lm_filtered/tweetsText02 > ../output_preprocess/out02.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText03 -out lm_filtered/tweetsText03 > ../output_preprocess/out03.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText04 -out lm_filtered/tweetsText04 > ../output_preprocess/out04.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText05 -out lm_filtered/tweetsText05 > ../output_preprocess/out05.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText06 -out lm_filtered/tweetsText06 > ../output_preprocess/out06.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText07 -out lm_filtered/tweetsText07 > ../output_preprocess/out07.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText08 -out lm_filtered/tweetsText08 > ../output_preprocess/out08.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText09 -out lm_filtered/tweetsText09 > ../output_preprocess/out09.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText10 -out lm_filtered/tweetsText10 > ../output_preprocess/out10.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText11 -out lm_filtered/tweetsText11 > ../output_preprocess/out11.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText12 -out lm_filtered/tweetsText12 > ../output_preprocess/out12.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText13 -out lm_filtered/tweetsText13 > ../output_preprocess/out13.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText14 -out lm_filtered/tweetsText14 > ../output_preprocess/out14.lmfilt &
+python filter_lm.py -lm ~/nlpTools/LM/US_english_lm/en-70k-0.1.lm -in ~/corpus/data_twitter201301/201301_clean/tweetCleanText15 -out lm_filtered/tweetsText15 > ../output_preprocess/out15.lmfilt &

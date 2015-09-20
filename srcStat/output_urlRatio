@@ -1,0 +1,106 @@
+###program starts at Thu Mar 20 14:54:24 2014
+### Processing tweetFile_0110_2013-09-01_22-43_2013-01-09
+### Thu Mar 20 14:55:05 2014 1000000 tweets are processed!
+### Thu Mar 20 14:55:48 2014 2000000 tweets are processed!
+### Thu Mar 20 14:56:31 2014 3000000 tweets are processed!
+### Thu Mar 20 14:56:59 2014 tweets in tweetFile_0110_2013-09-01_22-43_2013-01-09 are loaded.3673413
+url tweet num: 491093
+0.133688479896
+### Processing tweetFile_0110_2013-09-01_22-43_2013-01-10
+### Thu Mar 20 14:57:41 2014 1000000 tweets are processed!
+### Thu Mar 20 14:58:24 2014 2000000 tweets are processed!
+### Thu Mar 20 14:59:06 2014 3000000 tweets are processed!
+### Thu Mar 20 14:59:13 2014 tweets in tweetFile_0110_2013-09-01_22-43_2013-01-10 are loaded.3175836
+url tweet num: 426521
+0.134301960177
+### Processing tweetFile_0110_2013-09-01_22-43_2013-01-11
+### Thu Mar 20 14:59:55 2014 1000000 tweets are processed!
+### Thu Mar 20 15:00:38 2014 2000000 tweets are processed!
+### Thu Mar 20 15:01:21 2014 3000000 tweets are processed!
+### Thu Mar 20 15:01:39 2014 tweets in tweetFile_0110_2013-09-01_22-43_2013-01-11 are loaded.3417299
+url tweet num: 444120
+0.129962288931
+### Processing tweetFile_0110_2013-09-01_22-43_2013-01-12
+### Thu Mar 20 15:02:20 2014 1000000 tweets are processed!
+### Thu Mar 20 15:03:03 2014 2000000 tweets are processed!
+### Thu Mar 20 15:03:29 2014 tweets in tweetFile_0110_2013-09-01_22-43_2013-01-12 are loaded.2615850
+url tweet num: 314362
+0.120175851062
+### Processing tweetFile_0110_2013-09-01_22-43_2013-01-13
+### Thu Mar 20 15:04:11 2014 1000000 tweets are processed!
+### Thu Mar 20 15:04:54 2014 2000000 tweets are processed!
+### Thu Mar 20 15:05:27 2014 tweets in tweetFile_0110_2013-09-01_22-43_2013-01-13 are loaded.2805656
+url tweet num: 310715
+0.110745936066
+### Processing tweetFile_0114_2013-09-02_09-29_2013-01-14
+### Thu Mar 20 15:06:09 2014 1000000 tweets are processed!
+### Thu Mar 20 15:06:52 2014 2000000 tweets are processed!
+### Thu Mar 20 15:07:19 2014 tweets in tweetFile_0114_2013-09-02_09-29_2013-01-14 are loaded.2650728
+url tweet num: 338181
+0.127580423189
+### Processing tweetFile_0114_2013-09-02_09-29_2013-01-15
+### Thu Mar 20 15:08:01 2014 1000000 tweets are processed!
+### Thu Mar 20 15:08:44 2014 2000000 tweets are processed!
+### Thu Mar 20 15:09:26 2014 3000000 tweets are processed!
+### Thu Mar 20 15:09:40 2014 tweets in tweetFile_0114_2013-09-02_09-29_2013-01-15 are loaded.3322984
+url tweet num: 430361
+0.129510403902
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-01
+### Thu Mar 20 15:10:22 2014 1000000 tweets are processed!
+### Thu Mar 20 15:11:05 2014 2000000 tweets are processed!
+### Thu Mar 20 15:11:47 2014 3000000 tweets are processed!
+### Thu Mar 20 15:12:14 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-01 are loaded.3654690
+url tweet num: 387287
+0.105969863381
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-02
+### Thu Mar 20 15:12:57 2014 1000000 tweets are processed!
+### Thu Mar 20 15:13:39 2014 2000000 tweets are processed!
+### Thu Mar 20 15:14:06 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-02 are loaded.2644263
+url tweet num: 336757
+0.127353822218
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-03
+### Thu Mar 20 15:14:48 2014 1000000 tweets are processed!
+### Thu Mar 20 15:15:31 2014 2000000 tweets are processed!
+### Thu Mar 20 15:16:13 2014 3000000 tweets are processed!
+### Thu Mar 20 15:16:39 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-03 are loaded.3621971
+url tweet num: 430425
+0.118837229785
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-04
+### Thu Mar 20 15:17:21 2014 1000000 tweets are processed!
+### Thu Mar 20 15:18:04 2014 2000000 tweets are processed!
+### Thu Mar 20 15:18:47 2014 3000000 tweets are processed!
+### Thu Mar 20 15:19:20 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-04 are loaded.3780989
+url tweet num: 466175
+0.123294460788
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-05
+### Thu Mar 20 15:20:02 2014 1000000 tweets are processed!
+### Thu Mar 20 15:20:44 2014 2000000 tweets are processed!
+### Thu Mar 20 15:21:27 2014 3000000 tweets are processed!
+### Thu Mar 20 15:21:58 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-05 are loaded.3744093
+url tweet num: 426098
+0.113805399599
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-06
+### Thu Mar 20 15:22:39 2014 1000000 tweets are processed!
+### Thu Mar 20 15:23:22 2014 2000000 tweets are processed!
+### Thu Mar 20 15:24:04 2014 3000000 tweets are processed!
+### Thu Mar 20 15:24:35 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-06 are loaded.3756254
+url tweet num: 404281
+0.107628770578
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-07
+### Thu Mar 20 15:25:16 2014 1000000 tweets are processed!
+### Thu Mar 20 15:25:59 2014 2000000 tweets are processed!
+### Thu Mar 20 15:26:41 2014 3000000 tweets are processed!
+### Thu Mar 20 15:26:57 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-07 are loaded.3372362
+url tweet num: 409915
+0.121551304397
+### Processing tweetFile_201301_2013-09-01_21-16_2013-01-08
+### Thu Mar 20 15:27:38 2014 1000000 tweets are processed!
+### Thu Mar 20 15:28:21 2014 2000000 tweets are processed!
+### Thu Mar 20 15:29:04 2014 3000000 tweets are processed!
+### Thu Mar 20 15:29:26 2014 tweets in tweetFile_201301_2013-09-01_21-16_2013-01-08 are loaded.3544145
+url tweet num: 456030
+0.12867137208
+[0, 387287, 336757, 430425, 466175, 426098, 404281, 409915, 456030, 491093, 426521, 444120, 314362, 310715, 338181, 430361]
+[0, 3654690, 2644263, 3621971, 3780989, 3744093, 3756254, 3372362, 3544145, 3673413, 3175836, 3417299, 2615850, 2805656, 2650728, 3322984]
+[0.10596986338102547, 0.1273538222181379, 0.11883722978455653, 0.12329446078790496, 0.11380539959878133, 0.10762877057834747, 0.12155130439733339, 0.12867137207986692, 0.13368847989594418, 0.13430196017678495, 0.12996228893052672, 0.12017585106179636, 0.11074593606628895, 0.12758042318940307, 0.12951040390203503]
+###program ends at Thu Mar 20 15:29:26 2014

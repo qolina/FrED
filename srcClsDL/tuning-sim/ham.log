@@ -1,0 +1,66 @@
+###program starts at Thu Sep  4 09:40:47 2014
+Global Vocab loading done.  17232210  at  Thu Sep  4 09:41:48 2014
+Separate Vocab loading done.  [5229951, 6550443, 7095471]  at  Thu Sep  4 09:42:14 2014
+Loading units' vectors done. [wnum, vecLen]  ['1074213', '200']  vecHash:  627  with localUnits:  1000  at  Thu Sep  4 09:44:04 2014
+begin calculating len of items. #item:  1000  at  Thu Sep  4 09:44:04 2014
+begin calculating sim of pairs. #item:  1000  at  Thu Sep  4 09:44:04 2014
+i  0  items are processed at  Thu Sep  4 09:44:04 2014
+i  10  items are processed at  Thu Sep  4 09:44:04 2014
+i  20  items are processed at  Thu Sep  4 09:44:05 2014
+i  30  items are processed at  Thu Sep  4 09:44:05 2014
+i  40  items are processed at  Thu Sep  4 09:44:05 2014
+i  50  items are processed at  Thu Sep  4 09:44:06 2014
+i  60  items are processed at  Thu Sep  4 09:44:06 2014
+i  70  items are processed at  Thu Sep  4 09:44:06 2014
+i  80  items are processed at  Thu Sep  4 09:44:06 2014
+i  90  items are processed at  Thu Sep  4 09:44:07 2014
+i  100  items are processed at  Thu Sep  4 09:44:07 2014
+i  200  items are processed at  Thu Sep  4 09:44:09 2014
+i  300  items are processed at  Thu Sep  4 09:44:11 2014
+i  400  items are processed at  Thu Sep  4 09:44:13 2014
+i  500  items are processed at  Thu Sep  4 09:44:14 2014
+i  600  items are processed at  Thu Sep  4 09:44:15 2014
+i  700  items are processed at  Thu Sep  4 09:44:15 2014
+i  800  items are processed at  Thu Sep  4 09:44:15 2014
+i  900  items are processed at  Thu Sep  4 09:44:15 2014
+End calculating sim of pairs. #item pairs:  63500  at  Thu Sep  4 09:44:21 2014
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.1 End calculating sim of pairs. #item pairs:  7  at  Thu Sep  4 09:44:31 2014
+ lengthOfsims:  7   499500
+recall:  0
+7   0.281249606026   0.0162460402221   0.118391316474   0.0548146232801
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.2 End calculating sim of pairs. #item pairs:  21445  at  Thu Sep  4 09:44:42 2014
+ lengthOfsims:  21445   499500
+recall:  22
+21445   0.773931234962   0.000353090523721   0.326375263081   0.00235092850218
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.3 End calculating sim of pairs. #item pairs:  152095  at  Thu Sep  4 09:45:05 2014
+ lengthOfsims:  152095   499500
+recall:  85
+152095   0.773931234962   1.12212704563e-06   0.166229674838   0.000520733848958
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.4 End calculating sim of pairs. #item pairs:  151511  at  Thu Sep  4 09:45:27 2014
+ lengthOfsims:  151511   499500
+recall:  85
+151511   0.831476251069   1.12212704563e-06   0.166605633359   0.000522750478066
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.5 End calculating sim of pairs. #item pairs:  151299  at  Thu Sep  4 09:45:48 2014
+ lengthOfsims:  151299   499500
+recall:  84
+151299   0.831476251069   1.12212704563e-06   0.166600596499   0.000523397294712
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.6 End calculating sim of pairs. #item pairs:  151197  at  Thu Sep  4 09:46:10 2014
+ lengthOfsims:  151197   499500
+recall:  85
+151197   1.01243541105   5.36815243067e-06   0.166684178325   0.000523820042062
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.7 End calculating sim of pairs. #item pairs:  151027  at  Thu Sep  4 09:46:32 2014
+ lengthOfsims:  151027   499500
+recall:  85
+151027   1.01243541105   1.12212704563e-06   0.166538837894   0.000523647062553
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.8 End calculating sim of pairs. #item pairs:  152203  at  Thu Sep  4 09:46:54 2014
+ lengthOfsims:  152203   499500
+recall:  85
+152203   1.01243541105   1.12212704563e-06   0.166586237192   0.000521812724353
+*********Value fixed B:  50  with q_init:  20  hamThre:  0.9 End calculating sim of pairs. #item pairs:  151729  at  Thu Sep  4 09:47:17 2014
+ lengthOfsims:  151729   499500
+recall:  85
+151729   0.831476251069   1.12212704563e-06   0.166653821486   0.000522761016474
+*********Value fixed B:  50  with q_init:  20  hamThre:  1.0 End calculating sim of pairs. #item pairs:  152038  at  Thu Sep  4 09:47:39 2014
+ lengthOfsims:  152038   499500
+recall:  85
+152038   0.773931234962   5.36815243067e-06   0.166401113343   0.000521579529843

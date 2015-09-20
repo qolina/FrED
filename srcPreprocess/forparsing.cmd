@@ -1,0 +1,15 @@
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text01.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text02.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text03.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text04.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text05.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text06.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text07.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text08.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text09.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text10.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text11.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text12.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text13.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text14.tg &
+python forparsing.py ~/corpus/data_twitter201301/201301_preprocess text15.tg &

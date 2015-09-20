@@ -1,0 +1,15 @@
+python filtering_by_lmProb.py -prob lmProb01 -tid ~/corpus/data_twitter201301/201301_clean/tweetId01 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered01 &
+python filtering_by_lmProb.py -prob lmProb02 -tid ~/corpus/data_twitter201301/201301_clean/tweetId02 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered02 &
+python filtering_by_lmProb.py -prob lmProb03 -tid ~/corpus/data_twitter201301/201301_clean/tweetId03 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered03 &
+python filtering_by_lmProb.py -prob lmProb04 -tid ~/corpus/data_twitter201301/201301_clean/tweetId04 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered04 &
+python filtering_by_lmProb.py -prob lmProb05 -tid ~/corpus/data_twitter201301/201301_clean/tweetId05 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered05 &
+python filtering_by_lmProb.py -prob lmProb06 -tid ~/corpus/data_twitter201301/201301_clean/tweetId06 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered06 &
+python filtering_by_lmProb.py -prob lmProb07 -tid ~/corpus/data_twitter201301/201301_clean/tweetId07 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered07 &
+python filtering_by_lmProb.py -prob lmProb08 -tid ~/corpus/data_twitter201301/201301_clean/tweetId08 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered08 &
+python filtering_by_lmProb.py -prob lmProb09 -tid ~/corpus/data_twitter201301/201301_clean/tweetId09 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered09 &
+python filtering_by_lmProb.py -prob lmProb10 -tid ~/corpus/data_twitter201301/201301_clean/tweetId10 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered10 &
+python filtering_by_lmProb.py -prob lmProb11 -tid ~/corpus/data_twitter201301/201301_clean/tweetId11 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered11 &
+python filtering_by_lmProb.py -prob lmProb12 -tid ~/corpus/data_twitter201301/201301_clean/tweetId12 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered12 &
+python filtering_by_lmProb.py -prob lmProb13 -tid ~/corpus/data_twitter201301/201301_clean/tweetId13 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered13 &
+python filtering_by_lmProb.py -prob lmProb14 -tid ~/corpus/data_twitter201301/201301_clean/tweetId14 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered14 &
+python filtering_by_lmProb.py -prob lmProb15 -tid ~/corpus/data_twitter201301/201301_clean/tweetId15 -out ~/corpus/data_twitter201301/lm_filtered/tweetFiltered15 &

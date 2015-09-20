@@ -1,0 +1,19 @@
+# This version is used for structured skeleton.
+# Next version: head_dependent strings
+
+
+#step 0: get skeleton 
+#python getSkeleton.py(../srcGetskl)
+
+#step 1: estimate_ps of skeleton
+#python getrelpair.py
+#python estimate_ps_round2.py (18hours)
+#python estimate_ps_round3.py (14 hours)
+
+#step 2: get bursty skeleton
+python getburstyskl.py
+
+python getEventSegPair.py > ../log/out_ltwehash_segcls_getesegpair_hfmon
+#sync
+python getEvent.py > ../log/out_ltwehash_segcls_getevent_hfmon
+#exit
