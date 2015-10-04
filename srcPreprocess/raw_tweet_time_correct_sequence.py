@@ -1,6 +1,6 @@
 # func: load content from tweet.txt file. recollect tweets in each day into seperate files
-# sequence version is for original tweets arranged by time
-# this version is for original tweets may not be arranged by time, and each days' tweet is stored into memory first.
+# this sequence version is for original tweets arranged by time
+# the other version is for original tweets may not be arranged by time, and each days' tweet is stored into memory first.
 
 import os
 import sys
@@ -28,12 +28,10 @@ def loadTweetFromFile(dirPath):
 
     print fileList
 
-    date_tweetHash = {} # date:lineStrList
-
-    # for statistic
-    dateHash = {} # date:tweetNum
-
+    baseDate = None
+    output_rawTweetFile = None
     for item in fileList:
+
         print "## Processing file ", item
         if not item.endswith(".txt"):
             print item, " is not txt file. passed."
@@ -41,7 +39,7 @@ def loadTweetFromFile(dirPath):
         jsonFile = file(item)
         firstLine = jsonFile.readline()
 
-        lineIdx = 1
+        lineIdx = 0
         while 1:
             lineStr = jsonFile.readline()
             if not lineStr:
@@ -55,7 +53,7 @@ def loadTweetFromFile(dirPath):
             lineStr = lineStr[:-1]
             if len(lineStr) < 20:
                 continue
-#            lineStr = re.sub(r'\\\\', r"\\", lineStr) # for twitter201301 data, not for stockTweets_201504
+#            lineStr = re.sub(r'\\\\', r"\\", lineStr)
 
             # compile into json format
             try:
@@ -67,49 +65,38 @@ def loadTweetFromFile(dirPath):
 
             # create tweet and user instance for current jsonObj
             currTweet = getTweet(jsonObj)
+
             if currTweet is None: # lack of id_str
                 if loadDataDebug:
                     print "Null tweet (no id_str) in lineNum", lineIdx, str(jsonObj)
                 continue
-            # tweet.user_id is initialized to be empty 
 
-
-            #################################
-            # store into memory: date_tweetHash 
-            # time filtering ,keep tweets between (20130101-20130115) (20150410-20150531)
+            # output
+            # time filtering ,keep tweets between (20130101-20130115)
             currTime = readTime_fromTweet(currTweet.created_at)
             currDate = time.strftime("%Y-%m-%d", currTime)
 #            print currDate
-            cumulativeInsert(dateHash, currDate, 1) # for statistic
             if currDate.startswith("2012-12-31"): 
                 continue
             if not currDate[5:7] in ["04", "05"]: # month
                 continue
 
-            lineArr = []
-            if currDate in date_tweetHash:
-                lineArr = date_tweetHash[currDate]
-            lineArr.append(lineStr)
-            date_tweetHash[currDate] = lineArr
+            if baseDate > currDate: # tweet in wrong time series
+                print "tweet in wrong time. basedate currdate ", baseDate, currDate, "in lineNum: ", lineIdx
+                continue
+            if baseDate != currDate:
+            # a new date, close previous file, create a new file
+                print "Create a new file for date", currDate, " close old date", baseDate
+                baseDate = currDate
 
+                if output_rawTweetFile: #close previous file
+                    output_rawTweetFile.close()
 
-        jsonFile.close()
-
-    for date in date_tweetHash:
-        print "Create a new file for date", date
-
-        output_rawTweetFile = file(dirPath + r"rawTwitter_timeCorrect-" + date, "w")
-
-        for lineStr in date_tweetHash[date]:
+                output_rawTweetFile = file(dirPath + r"rawTwitter_timeCorrect-" + currDate, "w")
             output_rawTweetFile.write(lineStr + "\n")
 
-        output_rawTweetFile.close()
-
-
-    if loadDataDebug:
-        print "#tweet in dates: "
-        print sorted(dateHash.items(), key = lambda a:a[0])
-  
+        jsonFile.close()
+   
 def getArg(args, flag):
     arg = None
     if flag in args:

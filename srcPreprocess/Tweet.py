@@ -1,3 +1,5 @@
+import re
+
 
 ########################################################
 ## Define user and tweet's attributes. 
@@ -71,5 +73,81 @@ class Tweet:
     ## feature used
     def setTF_IDF_Vector(self,TF_IDF_Vector):
         self.TF_IDF_Vector = TF_IDF_Vector
+
+## extract a tweet for current tweetLine
+def getTweet(jsonObj):
+    tweetAtts = []
+    if not jsonObj.has_key('id_str'):
+        return None
+    tweetAtts.append(jsonObj['id_str'])
+    tweetAtts.append('user_id_str')# user-id will be assigned later
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'text')
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'created_at')
+    #tweetAtts = getValue_from2ndLayer_InJson(tweetAtts,jsonObj,'entities','media')
+    tweetAtts = getValue_from2ndLayer_InJson(tweetAtts,jsonObj,'entities','user_mentions')
+    tweetAtts = getValue_from2ndLayer_InJson(tweetAtts,jsonObj,'entities','hashtags')
+    tweetAtts = getValue_from2ndLayer_InJson(tweetAtts,jsonObj,'entities','urls')
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'retweet_count')
+    #tweetAtts = getValue_InJson(tweetAtts,jsonObj,'is_rtl_tweet')
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'retweeted')
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'favorited')
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'in_reply_to_status_id_str')
+    tweetAtts = getValue_InJson(tweetAtts,jsonObj,'lang')
+    
+    tweet = Tweet(tweetAtts)
+    tweet = textInOneLine(tweet)
+
+    return tweet
+
+## extract an user for current tweetLine
+def getUser(jsonObj):
+    userAtts = []
+    if not jsonObj.has_key('user'):
+        return None
+    if not jsonObj['user'].has_key('id_str'):
+        return None
+    
+    userAtts.append(jsonObj['user']['id_str'])
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','screen_name')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','name')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','description')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','created_at')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','location')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','lang')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','statuses_count')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','favourites_count')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','listed_count')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','friends_count')
+    userAtts = getValue_from2ndLayer_InJson(userAtts,jsonObj,'user','followers_count')
+    
+    user = User(userAtts)
+    return user
+
+
+# special processing in Tweet.text, replace \n with " "
+def textInOneLine(currTweet):
+    currTweet.text = re.sub("\n", " ", currTweet.text)
+    currTweet.text = re.sub("\s+", " ", currTweet.text).strip()
+    return currTweet
+
+def getValue_InJson(attArr, jsonObj, keyword):
+    if jsonObj.has_key(keyword):
+        attArr.append(jsonObj[keyword])
+    else:
+        attArr.append(None)
+    return attArr
+    
+def getValue_from2ndLayer_InJson(attArr, jsonObj, keyword1, keyword2):
+    if not jsonObj.has_key(keyword1):
+        attArr.append(None)
+        return attArr
+    if jsonObj[keyword1].has_key(keyword2):
+            attArr.append(jsonObj[keyword1][keyword2])
+    else:
+        attArr.append(None)
+        #print "Not Found " + keyword1 + " - " + keyword2
+        #statistic number of atts missed
+        keyword = keyword1 + "-" + keyword2
+    return attArr
 
 

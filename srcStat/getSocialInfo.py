@@ -7,16 +7,12 @@ import cPickle
 import sys
 import json
 
-sys.path.append("/home/yxqin/fbes/srcPreprocess")
+sys.path.append("/home/yxqin/FrED/srcPreprocess")
 from Tweet import *
 from read_tweet_from_json import *
 
-def readTime(timeStr):
-    #Time format in tweet: "Sun Jan 23 00:00:02 +0000 2011"
-    tweetTimeFormat = r"%a %b %d %X +0000 %Y"
-    createTime = time.strptime(timeStr, tweetTimeFormat)
-    return createTime
-
+sys.path.append("/home/yxqin/Scripts")
+from strOperation import *  # readTime
 
 def getSocialFeatures(currTweet):
     usrIDstr = currTweet.user_id_str
