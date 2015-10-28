@@ -19,7 +19,8 @@ def getRelskl_fromPOS(filename, chunkedFilename):
     tStr = filename[-5:-3]#[:3]#[-6:-4]
     if not lex:
         npHash = getNPs(chunkedFilename)
-        outputFile = file(outputDir + r"/relSkl_2013-01-" + tStr, "w")
+        #outputFile = file(outputDir + r"/relSkl_2013-01-" + tStr, "w")
+        outputFile = file(outputDir + r"/relSkl_2015-05-" + tStr, "w")
         #outputFile_w2v = file(outputDir + r"/w2v_2013-01-" + tStr, "w")
         ## with lexical constraint
         #lexHash = loadLex(outputDir)

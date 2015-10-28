@@ -68,10 +68,9 @@ def compare2Bursty(datafilename1, datafilename2):
 if __name__ == "__main__":
     print "###program starts at " + str(time.asctime())
 
-    # compare 2 bursty skl if they are same
-    compare2Bursty(sys.argv[1], sys.argv[2])
-
-    sys.exit(0)
+#    # compare 2 bursty skl if they are same
+#    compare2Bursty(sys.argv[1], sys.argv[2])
+#    sys.exit(0)
 
     # for debugging bursty methods
     if len(sys.argv) == 3:

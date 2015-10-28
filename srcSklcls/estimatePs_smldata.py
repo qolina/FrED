@@ -17,14 +17,16 @@ def statisticDF(dataFilePath, predefinedUnitHash):
     fileList = os.listdir(dataFilePath)
     fileList = sorted(fileList)
     for item in fileList:
-        if item.find("relSkl_2013") != 0:
+        if item.find("relSkl_") != 0:
 #        if item.find("segged_tweetContentFile") != 0:
             continue
         inFile = file(dataFilePath + item)
         print "### Processing " + inFile.name
         tStr = item[-2:]
-        if int(tStr) <= 5: # test
-            continue
+
+#        if int(tStr) <= 5: # designed for develop-test split data in twitter_201301
+#            continue
+
         tweetNum_t = 0
         while 1:
             #[GUA] seggedFile name: * + TimeWindow, format: twitterID, [score,] twitterText(segment|segment|...), ...

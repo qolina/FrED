@@ -274,10 +274,10 @@ def loadText(textFilePath, IDmap, unitInvolvedHash):
     textFile.close()
     return unitTextHash
 
-def loadOriText(tStr, IDmap, unitInvolvedHash):
+def loadOriText(oriTweetTextDir, tStr, IDmap, unitInvolvedHash):
     unitTextHash = {} #sid:text (word word word...)
 #    textFile = file(r"../data/201301_preprocess/text_2013-01-"+tStr)
-    textFile = file(r"/home/yxqin/corpus/data_twitter201301/201301_preprocess/tweetText"+tStr)
+    textFile = file(oriTweetTextDir + r"/tweetText"+tStr)
     idx = 0
     while True:
         lineStr = textFile.readline().lower()
@@ -312,11 +312,11 @@ def merge(smallHash, bigHash):
 
 ############################
 ## cluster Event Segment
-def geteSegPairSim(dataFilePath, M, toolDirPath):
+def geteSegPairSim(dataFilePath, M, idmapFileDir, tweetSocialInfoDir, oriTweetTextDir):
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
         #if item.find("skl_2013-01") != 0:
-        if item.find("relSkl_2013-01") != 0:
+        if item.find("relSkl_") != 0:
         #if item.find("segged_tweetContentFile") != 0:
             continue
 
@@ -339,17 +339,16 @@ def geteSegPairSim(dataFilePath, M, toolDirPath):
         [unitHash, unitDFHash, unitInvolvedHash, unitScoreHash] = loadEvtseg(eventSegFilePath)
 
         # load extracted createdHour of tweet in tStr
-        tweetTimeFilePath = "/home/yxqin/corpus/data_twitter201301/201301_nonEng/"+ "tweetSocialFeature" + tStr
-        #tweetTimeFilePath = "/home/yxqin/corpus/data_twitter201301/rawData/"+ "tweetSocialFeature" + tStr
+        tweetTimeFilePath = tweetSocialInfoDir + "tweetSocialFeature" + tStr
         #[GUA] usrHour name: tweetSocialFeature + TimeWindow, format: twitterID -> hourStr([00, 23])
         #timeHash = loadTime(tweetTimeFilePath, dataFilePath+item)
         timeHash = loadTime(tweetTimeFilePath, None)
 
-        IDmapFilePath = "/home/yxqin/corpus/data_twitter201301/201301_clean/"+ "IDmap_2013-01-" + tStr
+        IDmapFilePath = idmapFileDir + "IDmap_2015-05-" + tStr
         IDmap = loadID(IDmapFilePath)
 
         if UNIT == "skl":
-            unitTextHash = loadOriText(tStr, IDmap, unitInvolvedHash)
+            unitTextHash = loadOriText(oriTweetTextDir, tStr, IDmap, unitInvolvedHash)
         elif UNIT == "segment":
             unitTextHash = loadText(dataFilePath+item, IDmap, unitInvolvedHash)
 
@@ -475,35 +474,46 @@ if __name__=="__main__":
         sys.exit()
 
     print "###program starts at " + str(time.asctime())
-    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
+
+
+    #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
+    dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
 
     dfFilePathFromSkl = dataFilePath + "wordDF"
-    toolDirPath = r"../Tools/"
-    #dfFilePathFromOriText = toolDirPath + "wordDF"
-    dfFilePathFromOriText = "/home/yxqin/corpus/data_twitter201301/201301_clean/"+ "wordDF"
+    #dfFilePathFromOriText = dataFilePath + "../201301_clean/"+ "wordDF"
+    dfFilePathFromOriText = dataFilePath + "../clean/"+ "wordDF"
 
-    wordDFHash = {}
+    #idmapFileDir = dataFilePath + "../201301_clean/"
+    idmapFileDir = dataFilePath + "../clean/"
+    #tweetSocialInfoDir = dataFilePath + "../201301_nonEng/"
+    #tweetSocialInfoDir = dataFilePath + "../rawData/"
+    tweetSocialInfoDir = dataFilePath + "../nonEng/"
+
+    # used for calculate textSim of bursty feature(frame or segment)
+    #oriTweetTextDir = dataFilePath + "../201301_preprocess"
+    oriTweetTextDir = dataFilePath + "../preprocess"
+
     #TWEETNUM = 41293009 # tweetnum in text_2013-01-??
     #TWEETNUM = 28651435 # relSkl-2013-01-??
 
     #TWEETNUM = 19334497 # frED_relSkl-2013-01-01-15
-    TWEETNUM = 12608621 # frED_relSkl-2013-01-06-15
+    #TWEETNUM = 12608621 # frED_relSkl-2013-01-06-15
 
     #TWEETNUM = 31097528 # segged_tweetContentFile
     #TWEETNUM = 10888639 # segged_tweetContentFile 01-05
     #TWEETNUM = 20208889 # segged_tweetContentFile 06-15
+
+    TWEETNUM = 949229 # FrED_relSkl-2015-05-01-31
+
+
+    wordDFHash = {}
     M = 12
 
-    '''
-    [unitHash, unitDFHash, unitInvolvedHash, unitScoreHash] = loadEvtseg(sys.argv[1])
-    print "\n".join(sorted(unitHash.keys()))
-    sys.exit()
-    '''
 
     loadDF(dfFilePathFromOriText)
     #loadDF(dfFilePathFromSkl)
 
-    geteSegPairSim(dataFilePath, M, toolDirPath)
+    geteSegPairSim(dataFilePath, M, idmapFileDir, tweetSocialInfoDir, oriTweetTextDir)
 
     print "###program ends at " + str(time.asctime())

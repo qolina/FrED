@@ -167,7 +167,8 @@ if __name__ == "__main__":
 
     #dataFilePath = r"../corpus_struct/"
     #dataFilePath = "/home/yxqin/corpus/data_twitter201301/201301_nonEng/"
-    dataFilePath = "/home/yxqin/corpus/data_twitter201301/rawData/timeCorrect/"
+    dataFilePath = "/home/yxqin/corpus/data_stock201504/nonEng/"
+    #dataFilePath = "/home/yxqin/corpus/data_twitter201301/rawData/timeCorrect/"
 
     outputStr = "tweetSocialFeature"
     M = 12
@@ -175,8 +176,8 @@ if __name__ == "__main__":
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
     #    if item.find("tweetFile_") != 0:
-        #if item.find("tweetStruct") != 0:
-        if item.find("rawTwitter_timeCorrect-2013-01") != 0:
+        if item.find("tweetStruct") != 0:
+#        if item.find("rawTwitter_timeCorrect-2013-01") != 0:
             continue
         tStr = item[-2:]
         if tStr != dayStr:
@@ -186,10 +187,10 @@ if __name__ == "__main__":
 
         dataFileName = dataFilePath + item
 
-#        attriHash = read_structFile(dataFileName)
-        seggedFilePath = "/home/yxqin/corpus/data_twitter201301/201301_segment/segged_tweetContentFile_jan"
-        specificTidList = getTweetID(seggedFilePath+tStr)
-        attriHash = read_rawFile(dataFileName, specificTidList)
+        attriHash = read_structFile(dataFileName)
+#        seggedFilePath = "/home/yxqin/corpus/data_twitter201301/201301_segment/segged_tweetContentFile_jan"
+#        specificTidList = getTweetID(seggedFilePath+tStr)
+#        attriHash = read_rawFile(dataFileName, specificTidList)
 
         # output into file
         outputFile = file(dataFilePath + outputStr  + tStr, "w")

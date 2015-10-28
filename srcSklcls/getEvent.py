@@ -346,7 +346,7 @@ def writeEvent2File(eventHash, score_eventHash, score_nodeHash, reverseSegHash, 
 def clusterEventSegment(dataFilePath, kNeib, taoRatio):
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
-        if item.find("relSkl_2013") != 0:
+        if item.find("relSkl_") != 0:
         #if item.find("segged_tweetContentFile") != 0:
             continue
         tStr = item[-2:]
@@ -403,11 +403,11 @@ if __name__=="__main__":
 
     #dataFilePath = r"../parsedTweet/"
     #dataFilePath = r"../exp/w2v/"
-    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
+    #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
+    dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
 
-    toolDirPath = r"../Tools/"
-    wikiPath = toolDirPath + "anchorProbFile_all"
+    wikiPath = "/home/yxqin/fred_expData/GlobalData/anchorProbFile_all"
 
     if True:
 #    if False:

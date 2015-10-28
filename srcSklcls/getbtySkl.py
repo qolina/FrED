@@ -7,7 +7,7 @@ import sys
 import math
 import cPickle
 
-sys.path.append("/home/yxqin/fbes/srcStat")
+sys.path.append("/home/yxqin/FrED/srcStat")
 from getSocialInfo import *
 
 ############################
@@ -87,7 +87,7 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
         #if item.find("skl_2013-01") != 0:
-        if item.find("relSkl_2013-01") != 0:
+        if item.find("relSkl_") != 0:
         #if item.find("segged_tweetContentFile") != 0:
             continue
         tStr = item[-2:]
@@ -104,7 +104,7 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         tweToUsrFilePath = socialFeaFilePath + "tweetSocialFeature" + tStr
         #tweIdToUsrIdHash = loadUsrId(tweToUsrFilePath, dataFilePath+item)
         tweIdToUsrIdHash = loadUsrId(tweToUsrFilePath, None)
-        IDmap = loadID(idmapFilePath + "IDmap_2013-01-" + tStr)
+        IDmap = loadID(idmapFilePath + "IDmap_2015-05-" + tStr)
         while True:
             lineStr = seggedFile.readline()
             lineStr = re.sub(r'\n', " ", lineStr)
@@ -239,26 +239,26 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         print "K (num of event " + UNIT + "): " + str(K)
 
         #option1 use one score to rank
-#        sortedList = sorted(burstySegHash.items(), key = lambda a:a[1], reverse = True)
-#        sortedList = sortedList[0:K]
+        sortedList = sorted(burstySegHash_zscore.items(), key = lambda a:a[1], reverse = True)
+        sortedList = sortedList[0:K]
 
 
         #option2 use two score to rank
-        sortedList_udf = sorted(burstySegHash_udf.items(), key = lambda a:a[1], reverse = True)
-        sortedList_zscore = sorted(burstySegHash_zscore.items(), key = lambda a:a[1], reverse = True)
-
-        sortedList_udf_unit = [item[0] for item in sortedList_udf][:2*K]
-        sortedList_zscore_unit = [item[0] for item in sortedList_zscore][:2*K]
-
-#        for i in range(2000):
-#            print sortedList_udf_unit[i], "\t", sortedList_zscore_unit[i]
-
-        commonList_unit = [item for item in sortedList_zscore_unit if item in sortedList_udf_unit]
-        print "Num of commonBursty features of 2K-size lists:", len(commonList_unit)
-        if len(commonList_unit) > K:
-            commonList_unit = commonList_unit[:K]
-
-        sortedList = [(unit, str(burstySegHash_zscore[unit]) + "-" + str(burstySegHash_udf[unit])) for unit in commonList_unit]
+#        sortedList_udf = sorted(burstySegHash_udf.items(), key = lambda a:a[1], reverse = True)
+#        sortedList_zscore = sorted(burstySegHash_zscore.items(), key = lambda a:a[1], reverse = True)
+#
+#        sortedList_udf_unit = [item[0] for item in sortedList_udf][:2*K]
+#        sortedList_zscore_unit = [item[0] for item in sortedList_zscore][:2*K]
+#
+##        for i in range(2000):
+##            print sortedList_udf_unit[i], "\t", sortedList_zscore_unit[i]
+#
+#        commonList_unit = [item for item in sortedList_zscore_unit if item in sortedList_udf_unit]
+#        print "Num of commonBursty features of 2K-size lists:", len(commonList_unit)
+#        if len(commonList_unit) > K:
+#            commonList_unit = commonList_unit[:K]
+#
+#        sortedList = [(unit, str(burstySegHash_zscore[unit]) + "-" + str(burstySegHash_udf[unit])) for unit in commonList_unit]
 
 
         # write 2 file
@@ -310,19 +310,22 @@ if __name__ == "__main__":
     print "###program starts at " + str(time.asctime())
 
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
-    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
+    #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
+    dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
 
     psFilePath = dataFilePath + UNIT + "_ps"
     #slangFilePath = r"../Tools/slang.txt"
 
     # for frame
-    socialFeaFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_nonEng/"
+    socialFeaFilePath = dataFilePath + r"../nonEng/"
     # for segment
-    #socialFeaFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
+    #socialFeaFilePath = dataFilePath + r"../201301_segment/"
     # available for all
-    #socialFeaFilePath = r"/home/yxqin/corpus/data_twitter201301/rawData/"
+    #socialFeaFilePath = dataFilePath + r"../rawData/"
 
-    idmapFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_clean/"
+    #idmapFilePath = dataFilePath + r"../201301_clean/"
+    idmapFilePath = dataFilePath + r"../clean/"
+
     windowHash = {} # timeSliceIdStr:tweetNum
     unitpsHash = {} # unit:ps
     #slangHash = {} #slangword:regular word
