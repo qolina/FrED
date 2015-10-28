@@ -97,7 +97,9 @@ def write2file(phraseList, probArr):
 print "Program starts at time:" + str(time.asctime())
 
 global probFile
-dirPath = r"../parsedTweet/subtree1/"
+#dirPath = r"../parsedTweet/subtree1/"
+dirPath = r"/home/yxqin/corpus/data_stock201504/segment/grams_qtwe/"
+
 args = sys.argv
 subFile = file(dirPath + args[1])
 probFile = file(dirPath + args[1] + "_prob", "w")
@@ -106,7 +108,7 @@ phraseList = []
 phrasesStr = ""
 emptyGramList = []
 lineIdx = 0
-N = int(args[2])
+N = int(args[2]) # default 1000
 while True:
     lineStr = subFile.readline()
     if len(lineStr) <= 0:
@@ -142,13 +144,12 @@ while True:
         print str(lineIdx) + " lines are processed at " + str(time.asctime())
 
 # last 1000
-'''
-try:
-    probArr = getProb(phraseList)
-except:
-    print "Error: " + str(lineIdx) + " and previous " + str(len(phraseList)) + "grams"
-    probArr = getProbDebug(phraseList)
-'''
+#try:
+#    probArr = getProb(phraseList)
+#except:
+#    print "Error: " + str(lineIdx) + " and previous " + str(len(phraseList)) + "grams"
+#    probArr = getProbDebug(phraseList)
+
 probArr = getProb_unknown(phraseList)
 write2file(phraseList, probArr)
 
