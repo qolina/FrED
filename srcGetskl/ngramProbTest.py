@@ -36,9 +36,10 @@ print "redmond server(token2), word: " + gramStr
 probStr = urllib2.urlopen(urllib2.Request('http://weblm.research.microsoft.com/weblm/rest.svc/bing-body/apr10/5/jp?u=6c5bffbd-e43c-44ab-8c69-acf0439a7a6b',gramStr)).read()
 print probStr
 
-# beijing server
-print "Beijing server, word: " + gramStr
+# beijing server  -- down, not working
+#print "Beijing server, word: " + gramStr
 #probStr = urllib2.urlopen(urllib2.Request('http://msraml-s003/ngram-lm/rest.svc/bing-body/apr10/5/jp?u=msrauser001',gramStr)).read()
 #print probStr
+
 print "Program ends at time:" + str(time.asctime())
 

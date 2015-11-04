@@ -13,14 +13,15 @@ def getProb_unknown(phraseList):
     phraseListNew = list([urllib.quote(gram) for gram in phraseList])
     phrasesStr = "\n".join(phraseListNew) 
     #probStr = urllib2.urlopen(urllib2.Request('http://web-ngram.research.microsoft.com/rest/lookup.svc/bing-body/apr10/5/jp?u=6c5bffbd-e43c-44ab-8c69-acf0439a7a6b',phrasesStr)).read()
-    probStr = urllib2.urlopen(urllib2.Request('http://weblm.research.microsoft.com/weblm/rest.svc/bing-body/apr10/5/jp?u=6ad01338-a036-4184-acc5-380e9aad7fb4',phrasesStr)).read()
-    '''
+    #probStr = urllib2.urlopen(urllib2.Request('http://weblm.research.microsoft.com/weblm/rest.svc/bing-body/apr10/5/jp?u=6ad01338-a036-4184-acc5-380e9aad7fb4',phrasesStr)).read()
+
     try:
         #probStr = urllib2.urlopen(urllib2.Request('http://web-ngram.research.microsoft.com/rest/lookup.svc/bing-body/apr10/5/jp?u=6ad01338-a036-4184-acc5-380e9aad7fb4',phrasesStr)).read()
-        probStr = urllib2.urlopen(urllib2.Request('http://web-ngram.research.microsoft.com/rest/lookup.svc/bing-body/apr10/5/jp?u=6c5bffbd-e43c-44ab-8c69-acf0439a7a6b',phrasesStr)).read()
+        probStr = urllib2.urlopen(urllib2.Request('http://weblm.research.microsoft.com/weblm/rest.svc/bing-body/apr10/5/jp?u=6ad01338-a036-4184-acc5-380e9aad7fb4',phrasesStr)).read()
+        #probStr = urllib2.urlopen(urllib2.Request('http://web-ngram.research.microsoft.com/rest/lookup.svc/bing-body/apr10/5/jp?u=6c5bffbd-e43c-44ab-8c69-acf0439a7a6b',phrasesStr)).read()
     except:
         return list(["-1" for i in phraseList])
-    '''
+
     probArr = probStr.split("\r\n")
     return probArr
 
@@ -142,6 +143,7 @@ while True:
     lineIdx += 1
     if lineIdx % N == 0:
         print str(lineIdx) + " lines are processed at " + str(time.asctime())
+        time.sleep(1)
 
 # last 1000
 #try:
