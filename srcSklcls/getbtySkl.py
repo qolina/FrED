@@ -87,8 +87,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
         #if item.find("skl_2013-01") != 0:
-        if item.find("relSkl_") != 0:
-        #if item.find("segged_tweetContentFile") != 0:
+        #if item.find("relSkl_") != 0:
+        if item.find("segged_tweet") != 0:
             continue
         tStr = item[-2:]
         if Day != tStr:
@@ -128,7 +128,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
             N_t += 1
 
             # use segment
-            #tweetText = re.sub(" ", "_", tweetText)
+            if UNIT == "segment":
+                tweetText = re.sub(" ", "_", tweetText)
 
             # use frame element
             tweetText = re.sub("\|", " ", tweetText)
@@ -291,8 +292,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
             print item[0], "\t", pbSegHash[item[0]]
 
 global UNIT
-UNIT = "skl"
-#UNIT = "segment"
+#UNIT = "skl"
+UNIT = "segment"
 
 ############################
 ## main Function
@@ -311,7 +312,8 @@ if __name__ == "__main__":
 
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
-    dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
+    #dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
+    dataFilePath = r"/home/yxqin/corpus/data_stock201504/segment/"
 
     psFilePath = dataFilePath + UNIT + "_ps"
     #slangFilePath = r"../Tools/slang.txt"

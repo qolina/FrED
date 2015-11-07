@@ -6,6 +6,10 @@ import os
 import sys
 import cPickle
 
+sys.path.append("/home/yxqin/Scripts")
+from hashOperation import *
+
+
 def statisticDF(dataFilePath, predefinedUnitHash):
 
     unitHash = {} #unit:df_hash
@@ -17,8 +21,9 @@ def statisticDF(dataFilePath, predefinedUnitHash):
     fileList = os.listdir(dataFilePath)
     fileList = sorted(fileList)
     for item in fileList:
-        if item.find("relSkl_") != 0:
+#        if item.find("relSkl_") != 0:
 #        if item.find("segged_tweetContentFile") != 0:
+        if item.find("segged_tweet") != 0:
             continue
         inFile = file(dataFilePath + item)
         print "### Processing " + inFile.name
@@ -47,8 +52,8 @@ def statisticDF(dataFilePath, predefinedUnitHash):
             # use segment
             # tweetText: seg1|seg2|...
             # segment: word1 word2
-#            if UNIT == "segment":
-#                tweetText = re.sub(" ", "_", tweetText)
+            if UNIT == "segment":
+                tweetText = re.sub(" ", "_", tweetText)
 
             # use frame element
             # tweetText: frm1[1space]frm2 frm3...
@@ -84,13 +89,11 @@ def statisticDF(dataFilePath, predefinedUnitHash):
                         continue
 
                 # statistic unit df
-                '''
-                apphash = {}
-                if unit in unitAppHash:
-                    apphash = unitAppHash[unit]
-                apphash[tweetIDstr] = 1
-                unitAppHash[unit] = apphash 
-                '''
+#                apphash = {}
+#                if unit in unitAppHash:
+#                    apphash = unitAppHash[unit]
+#                apphash[tweetIDstr] = 1
+#                unitAppHash[unit] = apphash 
 
                 # statistic unit ps
                 if unit in unitHash:
@@ -187,8 +190,8 @@ def write2psFile(unitHash, windowHash, psFilePath):
     print "### " + UNIT + "s' ps values are written to " + psFile.name
 
 global UNIT
-UNIT = "skl"
-#UNIT = "segment"
+#UNIT = "skl"
+UNIT = "segment"
 
 
 if __name__ == "__main__":
@@ -206,8 +209,16 @@ if __name__ == "__main__":
 #    dfFilePath = dataFilePath + UNIT + "_df"
 #    write2dfFile(unitAppHash, windowHash, dfFilePath)
 
-    psFilePath = dataFilePath + UNIT + "_ps"
-    write2psFile(unitHash, windowHash, psFilePath)
+#    psFilePath = dataFilePath + UNIT + "_ps"
+#    write2psFile(unitHash, windowHash, psFilePath)
+
+    # for statistic word length
+    wordNumHash = {}
+    for unit in unitHash:
+        wordNum = len(unit.split("_"))
+        cumulativeInsert(wordNumHash, wordNum, 1)
+
+    output_sortedHash(wordNumHash, 0, False)
 
     print "###program ends at " + str(time.asctime())
 

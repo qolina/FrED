@@ -316,8 +316,8 @@ def geteSegPairSim(dataFilePath, M, idmapFileDir, tweetSocialInfoDir, oriTweetTe
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
         #if item.find("skl_2013-01") != 0:
-        if item.find("relSkl_") != 0:
-        #if item.find("segged_tweetContentFile") != 0:
+        #if item.find("relSkl_") != 0:
+        if item.find("segged_tweet") != 0:
             continue
 
         #[GUA] Time window
@@ -460,8 +460,8 @@ def getTopItems(sampleHash, K):
 ############################
 ## main Function
 global Day, UNIT, TWEETNUM, btyEleFilename 
-#UNIT = "segment"
-UNIT = "skl"
+UNIT = "segment"
+#UNIT = "skl"
 
 if __name__=="__main__":
     if len(sys.argv) == 2:
@@ -478,7 +478,8 @@ if __name__=="__main__":
 
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
-    dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
+    #dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
+    dataFilePath = r"/home/yxqin/corpus/data_stock201504/segment/"
 
     dfFilePathFromSkl = dataFilePath + "wordDF"
     #dfFilePathFromOriText = dataFilePath + "../201301_clean/"+ "wordDF"
@@ -504,7 +505,8 @@ if __name__=="__main__":
     #TWEETNUM = 10888639 # segged_tweetContentFile 01-05
     #TWEETNUM = 20208889 # segged_tweetContentFile 06-15
 
-    TWEETNUM = 949229 # FrED_relSkl-2015-05-01-31
+    #TWEETNUM = 949229 # FrED_relSkl-2015-05-01-31
+    TWEETNUM = 1199088 # FrED_segged_tweetCleanText-2015-05-01-31
 
 
     wordDFHash = {}

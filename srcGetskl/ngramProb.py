@@ -19,10 +19,11 @@ def getProb_unknown(phraseList):
         #probStr = urllib2.urlopen(urllib2.Request('http://web-ngram.research.microsoft.com/rest/lookup.svc/bing-body/apr10/5/jp?u=6ad01338-a036-4184-acc5-380e9aad7fb4',phrasesStr)).read()
         probStr = urllib2.urlopen(urllib2.Request('http://weblm.research.microsoft.com/weblm/rest.svc/bing-body/apr10/5/jp?u=6ad01338-a036-4184-acc5-380e9aad7fb4',phrasesStr)).read()
         #probStr = urllib2.urlopen(urllib2.Request('http://web-ngram.research.microsoft.com/rest/lookup.svc/bing-body/apr10/5/jp?u=6c5bffbd-e43c-44ab-8c69-acf0439a7a6b',phrasesStr)).read()
+#        print probStr[-50:]
     except:
         return list(["-1" for i in phraseList])
 
-    probArr = probStr.split("\r\n")
+    probArr = probStr.strip().split("\r\n")
     return probArr
 
 def getProb_redmond(phraseList):
