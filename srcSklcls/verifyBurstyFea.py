@@ -110,7 +110,7 @@ if __name__ == "__main__":
 #        print unit, fstStr
 
     print "unitNum in unitHash_Score, unitHash_FST", len(unitHash_Score), len(unitHash_FST)
-    print "### Freq of bursty skls."
+    print "### Freq of bursty units."
 
     for item in sorted(unitHash_Score.items(), key = lambda a:a[1], reverse = True):
         print item[0], "\t", item[1], "\t", unitHash_FST[item[0]]

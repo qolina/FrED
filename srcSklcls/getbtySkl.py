@@ -196,7 +196,10 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
 
 
             #[GUA] segmentpsHash mapping: segment -> ps, N_t: twitterNum / timeWindow
-            ps = unitpsHash[unit]
+            ps = unitpsHash.get(unit)
+            if ps is None:
+                continue
+
             e_st = N_t * ps
             if f_st <= e_st: # non-bursty segment or word
 #                print "### non-bursty " + UNIT + ": " + unit + " f_st: " + str(f_st) + " e_st: " + str(e_st)
@@ -310,10 +313,10 @@ if __name__ == "__main__":
 
     print "###program starts at " + str(time.asctime())
 
-    #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
+    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
     #dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
-    dataFilePath = r"/home/yxqin/corpus/data_stock201504/segment/"
+    #dataFilePath = r"/home/yxqin/corpus/data_stock201504/segment/"
 
     psFilePath = dataFilePath + UNIT + "_ps"
     #slangFilePath = r"../Tools/slang.txt"

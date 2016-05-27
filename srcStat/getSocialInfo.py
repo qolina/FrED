@@ -8,6 +8,7 @@ import sys
 import json
 
 sys.path.append("/home/yxqin/FrED/srcPreprocess")
+sys.path.append("/home/yxqin/Scripts")
 from Tweet import *
 from read_tweet_from_json import *
 

@@ -9,8 +9,77 @@ import cPickle
 sys.path.append("/home/yxqin/Scripts")
 from hashOperation import *
 
+sys.path.append("/home/yxqin/FrED/srcPreprocess/")
+from preProcessTweetText import *
+
+
+def statisticDF_fromFile(dataFilename, predefinedUnitHash):
+    unitAppHash = {} #unit:df_t_hash
+    #df_t_hash --> tweetIDStr:1
+
+    inFile = file(dataFilename)
+    print "### Processing " + inFile.name
+
+    tweetNum_t = 0
+    while 1:
+        #[GUA] seggedFile name: * + TimeWindow, format: twitterID, [score,] twitterText(segment|segment|...), ...
+        lineStr = inFile.readline()
+        if not lineStr:
+            break
+
+        contentArr = lineStr[:-1].split("\t")
+        # lineStr frame format: tweetIDstr[\t]tweetText
+        # Or segment format: tweetIDstr[\t]score[\t]tweetText
+        if len(contentArr) < 2: 
+            print "**less than 2 components", contentArr
+            continue
+        
+        tweetIDstr = contentArr[0]
+        tweetText = contentArr[-1]
+        tweetNum_t += 1
+
+        # use segment
+        # tweetText: seg1|seg2|...
+        # segment: word1 word2
+        if UNIT == "segment":
+            tweetText = re.sub(" ", "_", tweetText)
+
+        # use frame element
+        # tweetText: frm1[1space]frm2 frm3...
+        # frame: arg1|vp|arg2   frmEle: word1_word2_...
+        tweetText = re.sub("\|", " ", tweetText)
+
+
+        textArr = tweetText.strip().split(" ")
+        for unit in textArr:
+            if len(unit) < 1:
+                continue
+
+            # for testing bursty methods
+            # predefinedUnitHash usually is bursty skl hash
+            if predefinedUnitHash is not None:
+                #if re.sub(r"\|", "_", unit).strip("_") not in sklHash: # use frame
+                if unit not in predefinedUnitHash: # use frame element or segment
+                    continue
+
+            # statistic unit df
+                apphash = {}
+                if unit in unitAppHash:
+                    apphash = unitAppHash[unit]
+                apphash[tweetIDstr] = 1
+                unitAppHash[unit] = apphash 
+
+        if tweetNum_t % 100000 == 0:
+            print "### " + str(time.asctime()) + " " + str(tweetNum_t) + " tweets are processed! units: " + str(len(unitHash))
+
+    inFile.close()
+    return unitAppHash
+
 
 def statisticDF(dataFilePath, predefinedUnitHash):
+
+    stopFileName = r"/home/yxqin/FrED/Tools/stoplist.dft"
+    stopwordHash = loadStopword(stopFileName)
 
     unitHash = {} #unit:df_hash
     #df_hash --> timeSliceIdStr:df_t_hash
@@ -43,6 +112,7 @@ def statisticDF(dataFilePath, predefinedUnitHash):
             # lineStr frame format: tweetIDstr[\t]tweetText
             # Or segment format: tweetIDstr[\t]score[\t]tweetText
             if len(contentArr) < 2: 
+                print "**less than 2 components", contentArr
                 continue
             
             tweetIDstr = contentArr[0]
@@ -62,6 +132,11 @@ def statisticDF(dataFilePath, predefinedUnitHash):
 
 
             textArr = tweetText.strip().split(" ")
+
+            # del stop words
+            textArr = tweetArrClean_delStop(textArr, stopwordHash)
+            textArr = tweetArrClean_delUrl(textArr)
+
 
 #            # for frame structure
 #            # v6: make record of location
@@ -209,8 +284,8 @@ if __name__ == "__main__":
 #    dfFilePath = dataFilePath + UNIT + "_df"
 #    write2dfFile(unitAppHash, windowHash, dfFilePath)
 
-#    psFilePath = dataFilePath + UNIT + "_ps"
-#    write2psFile(unitHash, windowHash, psFilePath)
+    psFilePath = dataFilePath + UNIT + "_ps"
+    write2psFile(unitHash, windowHash, psFilePath)
 
     # for statistic word length
     wordNumHash = {}

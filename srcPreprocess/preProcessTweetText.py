@@ -5,6 +5,7 @@ sys.path.append("/home/yxqin/Scripts")
 from sysOperation import *
 from strOperation import *
 from tweetStrOperation import *
+from fileOperation import *
 
 #stemmer = stem.PorterStemmer()
 #engDetector = enchant.Dict("en_US")
@@ -99,6 +100,11 @@ def tweetArrClean_delStop(wordsArr, stopwordHash):
     wordsArr = [word for word in wordsArr if word not in stopwordHash]
     return wordsArr
 
+def tweetArrClean_delUrl(wordsArr):
+    wordsArr = [word for word in wordsArr if word.find("http") < 0]
+    return wordsArr
+
+
 #@profile
 def tweetArrClean_delIllegal(wordsArr):
     newArr = []
@@ -172,10 +178,12 @@ def contain_only_punc_in_word(word):
         return False
     return True
 
+# version-20160512 
+# allow $ appear in words ($cashtag in corpus)
 def strip_nonLetter_in_word(word):
-    if re.findall("[^a-zA-Z0-9]", word): # contain some punctuations
-        word = re.sub("^[^a-zA-Z0-9]*","", word) # start with punc
-        word = re.sub("[^a-zA-Z0-9]*$","", word) # end with punc
+    if re.findall("[^a-zA-Z0-9$]", word): # contain some punctuations
+        word = re.sub("^[^a-zA-Z0-9$]*","", word) # start with punc
+        word = re.sub("[^a-zA-Z0-9$]*$","", word) # end with punc
     return word
 
 
