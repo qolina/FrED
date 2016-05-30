@@ -90,9 +90,8 @@ def statisticDF(dataFilePath, predefinedUnitHash):
     fileList = os.listdir(dataFilePath)
     fileList = sorted(fileList)
     for item in fileList:
-#        if item.find("relSkl_") != 0:
-#        if item.find("segged_tweetContentFile") != 0:
-        if item.find("segged_tweet") != 0:
+        if item.find("relSkl_") != 0:
+#        if item.find("segged_tweet") != 0:
             continue
         inFile = file(dataFilePath + item)
         print "### Processing " + inFile.name
@@ -203,7 +202,7 @@ def statisticDF(dataFilePath, predefinedUnitHash):
 
         print "### (current day)" + str(time.asctime()) + " " + UNIT + "s in " + item + " are loaded. unitNum: " + str(len(unitHash))
 
-    print "### In total(whole corpora) " + str(len(unitHash)) + " " + UNIT + "s are loaded!"
+    print "### In total(whole corpora) ", len(unitHash), UNIT, "s are loaded!"
 
     return unitHash, windowHash
 
@@ -265,8 +264,8 @@ def write2psFile(unitHash, windowHash, psFilePath):
     print "### " + UNIT + "s' ps values are written to " + psFile.name
 
 global UNIT
-#UNIT = "skl"
-UNIT = "segment"
+UNIT = "skl"
+#UNIT = "segment"
 
 
 if __name__ == "__main__":

@@ -87,8 +87,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
         #if item.find("skl_2013-01") != 0:
-        #if item.find("relSkl_") != 0:
-        if item.find("segged_tweet") != 0:
+        if item.find("relSkl_") != 0:
+        #if item.find("segged_tweet") != 0:
             continue
         tStr = item[-2:]
         if Day != tStr:
@@ -97,6 +97,7 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         print "### Processing " + item
         seggedFile = file(dataFilePath + item)
         N_t = 0
+        userHash = {}# statistic user number in current day
         unitHash = {} #unit:df_t_hash
         #df_t_hash --> tweetIDStr:1
         unitUsrHash = {}
@@ -104,7 +105,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         tweToUsrFilePath = socialFeaFilePath + "tweetSocialFeature" + tStr
         #tweIdToUsrIdHash = loadUsrId(tweToUsrFilePath, dataFilePath+item)
         tweIdToUsrIdHash = loadUsrId(tweToUsrFilePath, None)
-        IDmap = loadID(idmapFilePath + "IDmap_2015-05-" + tStr)
+        #IDmap = loadID(idmapFilePath + "IDmap_2015-05-" + tStr)
+        IDmap = loadID(idmapFilePath + "IDmap_2013-01-" + tStr)
         while True:
             lineStr = seggedFile.readline()
             lineStr = re.sub(r'\n', " ", lineStr)
@@ -125,6 +127,9 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
 
             if usrIDstr is None:
                 continue
+
+            userHash[usrIDstr] = 1 # statistic user number in current day
+
             N_t += 1
 
             # use segment
@@ -178,7 +183,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         #[GUA] WindowHash mapping: timeWindow -> twitterNum
         windowHash[tStr] = N_t
         seggedFile.close()
-        print "### " + str(time.asctime()) + " " + UNIT + "s in " + item + " are loaded." + str(len(unitHash))
+        print "### " + str(time.asctime()) + " " + UNIT + "s in " + item + " are loaded.", len(unitHash), "\t", len(userHash)
+        break
 
         #[GUA] burstySegHash mapping: segment -> wb_st(bursty score)
         burstySegHash = {}
@@ -295,8 +301,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
             print item[0], "\t", pbSegHash[item[0]]
 
 global UNIT
-#UNIT = "skl"
-UNIT = "segment"
+UNIT = "skl"
+#UNIT = "segment"
 
 ############################
 ## main Function
@@ -313,8 +319,9 @@ if __name__ == "__main__":
 
     print "###program starts at " + str(time.asctime())
 
-    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
+    #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
+    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl_fred/"
     #dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
     #dataFilePath = r"/home/yxqin/corpus/data_stock201504/segment/"
 
