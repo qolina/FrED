@@ -9,14 +9,13 @@ import time
 import json
 import cPickle
 
-from Tweet import *
-
 sys.path.append("/home/yxqin/Scripts/")
 import lang
 from tweetStrOperation import *
 from hashOperation import *
 from strOperation import *
 
+from Tweet import *
 
 # voting method: currTweet.lang, langText_wholeLine, langText_words
 def isENTweet(currTweet):
@@ -63,6 +62,11 @@ def loadTweetFromFile(jsonFileName, outFileName_tweetText, outFileName_tweetStru
     print "File loaded done. start processing", len(jsonContents), time.asctime()
     textOutArr = []
     structOutArr = []
+
+    ############
+    # added in 2016-8-2
+    tweetIdHash = {} # for duplication removal
+    ############
 
     lineIdx = 0
 ### read file option 1 (line by line)
@@ -116,13 +120,19 @@ def loadTweetFromFile(jsonFileName, outFileName_tweetText, outFileName_tweetStru
 
         currTweet.user_id_str = currUser.id_str # assign tweet's user_id_str
 
-
-        if not isENTweet(currTweet):
-            if loadDataDebug:
-#                print "non-english"
-#                print currTweet.id_str, currTweet.text
-                statisticArr[0] += 1
+        if currTweet.id_str in tweetIdHash:
             continue
+        else:
+            tweetIdHash[currTweet.id_str] = 1
+
+
+#  Do NOT use non english tweet filtering
+#        if not isENTweet(currTweet):
+#            if loadDataDebug:
+##                print "non-english"
+##                print currTweet.id_str, currTweet.text
+#                statisticArr[0] += 1
+#            continue
 
 
         # output
@@ -159,7 +169,7 @@ def loadTweetFromFile(jsonFileName, outFileName_tweetText, outFileName_tweetStru
     if outputFlag_struct:
         for item in structOutArr:
             cPickle.dump(item, out_structFile)
-    print "End of file. total lines: ", lineIdx
+    print "End of file. total lines: ", len(tweetIdHash), " out of raw lines: ",  lineIdx
 
     jsonFile.close()
     if outputFlag_struct:
@@ -184,6 +194,7 @@ def parseArgs(args):
     outFileName_tweetStruct = getArg(args, "-structOut")
     return jsonFileName, outFileName_tweetText, outFileName_tweetStruct
 
+########################################################################
 if __name__ == "__main__":
     print "Usage: python read_tweet_from_json.py -json tweet.jason.file [-textOut tweetTextFilename -structOut tweetStructureFilename]"
     print "       (eg. -json twitter-20130101.txt -textOut tweetText-20130101.data -structOut tweetStructure-20130101.data)"

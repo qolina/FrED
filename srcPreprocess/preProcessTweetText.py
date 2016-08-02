@@ -7,6 +7,22 @@ from strOperation import *
 from tweetStrOperation import *
 from fileOperation import *
 
+#########  Procedures
+# tweetClean:
+#    delete illegal: 
+#        delete non-valid Url, 
+#        delete illegeLetter in mention, 
+#        delete words with puncs only, 
+#        changeCode2char, 
+#        strip illegal letter in word, 
+#        delete illegal letter in word, 
+#        delete illegal letter in hashtag
+#    add space before punctuations: !,.;?
+#    stem words
+#    delete stopwords
+# delete 0-length cleanedText
+# del tweets with no normal words, which are not Mention, Url, RT; del tweets with one Hashtag
+
 #stemmer = stem.PorterStemmer()
 #engDetector = enchant.Dict("en_US")
 #@profile
@@ -39,6 +55,8 @@ def tweetTextCleaning_infile(textFileName, outFileName):
             print "Lines processed: ", lineIdx, " at ", time.asctime()
 
         [tweet_id, tweet_text] = lineStr.split("\t")
+        #print tweet_id, tweet_text
+
         cleaned_text = tweetClean(tweet_text)
 
         # special case filtering
@@ -104,7 +122,6 @@ def tweetArrClean_delUrl(wordsArr):
     wordsArr = [word for word in wordsArr if word.find("http") < 0]
     return wordsArr
 
-
 #@profile
 def tweetArrClean_delIllegal(wordsArr):
     newArr = []
@@ -119,7 +136,7 @@ def tweetArrClean_delIllegal(wordsArr):
 
         if word.find("@") >= 0: # mention
             word = word[word.find("@"):]
-            word = re.sub("[^@a-zA-Z0-9_]"," ",word) # contracation of mention and other words
+            word = re.sub("[^@a-zA-Z0-9_]"," ",word) # catenation of mention and other words
             newArr.append(word)
             continue
  
@@ -163,6 +180,7 @@ def code2char(word):
 #    word = re.sub("&gt;",">", word)
     word = word.replace("&lt;", "<")
     word = word.replace("&gt;", ">")
+    word = word.replace("&amp;", "&")
     return word
 
 def contain_illegal_letter_in_word(word):
@@ -197,7 +215,7 @@ def parseArgs(args):
 
 #############################
 if __name__ == "__main__":
-    print "Usage: python preProcessTweetText.py -text tweetTextFileName [-out tweetText.outFileName]"
+    print "Usage: python preProcessTweetText.py -text tweetTextFileName_nonEng [-out tweetText.outFileName_clean]"
     print "Program starts at time:" + str(time.asctime())
 
     [textFileName, outFileName] = parseArgs(sys.argv)

@@ -87,8 +87,9 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
         #if item.find("skl_2013-01") != 0:
-        if item.find("relSkl_") != 0:
+        #if item.find("relSkl_") != 0:
         #if item.find("segged_tweet") != 0:
+        if item.find("tweetCleanText") != 0:
             continue
         tStr = item[-2:]
         if Day != tStr:
@@ -105,20 +106,19 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         tweToUsrFilePath = socialFeaFilePath + "tweetSocialFeature" + tStr
         #tweIdToUsrIdHash = loadUsrId(tweToUsrFilePath, dataFilePath+item)
         tweIdToUsrIdHash = loadUsrId(tweToUsrFilePath, None)
-        #IDmap = loadID(idmapFilePath + "IDmap_2015-05-" + tStr)
-        IDmap = loadID(idmapFilePath + "IDmap_2013-01-" + tStr)
+        IDmap = loadID(idmapFilePath + "IDmap_2015-05-" + tStr)
+        #IDmap = loadID(idmapFilePath + "IDmap_2013-01-" + tStr)
         while True:
-            lineStr = seggedFile.readline()
-            lineStr = re.sub(r'\n', " ", lineStr)
-            lineStr = lineStr.strip()
-            if len(lineStr) <= 0:
+            lineStr = seggedFile.readline()[:-1].strip()
+            if len(lineStr) == 0:
                 break
             contentArr = lineStr.split("\t")
             if len(contentArr) < 2:
+                print "wrong format", len(contentArr)
                 continue
             # format of lineStr: tweetID(originalTweetID)[\t]score[\t]tweetText   Or tweetId(day+lineId)[\t]tweetText
             tweetIDstr = contentArr[0]
-            tweetText = contentArr[-1]
+            tweetText = contentArr[-1].lower()
             
             if len(tweetIDstr)==18:
                 usrIDstr = tweIdToUsrIdHash.get(tweetIDstr)
@@ -184,7 +184,6 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
         windowHash[tStr] = N_t
         seggedFile.close()
         print "### " + str(time.asctime()) + " " + UNIT + "s in " + item + " are loaded.", len(unitHash), "\t", len(userHash)
-        break
 
         #[GUA] burstySegHash mapping: segment -> wb_st(bursty score)
         burstySegHash = {}
@@ -208,14 +207,9 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
 
             e_st = N_t * ps
             if f_st <= e_st: # non-bursty segment or word
-#                print "### non-bursty " + UNIT + ": " + unit + " f_st: " + str(f_st) + " e_st: " + str(e_st)
-#                if unit == "clemson":
-#                    print "##### clemson:", f_st, e_st
                 continue
             # bursty segment or word
             sigma_st = math.sqrt(e_st*(1-ps))
-
-            #[GUA] Whether or not f_st in (e_st, e_st + sigma_st) ?
 
             if f_st >= e_st + 2*sigma_st: # extremely bursty segments or words
                 Pb_st = 1.0
@@ -236,14 +230,16 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
 #            burstySegHash[unit] = wb_st
 #            pbSegHash[unit] = "\t".join([str(i) for i in [wb_st, Pb_st, f_st, e_st, 2*sigma_st, u_st_num, u_st]])
 
+            if f_st < 10 or u_st_num < 5:
+                continue
             burstySegHash_udf[unit] = u_st_num
-            burstySegHash_zscore[unit] = zscore
-            pbSegHash[unit] = "\t".join([str(i) for i in [zscore, u_st_num]])
+            burstySegHash_zscore[unit] = zscore*u_st
+            pbSegHash[unit] = "\t".join([str(i) for i in [zscore, f_st, u_st_num]])
 
 #            burstySegHash[unit] = (f_st - e_st) / sigma_st
 #            pbSegHash[unit] = (f_st - e_st) / sigma_st
 
-        print "Bursty " + UNIT + " num: " + str(len(burstySegHash)), len(burstySegHash_udf), len(burstySegHash_zscore)
+        print "Bursty " + UNIT + " num: ", len(burstySegHash), len(burstySegHash_udf), len(burstySegHash_zscore)
         
         K = int(math.sqrt(N_t)) + 1
         print "K (num of event " + UNIT + "): " + str(K)
@@ -301,8 +297,9 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
             print item[0], "\t", pbSegHash[item[0]]
 
 global UNIT
-UNIT = "skl"
+#UNIT = "skl"
 #UNIT = "segment"
+UNIT = "word"
 
 ############################
 ## main Function
@@ -321,9 +318,10 @@ if __name__ == "__main__":
 
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_segment/"
     #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl/"
-    dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl_fred/"
+    #dataFilePath = r"/home/yxqin/corpus/data_twitter201301/201301_skl_fred/"
     #dataFilePath = r"/home/yxqin/corpus/data_stock201504/skl/"
     #dataFilePath = r"/home/yxqin/corpus/data_stock201504/segment/"
+    dataFilePath = r"/home/yxqin/corpus/data_stock201504/word/"
 
     psFilePath = dataFilePath + UNIT + "_ps"
     #slangFilePath = r"../Tools/slang.txt"

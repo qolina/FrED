@@ -18,13 +18,14 @@ def statisticDF_fromFile(dataFilename, predefinedUnitHash):
     #df_t_hash --> tweetIDStr:1
 
     inFile = file(dataFilename)
-    print "### Processing " + inFile.name
+#    print "### Processing " + inFile.name
 
     tweetNum_t = 0
     while 1:
         #[GUA] seggedFile name: * + TimeWindow, format: twitterID, [score,] twitterText(segment|segment|...), ...
         lineStr = inFile.readline()
         if not lineStr:
+            print "##End of reading file. [statisticDF from text file] ", time.asctime(), inFile.name , " units: ", len(unitAppHash), " tweets:", tweetNum_t
             break
 
         contentArr = lineStr[:-1].split("\t")
@@ -35,7 +36,7 @@ def statisticDF_fromFile(dataFilename, predefinedUnitHash):
             continue
         
         tweetIDstr = contentArr[0]
-        tweetText = contentArr[-1]
+        tweetText = contentArr[-1].lower()
         tweetNum_t += 1
 
         # use segment
@@ -90,15 +91,13 @@ def statisticDF(dataFilePath, predefinedUnitHash):
     fileList = os.listdir(dataFilePath)
     fileList = sorted(fileList)
     for item in fileList:
-        if item.find("relSkl_") != 0:
+#        if item.find("relSkl_") != 0:
 #        if item.find("segged_tweet") != 0:
+        if item.find("tweetCleanText") != 0:
             continue
         inFile = file(dataFilePath + item)
         print "### Processing " + inFile.name
         tStr = item[-2:]
-
-#        if int(tStr) <= 5: # designed for develop-test split data in twitter_201301
-#            continue
 
         tweetNum_t = 0
         while 1:
@@ -110,12 +109,13 @@ def statisticDF(dataFilePath, predefinedUnitHash):
             contentArr = lineStr[:-1].split("\t")
             # lineStr frame format: tweetIDstr[\t]tweetText
             # Or segment format: tweetIDstr[\t]score[\t]tweetText
+            # Or word format: tweetIDstr[\t]tweetText
             if len(contentArr) < 2: 
                 print "**less than 2 components", contentArr
                 continue
             
             tweetIDstr = contentArr[0]
-            tweetText = contentArr[-1]
+            tweetText = contentArr[-1].lower()
             tweetNum_t += 1
 
             # use segment
@@ -264,8 +264,9 @@ def write2psFile(unitHash, windowHash, psFilePath):
     print "### " + UNIT + "s' ps values are written to " + psFile.name
 
 global UNIT
-UNIT = "skl"
+#UNIT = "skl"
 #UNIT = "segment"
+UNIT = "word"
 
 
 if __name__ == "__main__":
@@ -289,7 +290,9 @@ if __name__ == "__main__":
     # for statistic word length
     wordNumHash = {}
     for unit in unitHash:
-        wordNum = len(unit.split("_"))
+        if UNIT == "segment":
+            unit = re.sub("_", " ", unit)
+        wordNum = len(unit.split(" "))
         cumulativeInsert(wordNumHash, wordNum, 1)
 
     output_sortedHash(wordNumHash, 0, False)

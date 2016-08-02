@@ -6,6 +6,9 @@ import cPickle
 import math
 
 from estimatePs_smldata import *
+from estimatePs_smldata import statisticDF
+from estimatePs_smldata import statisticDF_fromFile
+
 
 ############################
 ## load event segments from file
@@ -28,7 +31,7 @@ def loadEvtseg(filePath):
         unitDFHash[unitID] = f_st
         unitID += 1
     inFile.close()
-    print "### " + str(len(unitHash)) + " event segs and f_st values are loaded from " + inFile.name + " with Involved tweet number: " + str(len(unitInvolvedHash))
+    print "##End of reading file. [bursty unit file]  unitNum:", len(unitHash), " involvedTweets:", len(unitInvolvedHash), inFile.name
     return unitHash, unitDFHash, unitInvolvedHash
 
 ############################
@@ -65,12 +68,15 @@ def compare2Bursty(datafilename1, datafilename2):
             print item
 
 
+###############################################
 if __name__ == "__main__":
     print "###program starts at " + str(time.asctime())
 
-#    # compare 2 bursty skl if they are same
+###############################################
+# compare 2 bursty skl if they are same
 #    compare2Bursty(sys.argv[1], sys.argv[2])
 #    sys.exit(0)
+###############################################
 
     # for debugging bursty methods
     if len(sys.argv) == 3:
@@ -83,10 +89,16 @@ if __name__ == "__main__":
     [btySklHash, unitDFHash, unitInvolvedHash] = loadEvtseg(btySklFileName)
     print "### Example of skl: ", len(btySklHash), btySklHash.keys()[0:20]
 
-    #frmHash = loadBtyFrm(sys.argv[1])
-    #print frmHash.keys()[0:20]
-    #sys.exit()
+###########
+#    frmHash = loadBtyFrm(sys.argv[1])
+#    print frmHash.keys()[0:20]
+#    sys.exit()
+###########
+    
+###############################################
 
+###########
+# output freq distri of bursty units
     [unitHash, windowHash] = statisticDF(dataFilePath, btySklHash)
 
     unitHash_FST = {}

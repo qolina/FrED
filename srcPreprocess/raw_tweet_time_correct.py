@@ -9,12 +9,13 @@ import time
 import json
 import cPickle
 
-from Tweet import *
 
 sys.path.append("/home/yxqin/Scripts/")
 from tweetStrOperation import *
 from strOperation import *
+from hashOperation import *
 
+from Tweet import *
 
 def loadTweetFromFile(dirPath):
     print "### " + str(time.asctime()) + " # Loading files from directory: " + dirPath
@@ -35,7 +36,7 @@ def loadTweetFromFile(dirPath):
 
     for item in fileList:
         print "## Processing file ", item
-        if not item.endswith(".txt"):
+        if not item.endswith(".tweet"): # ".txt"
             print item, " is not txt file. passed."
             continue
         jsonFile = file(item)

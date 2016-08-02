@@ -53,7 +53,7 @@ def loadTweetFromFile(dirPath):
             lineStr = lineStr[:-1]
             if len(lineStr) < 20:
                 continue
-#            lineStr = re.sub(r'\\\\', r"\\", lineStr)
+#            lineStr = re.sub(r'\\\\', r"\\", lineStr) # for twitter201301 data, not for stockTweets_201504
 
             # compile into json format
             try:
@@ -65,7 +65,6 @@ def loadTweetFromFile(dirPath):
 
             # create tweet and user instance for current jsonObj
             currTweet = getTweet(jsonObj)
-
             if currTweet is None: # lack of id_str
                 if loadDataDebug:
                     print "Null tweet (no id_str) in lineNum", lineIdx, str(jsonObj)
