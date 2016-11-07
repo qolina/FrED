@@ -801,8 +801,8 @@ if __name__ == "__main__":
         print "Usage getRelSkl.py posFileName chunkedFileName [lex] "
         sys.exit()
 
-    print sorted(lvHash.items(), key = lambda a:a[0])
-    print sorted(lvHash.items(), key = lambda a:a[1])
+    #print sorted(lvHash.items(), key = lambda a:a[0])
+    #print sorted(lvHash.items(), key = lambda a:a[1])
     
     ##############################################################
     # record noisy words which does not appear in frames in one tweet

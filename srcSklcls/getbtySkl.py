@@ -241,7 +241,8 @@ def getEventSkl(dataFilePath, socialFeaFilePath, idmapFilePath):
 
         print "Bursty " + UNIT + " num: ", len(burstySegHash), len(burstySegHash_udf), len(burstySegHash_zscore)
         
-        K = int(math.sqrt(N_t)) + 1
+        #K = int(math.sqrt(N_t)) + 1
+        K = 220
         print "K (num of event " + UNIT + "): " + str(K)
 
         #option1 use one score to rank
