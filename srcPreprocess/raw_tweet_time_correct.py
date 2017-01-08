@@ -10,7 +10,7 @@ import json
 import cPickle
 
 
-sys.path.append("/home/yxqin/Scripts/")
+sys.path.append(os.path.expanduser("~") + "/Scripts/")
 from tweetStrOperation import *
 from strOperation import *
 from hashOperation import *
@@ -36,9 +36,9 @@ def loadTweetFromFile(dirPath):
 
     for item in fileList:
         print "## Processing file ", item
-        if not item.endswith(".tweet"): # ".txt"
-            print item, " is not txt file. passed."
-            continue
+        #if not item.endswith(".tweet"): # ".txt"
+        #    print item, " is not txt file. passed."
+        #    continue
         jsonFile = file(item)
         firstLine = jsonFile.readline()
 
@@ -82,10 +82,10 @@ def loadTweetFromFile(dirPath):
             currDate = time.strftime("%Y-%m-%d", currTime)
 #            print currDate
             cumulativeInsert(dateHash, currDate, 1) # for statistic
-            if currDate.startswith("2012-12-31"): 
-                continue
-            if not currDate[5:7] in ["04", "05"]: # month
-                continue
+            #if currDate.startswith("2012-12-31"): 
+            #    continue
+            #if not currDate[5:7] in ["04", "05"]: # month
+            #    continue
 
             lineArr = []
             if currDate in date_tweetHash:

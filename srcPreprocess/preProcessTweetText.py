@@ -1,7 +1,8 @@
 import sys
+import os
 import cPickle
 
-sys.path.append("/home/yxqin/Scripts")
+sys.path.append(os.path.expanduser("~")+"/Scripts")
 from sysOperation import *
 from strOperation import *
 from tweetStrOperation import *

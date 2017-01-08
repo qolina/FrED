@@ -9,7 +9,7 @@ import time
 import json
 import cPickle
 
-sys.path.append("/home/yxqin/Scripts/")
+sys.path.append(os.path.expanduser("~")+"/Scripts/")
 import lang
 from tweetStrOperation import *
 from hashOperation import *
