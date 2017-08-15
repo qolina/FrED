@@ -7,12 +7,10 @@ import cPickle
 import sys
 import json
 
-sys.path.append("/home/yxqin/FrED/srcPreprocess")
-sys.path.append("/home/yxqin/Scripts")
+sys.path.append(os.path.expanduser("~") + "/FrED/srcPreprocess")
+sys.path.append(os.path.expanduser("~") + "/Scripts")
 from Tweet import *
 from read_tweet_from_json import *
-
-sys.path.append("/home/yxqin/Scripts")
 from strOperation import *  # readTime
 
 def getSocialFeatures(currTweet):
@@ -60,13 +58,13 @@ def getSocialFeatures(currTweet):
     feahash = {}
     feahash["Usr"] = usrIDstr
     feahash["Time"] = hourStr
-    feahash["RT"] = RT
-    feahash["Men"] = Men
-    feahash["Reply"] = Reply
-    feahash["Url"] = Url
-    feahash["Fav"] = Fav
-    feahash["Tag"] = Tag
-    feahash["Past"] = Past
+    #feahash["RT"] = RT
+    #feahash["Men"] = Men
+    #feahash["Reply"] = Reply
+    #feahash["Url"] = Url
+    #feahash["Fav"] = Fav
+    #feahash["Tag"] = Tag
+    #feahash["Past"] = Past
     return feahash
 
 def read_rawFile(dataFileName, specificTidList):
@@ -168,17 +166,27 @@ if __name__ == "__main__":
 
     #dataFilePath = r"../corpus_struct/"
     #dataFilePath = "/home/yxqin/corpus/data_twitter201301/201301_nonEng/"
-    dataFilePath = "/home/yxqin/corpus/data_stock201504/nonEng/"
     #dataFilePath = "/home/yxqin/corpus/data_twitter201301/rawData/timeCorrect/"
+    #dataFilePath = "/home/yxqin/corpus/data_stock201504/nonEng/"
+    dataFilePath = "/home/yanxia/SED/ni_data/timeCorrect/"
 
     outputStr = "tweetSocialFeature"
     M = 12
+
+    if 0:
+        singleFileName = sys.argv[1]
+        attriHash = read_structFile(singleFileName)
+        outputFile = open(singleFileName+".socialFea", "w")
+        cPickle.dump(attriHash, outputFile)
+        outputFile.close()
+        sys.exit(0)
 
     fileList = os.listdir(dataFilePath)
     for item in sorted(fileList):
     #    if item.find("tweetFile_") != 0:
         if item.find("tweetStruct") != 0:
 #        if item.find("rawTwitter_timeCorrect-2013-01") != 0:
+            print item
             continue
         tStr = item[-2:]
         if tStr != dayStr:
