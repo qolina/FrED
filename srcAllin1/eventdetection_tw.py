@@ -6,6 +6,7 @@ import os
 import sys
 import cPickle
 import math
+from argparse import ArgumentParser
 
 sys.path.append(os.path.expanduser("~")+"/Scripts")
 from hashOperation import *
@@ -23,20 +24,20 @@ class Event:
         self.nodeHash = nodeHash
         self.edgeHash = edgeHash
 
-def loadtw(filename):
-    global twHash,subtwHash
-    twHash = {}
+def loadtw(filename, tw):
     subtwHash = {}
     twfile = file(filename)
     lineIdx = 0
     while 1:
         line = twfile.readline()
         if not line: break
-        twHash[lineIdx] = line.strip().split(" ")[1]
+        arr = line.strip().split(" ")
+        if arr[1] != tw: continue
+        subtwHash[lineIdx] = arr[2]
         lineIdx += 1
     twfile.close()
-    print "#tweet ", len(twHash)
-    print Counter(twHash.values()).most_common()
+    return subtwHash
+
 
 def statisticDF(dataFileDir, predefinedUnitHash):
 
@@ -119,7 +120,9 @@ def statisticDF(dataFileDir, predefinedUnitHash):
     return unitHash, windowHash
 
 # calculate ps
-def calunitps(unitHash, windowHash):
+def calunitps(dataFileDir):
+    [unitHash, windowHash] = statisticDF(dataFileDir, None)
+
     unitpsHash = {}
     unitNum = 0
     for unit in sorted(unitHash.keys()):
@@ -135,23 +138,56 @@ def calunitps(unitHash, windowHash):
 
         if unitNum % 500000 == 0:
             print "### " + str(unitNum) + " units' ps are processed at " + str(time.asctime())
-    return unitpsHash
+    return unitpsHash, windowHash
+
+def calunitdf(tStr):
+    unitdayHash = {} #unit:df_hash
+    #df_hash --> tweetIDStr:1
+    stopFileName = r"../Tools/stoplist.dft"
+    stopwordHash = loadStopword(stopFileName)
+
+    inFile = file(args.datadir+"frames_"+tStr)
+    while 1:
+        lineStr = inFile.readline()
+        if not lineStr: break
+        contentArr = lineStr.strip().split("\t")
+        # lineStr frame format: tweetseqIDstr[\t]tweetText
+        if len(contentArr) < 2: 
+            print "**less than 2 components", contentArr
+            continue
+        tweetseqIDstr = contentArr[0]
+        tweetText = contentArr[-1].lower()
+        tweetText = re.sub("\|", " ", tweetText)
+        textArr = tweetText.strip().split(" ")
+        # del stop words
+        textArr = tweetArrClean_delStop(textArr, stopwordHash)
+        textArr = tweetArrClean_delUrl(textArr)
+        for unit in textArr:
+            if len(unit) < 1: continue
+            # statistic unit df
+            if unit in unitdayHash:
+                df_hash = unitdayHash[unit]
+            else:
+                df_hash = {}
+            df_hash[tweetseqIDstr] = 1
+            unitdayHash[unit] = df_hash
+    inFile.close()
+    print "### In total ", len(unitdayHash), UNIT, "s are loaded in tw", tStr
+    return unitdayHash
+
 
 ############################
 ## calculate sigmoid
 def sigmoid(x):
     return 1.0/(1.0+math.exp(-x))
 
-
-def calbursty(unitHash, unitpsHash, tStr, N_t):
+def calbursty(unitdayHash, unitpsHash, tStr, N_t):
     burstySegHash = {}
     unitInvolvedHash = {}
-    for unit in unitHash:
-        if tStr not in unitHash[unit]: continue
+    for unit in unitdayHash:
         ps = unitpsHash.get(unit)
         if ps is None: continue
-
-        f_st = len(unitHash[unit][tStr])*1.0
+        f_st = len(unitdayHash[unit])*1.0
         e_st = N_t * ps
         if f_st <= e_st: # non-bursty segment or word
             continue
@@ -169,10 +205,10 @@ def calbursty(unitHash, unitpsHash, tStr, N_t):
     segList = []
     for key in sortedList:
         eventSeg = key[0]
-        apphash = dict([(tid, 1) for tid in unitHash[eventSeg][tStr]])
+        apphash = dict([(tid, 1) for tid in unitdayHash[eventSeg]])
 
         unitInvolvedHash.update(apphash)
-        f_st = len(unitHash[eventSeg][tStr])
+        f_st = len(unitdayHash[eventSeg])
         segList.append((f_st, key[1], eventSeg))
     return segList, unitInvolvedHash
 
@@ -272,14 +308,14 @@ def calpairsim(tStr, segList, segTextHash, wordDFHash, segDFHash):
                 segPairHash[segPair] = 0.0
     return segPairHash 
 
-def calsegText(segList, unitHash, unitInvolvedHash, tStr):
+def calsegText(segList, unitdayHash, unitInvolvedHash, tStr, subtwHash):
     segTextHash = {}
     segDFHash = {}
-    content = file("../ni_data/tweet_text.txt").readlines()
+    content = file(args.datadir+"tweet_text_"+tStr).readlines()
     content = [line.strip().lower() for line in content]
-    involvedTweets = dict([(tid, content[int(tid)]) for tid in unitInvolvedHash])
+    involvedTweets = dict([(tid, content[int(tid[2:])]) for tid in unitInvolvedHash])
     for segId, seg in enumerate(segList):
-        seg_rel_tweets = [(tid, involvedTweets[tid], subtwHash[int(tid)]) for tid in unitHash[seg[2]][tStr]]
+        seg_rel_tweets = [(tid, involvedTweets[tid], subtwHash[int(tid[2:])]) for tid in unitdayHash[seg[2]]]
         tw_textHash = {}
         tw_dfHash = {}
         for subtw in set([item[2] for item in seg_rel_tweets]):
@@ -293,9 +329,10 @@ def calsegText(segList, unitHash, unitInvolvedHash, tStr):
 def calWordDF(dataFileDir):
     wordDFHash = {} #word:(tStr:df)
     filelist = sorted(os.listdir(dataFileDir))
-    filelist = [item for item in filelist if item.startswith("tweet_text_")]
+    filelist = [item for item in filelist if item.startswith("tweet_text_") and len(item)==13]
     for filename in filelist:
         tStr = filename[-2:]
+        print "# Processing for wordDF", filename
         content = file(dataFileDir+filename).readlines()
         for lineid, line in enumerate(content):
             arr = line.strip().lower().split(" ")
@@ -309,6 +346,8 @@ def calWordDF(dataFileDir):
                 tw_word_df_hash[lineid]=1
                 word_df_hash[tStr]=tw_word_df_hash
                 wordDFHash[word] = word_df_hash
+            if lineid+1 % 1000000 == 0:
+                print "### " + str(time.asctime()) + " " + str(lineid) + " tweets are processed! words: " + str(len(wordDFHash))
         for word in wordDFHash:
             word_df_hash = wordDFHash[word]
             if tStr in word_df_hash:
@@ -588,12 +627,8 @@ def loadWiki(filepath):
 
 def linkelefrm(tStr):
     frmeleAppHash = {} #ele:{frm:1, frm:1}
-
-    content = file(sys.argv[1]).readlines()
-    tw_tids = [int(tid) for tid in twHash if twHash[tid]==tStr]
-    start_tid, end_tid = min(tw_tids), max(tw_tids)
-
-    for line in content[start_tid:end_tid+1]:
+    content = file(args.datadir+"frames_"+tStr).readlines()
+    for line in content:
         frmArr = line.strip().split("\t")[1].split(" ")
         for frm in frmArr:
             for ele in frm.split("|"):
@@ -616,7 +651,7 @@ def getgoldevents():
     #stemmer = PorterStemmer()
     wordnet_lemmatizer = WordNetLemmatizer()
 
-    gevents = file("../ni_data/event_descriptions.tsv").readlines()
+    gevents = file(args.datadir+"event_descriptions.tsv").readlines()
     gevents = [line.strip().split("\t")[1].strip("\"") for line in gevents]
     gold_events = []
     for line in gevents:
@@ -631,9 +666,17 @@ def getgoldevents():
         valid_words = [words[idx] for idx, tag in enumerate(tags) if tag[:2] in ["nn", "vb", "jj", "cd", "rb"] if deps[idx] in ["root", "sub", "obj", "vc", "vmod", "nmod", "pmod"]]
         #stemmed_words = [stemmer.stem(word.lower()) for word in valid_words if word not in ["is", "are", "a", "an", "be", "had", "ha"]]
         stemmed_words = [wordnet_lemmatizer.lemmatize(word.lower()) for word in valid_words if word not in ["is", "are", "a", "an", "be", "had", "ha"]]
-        print "-gold", stemmed_words 
+        #print "-gold", stemmed_words 
         gold_events.append(list(set(stemmed_words)))
     return gold_events
+
+def strvalid(word):
+    newword = ""
+    for c in word:
+        if ord(c) not in range(32, 127):
+            continue
+        newword += c
+    return newword
 
 def evalrecall(output_events, gold_events):
     #stemmer = PorterStemmer()
@@ -644,6 +687,7 @@ def evalrecall(output_events, gold_events):
         oevent = " ".join(list(set(oevent)))
         oevent = re.sub("\|", " ", oevent)
         oevent = re.sub("_", " ", oevent)
+        oevent = strvalid(oevent)
         owords = list(set(oevent.split(" ")))
         #stem_owords = [stemmer.stem(word) for word in owords]
         stem_owords = [wordnet_lemmatizer.lemmatize(word) for word in owords]
@@ -657,16 +701,18 @@ def evalrecall(output_events, gold_events):
         matched_matrix.append(matched_gold)
     return matched_matrix
 
-def detection(unitHash, windowHash, unitpsHash, wordDFHash, kNeib, taoRatio):
+def detection(windowHash, unitpsHash, wordDFHash, kNeib, taoRatio):
     gold_events = getgoldevents()
     eval_matrix = []
     global TWEETNUM
     for tStr in sorted(windowHash.keys()):
+        subtwHash = loadtw(args.datadir+"tweet_id_tw_subtw.txt", str(int(tStr)))
         N_t = windowHash[tStr]
         TWEETNUM = N_t
         print "###########################Processing events in ", tStr, " #tweet", N_t
-        segList, unitInvolvedHash = calbursty(unitHash, unitpsHash, tStr, N_t)
-        segTextHash, segDFHash = calsegText(segList, unitHash, unitInvolvedHash, tStr)
+        unitdayHash = calunitdf(tStr)
+        segList, unitInvolvedHash = calbursty(unitdayHash, unitpsHash, tStr, N_t)
+        segTextHash, segDFHash = calsegText(segList, unitdayHash, unitInvolvedHash, tStr, subtwHash)
         segPairHash = calpairsim(tStr, segList, segTextHash, wordDFHash, segDFHash)
 
         kNNHash = getKNN(segPairHash, kNeib)
@@ -684,26 +730,49 @@ def detection(unitHash, windowHash, unitpsHash, wordDFHash, kNeib, taoRatio):
     print "##Recall", "%.4f"%recall, len(recall_gold), len(gold_events)
     print sorted(list(recall_gold))
 
+def loadps(filename):
+    psfile = file(filename)
+    unitpsHash = cPickle.load(psfile)
+    windowHash = cPickle.load(psfile)
+    psfile.close()
+    return unitpsHash, windowHash
+
+def get_args():
+    parser = ArgumentParser(description='twitter event detection')
+    parser.add_argument('-datadir', type=str, default='../ni_data/process_events2012/', help="datafiledir ")
+    parser.add_argument('-psfile', type=str, default='', help="psfilepath")
+    parser.add_argument('-k', type=int, default=5)
+    parser.add_argument('-t', type=int, default=2)
+    args = parser.parse_args()
+    return args
+
 global UNIT
 UNIT = "skl"
 #UNIT = "word"
 
 if __name__ == "__main__":
-    print "Usage python eventdetection.py datafiledir (default: ../ni_data/process_events2012/ [frames_tStr])"
+    print "Usage python eventdetection.py -datadir datafiledir -psfile psfilepath"
     print "###program starts at " + str(time.asctime())
-    dataFileDir = sys.argv[1]
-    #loadtw("../ni_data/process_events2012/tweet_id_tw_subtw.txt")
-    [unitHash, windowHash] = statisticDF(dataFileDir, None)
-    unitpsHash = calunitps(unitHash, windowHash)
+    global args
+    args = get_args()
+    if args.psfile != "":
+        unitpsHash, windowHash = loadps(args.psfile)
+        print "#Unit's ps are loaded from ", len(unitpsHash), args.psfile
+    else:
+        unitpsHash, windowHash = calunitps(args.datadir)
+        psfile = file(args.datadir+"frmps", "w")
+        cPickle.dump(unitpsHash, psfile)
+        cPickle.dump(windowHash, psfile)
+        psfile.close()
+        print "#Unit's ps are calculated and stored to", len(unitpsHash), psfile.name
 
-    wordDFHash = calWordDF(dataFileDir)
+    wordDFHash = calWordDF(args.datadir)
     wikiPath = "../ni_data/anchorProbFile_all"
     global wikiProbHash
     wikiProbHash = loadWiki(wikiPath)
-    sys.exit(0)
 
-    kNeib = int(sys.argv[2]) if len(sys.argv)>2 else 5
-    taoRatio = int(sys.argv[3]) if len(sys.argv)>3 else 2
-    detection(unitHash, windowHash, unitpsHash, wordDFHash, kNeib, taoRatio)
+    kNeib = args.k
+    taoRatio = args.t
+    detection(windowHash, unitpsHash, wordDFHash, kNeib, taoRatio)
     
     print "###program ends at " + str(time.asctime())
