@@ -1,0 +1,1 @@
+python split_by_tw.py ../ni_data/process_events2012/tweet_id_tw_subtw.txt ../ni_data/process_events2012/tweet_text ../ni_data/process_events2012/tweet_text_pos_v2 ../ni_data/process_events2012/tweet_text_chunked

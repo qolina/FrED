@@ -1,0 +1,23 @@
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_09 ../ni_data/process_events2012/tweet_text_chunked_09 ../ni_data/process_events2012/frames_09
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_10 ../ni_data/process_events2012/tweet_text_chunked_10 ../ni_data/process_events2012/frames_10
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_11 ../ni_data/process_events2012/tweet_text_chunked_11 ../ni_data/process_events2012/frames_11
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_12 ../ni_data/process_events2012/tweet_text_chunked_12 ../ni_data/process_events2012/frames_12
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_13 ../ni_data/process_events2012/tweet_text_chunked_13 ../ni_data/process_events2012/frames_13
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_14 ../ni_data/process_events2012/tweet_text_chunked_14 ../ni_data/process_events2012/frames_14
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_15 ../ni_data/process_events2012/tweet_text_chunked_15 ../ni_data/process_events2012/frames_15
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_16 ../ni_data/process_events2012/tweet_text_chunked_16 ../ni_data/process_events2012/frames_16
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_17 ../ni_data/process_events2012/tweet_text_chunked_17 ../ni_data/process_events2012/frames_17
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_18 ../ni_data/process_events2012/tweet_text_chunked_18 ../ni_data/process_events2012/frames_18
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_19 ../ni_data/process_events2012/tweet_text_chunked_19 ../ni_data/process_events2012/frames_19
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_20 ../ni_data/process_events2012/tweet_text_chunked_20 ../ni_data/process_events2012/frames_20
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_21 ../ni_data/process_events2012/tweet_text_chunked_21 ../ni_data/process_events2012/frames_21
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_22 ../ni_data/process_events2012/tweet_text_chunked_22 ../ni_data/process_events2012/frames_22
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_23 ../ni_data/process_events2012/tweet_text_chunked_23 ../ni_data/process_events2012/frames_23
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_24 ../ni_data/process_events2012/tweet_text_chunked_24 ../ni_data/process_events2012/frames_24
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_25 ../ni_data/process_events2012/tweet_text_chunked_25 ../ni_data/process_events2012/frames_25
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_26 ../ni_data/process_events2012/tweet_text_chunked_26 ../ni_data/process_events2012/frames_26
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_27 ../ni_data/process_events2012/tweet_text_chunked_27 ../ni_data/process_events2012/frames_27
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_28 ../ni_data/process_events2012/tweet_text_chunked_28 ../ni_data/process_events2012/frames_28
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_29 ../ni_data/process_events2012/tweet_text_chunked_29 ../ni_data/process_events2012/frames_29
+python getRelSkl.py ../ni_data/process_events2012/tweet_text_pos_v2_30 ../ni_data/process_events2012/tweet_text_chunked_30 ../ni_data/process_events2012/frames_30
+#exit
