@@ -537,7 +537,7 @@ def eventScoring(eventHash, reverseSegHash, segList):
 
 def writeEvent2File(eventHash, score_eventHash, score_nodeHash, reverseSegHash, tStr, kNeib, taoRatio, elefrmHash):
     outputEvents = []
-    eventFile = file("../ni_data/out.Events"+tStr + "_k" + str(kNeib) + "t" + str(taoRatio), "w")
+    eventFile = file(args.datadir+"out.Events"+tStr + "_k" + str(kNeib) + "t" + str(taoRatio), "w")
     sortedEventlist = sorted(score_eventHash.items(), key = lambda a:a[1])
     eventNum = 0
     # for statistic
@@ -682,6 +682,7 @@ def evalrecall(output_events, gold_events):
     #stemmer = PorterStemmer()
     wordnet_lemmatizer = WordNetLemmatizer()
     matched_matrix = []
+    matched_sysout = []
     for oevtid, oevent in enumerate(output_events):
         matched_gold = []
         oevent = " ".join(list(set(oevent)))
@@ -699,11 +700,10 @@ def evalrecall(output_events, gold_events):
             print "-", gevtid, gwords
             matched_gold.append(gevtid)
         matched_matrix.append(matched_gold)
-    return matched_matrix
+        if len(matched_gold)> 0: matched_sysout.append(oevtid)
+    return matched_matrix, [len(matched_sysout), len(output_events)]
 
 def detection(windowHash, unitpsHash, wordDFHash, kNeib, taoRatio):
-    gold_events = getgoldevents()
-    eval_matrix = []
     global TWEETNUM
     for tStr in sorted(windowHash.keys()):
         subtwHash = loadtw(args.datadir+"tweet_id_tw_subtw.txt", str(int(tStr)))
@@ -720,15 +720,42 @@ def detection(windowHash, unitpsHash, wordDFHash, kNeib, taoRatio):
 
         reverseSegHash = dict([(segId, seg[2]) for segId, seg in enumerate(segList)])
         [score_eventHash, score_nodeHash] = eventScoring(eventHash, reverseSegHash, segList)
-        elefrmHash = linkelefrm(tStr)
-        output_events = writeEvent2File(eventHash, score_eventHash, score_nodeHash, reverseSegHash, tStr, kNeib, taoRatio, elefrmHash)
-        t_matched_matrix = evalrecall(output_events, gold_events)
-        eval_matrix.append(t_matched_matrix)
         #break
+
+        evtfile = file(args.datadir+"event_k"+str(args.k)+"_"+tStr, "w")
+        cPickle.dump(eventHash, evtfile)
+        cPickle.dump(score_eventHash, evtfile)
+        cPickle.dump(score_nodeHash, evtfile)
+        cPickle.dump(reverseSegHash, evtfile)
+        evtfile.close()
+        print "#Events written to", evtfile.name, time.asctime()
+
+def write_evalrec():
+    gold_events = getgoldevents()
+    eval_matrix = []
+    eval_sysout_matrix = []
+    tStrArr = sorted([item[-2:] for item in os.listdir(args.datadir) if item.startswith("frames_")])
+    for tStr in tStrArr:
+        evtfile = file(args.datadir+"event_k"+str(args.k)+"_"+tStr)
+        eventHash = cPickle.load(evtfile)
+        score_eventHash = cPickle.load(evtfile)
+        score_nodeHash = cPickle.load(evtfile)
+        reverseSegHash = cPickle.load(evtfile)
+        evtfile.close()
+
+        elefrmHash = linkelefrm(tStr)
+        output_events = writeEvent2File(eventHash, score_eventHash, score_nodeHash, reverseSegHash, tStr, args.k, args.t, elefrmHash)
+        t_matched_matrix, t_matchedout = evalrecall(output_events, gold_events)
+        eval_matrix.append(t_matched_matrix)
+        eval_sysout_matrix.append(t_matchedout)
     recall_gold = set([gevtid for dayitem in eval_matrix for evtitem in dayitem for gevtid in evtitem])
     recall = len(recall_gold)*100.0/len(gold_events)
-    print "##Recall", "%.4f"%recall, len(recall_gold), len(gold_events)
     print sorted(list(recall_gold))
+    print "##Recall", "%.4f"%recall, len(recall_gold), len(gold_events)
+    matched_out = sum([item[0] for item in eval_sysout_matrix])
+    total_out = sum([item[1] for item in eval_sysout_matrix])
+    prec = matched_out*100.0/total_out
+    print "##Precision", "%.4f"%prec, matched_out, total_out
 
 def loadps(filename):
     psfile = file(filename)
@@ -741,6 +768,7 @@ def get_args():
     parser = ArgumentParser(description='twitter event detection')
     parser.add_argument('-datadir', type=str, default='../ni_data/process_events2012/', help="datafiledir ")
     parser.add_argument('-psfile', type=str, default='', help="psfilepath")
+    parser.add_argument('-eval', action="store_true", help="only eval performance")
     parser.add_argument('-k', type=int, default=5)
     parser.add_argument('-t', type=int, default=2)
     args = parser.parse_args()
@@ -755,24 +783,23 @@ if __name__ == "__main__":
     print "###program starts at " + str(time.asctime())
     global args
     args = get_args()
-    if args.psfile != "":
-        unitpsHash, windowHash = loadps(args.psfile)
-        print "#Unit's ps are loaded from ", len(unitpsHash), args.psfile
-    else:
-        unitpsHash, windowHash = calunitps(args.datadir)
-        psfile = file(args.datadir+"frmps", "w")
-        cPickle.dump(unitpsHash, psfile)
-        cPickle.dump(windowHash, psfile)
-        psfile.close()
-        print "#Unit's ps are calculated and stored to", len(unitpsHash), psfile.name
 
-    wordDFHash = calWordDF(args.datadir)
-    wikiPath = "../ni_data/anchorProbFile_all"
-    global wikiProbHash
-    wikiProbHash = loadWiki(wikiPath)
+    if not args.eval:
+        if args.psfile != "":
+            unitpsHash, windowHash = loadps(args.psfile)
+            print "#Unit's ps are loaded from ", len(unitpsHash), args.psfile
+        else:
+            unitpsHash, windowHash = calunitps(args.datadir)
+            psfile = file(args.datadir+"frmps", "w")
+            cPickle.dump(unitpsHash, psfile)
+            cPickle.dump(windowHash, psfile)
+            psfile.close()
+            print "#Unit's ps are calculated and stored to", len(unitpsHash), psfile.name
 
-    kNeib = args.k
-    taoRatio = args.t
-    detection(windowHash, unitpsHash, wordDFHash, kNeib, taoRatio)
-    
+        wordDFHash = calWordDF(args.datadir)
+        wikiPath = "../ni_data/anchorProbFile_all"
+        global wikiProbHash
+        wikiProbHash = loadWiki(wikiPath)
+        detection(windowHash, unitpsHash, wordDFHash, args.k, args.t)
+    write_evalrec()
     print "###program ends at " + str(time.asctime())

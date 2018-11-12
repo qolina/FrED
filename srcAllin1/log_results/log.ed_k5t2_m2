@@ -1,0 +1,436 @@
+Usage python eventdetection.py -datadir datafiledir -psfile psfilepath
+###program starts at Sat Nov 10 14:52:09 2018
+### Sat Nov 10 14:52:57 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events09_k5t2
+---- 2 116 set([u'come', u'show'])
+- 2 ['', 'keyshia', 'and', 'muthaf*ckin', 'love', 'on', 'i', 'true', 'is', 'show', u'gentleman', '&', 'daniel', 'a', 'watching', 'cole', 'come', 'are']
+- 116 [u'style', u'show', u'tv', u'strictly', u'dancing', u'discussed', u'bruce', u'forsyth', u'contestant', u'song', u'come', u'event', u'gangnam', u'dance']
+---- 3 258 set([u'person', u'is'])
+- 3 ['his', 'off', 'name', 'snoop', 'that', 'dogg', 'is', 'dog', 'freestyled', 'dome', 'person', 'only', 'lion', 'changed', 'the', u'wa']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 3 349 set([u'the', u'wa'])
+- 3 ['his', 'off', 'name', 'snoop', 'that', 'dogg', 'is', 'dog', 'freestyled', 'dome', 'person', 'only', 'lion', 'changed', 'the', u'wa']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 3 471 set([u'person', u'the', u'wa'])
+- 3 ['his', 'off', 'name', 'snoop', 'that', 'dogg', 'is', 'dog', 'freestyled', 'dome', 'person', 'only', 'lion', 'changed', 'the', u'wa']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 14:53:52 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events10_k5t2
+---- 1 203 set([u'up', u'people'])
+- 1 ['a', 'on', 'shut', 'dont', '', 'up', u'father', u'valentine', 'some', 'fuck', 'valentine', 'day.', 'have', 'day?', 'you', 'the', 'people']
+- 203 [u'lebanese', u'square', u'bomb', u'people', u'car', u'sassine', u'up', u'killing', u'others', u'wounding', u'capital', u'beirut', u'explodes', u'78']
+---- 1 471 set([u'a', u'the'])
+- 1 ['a', 'on', 'shut', 'dont', '', 'up', u'father', u'valentine', 'some', 'fuck', 'valentine', 'day.', 'have', 'day?', 'you', 'the', 'people']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 14:54:25 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events11_k5t2
+---- 0 231 set([u'military', u'dead'])
+- 0 [u'want', '#debateshttp://ow.ly/epphf', 'true.', "didn't", 'romney', 'wrong.', 'dead', 'this.', 'increase', 'to', 'defense', 'for?', 'spending?', 'military', 'ask', 'shading', "that's"]
+- 231 [u'shot', u'men', u'young', u'dead', u'maiduguri', u'military', u'dozen']
+---- 1 382 set([u'top', u'wa'])
+- 1 ['a', 'interscope', 'tank', 'dont', '', 'funny', 'i', 'come', 'top', 'there', 'herd', '@usr', 'wit', 'at', 'listening', 'party', 'da', u'wa']
+- 382 [u'lazcano', u'wa', u'top', u'killed', u'los', u'organization', u'zeta', u'criminal', u'leader', u'heriberto']
+---- 1 471 set([u'a', u'wa'])
+- 1 ['a', 'interscope', 'tank', 'dont', '', 'funny', 'i', 'come', 'top', 'there', 'herd', '@usr', 'wit', 'at', 'listening', 'party', 'da', u'wa']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 14:55:17 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events12_k5t2
+---- 4 3 set([u'win', u'national'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 3 [u'league', u'divisional', u'louis', u'st.', u'washington', u'cardinal', u'series', u'win', u'agains', u'national']
+---- 4 21 set([u'national', u'game'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 21 [u'run', u'walkoff', u'national', u'werth', u'game', u'hitting', u'playoff', u'cardinal', u'home', u'jason']
+---- 4 30 set([u'win', u'game'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 30 [u'sanchez', u'patriot', u'england', u'29-26', u'jet', u'beat', u'win', u'recovers', u'overtime', u'game', u'fumble', u'new', u'mark']
+---- 4 59 set([u'national', u'game'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 59 [u'play', u'championship', u'discus', u'notre', u'national', u'game', u'going', u'event', u'fact', u'dame']
+---- 4 108 set([u'win', u'one'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 108 [u'being', u'win', u'detriot', u'new', u'one', u'tiger', u'playoff', u'going', u'york', u'series', u'world', u'away', u'yankee']
+---- 4 161 set([u'game', u'the'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 4 308 set([u'win', u'one'])
+- 4 ['win', 'one', 'gilmore', 'storen', 'putt', 'drained', 'had', 'to', 'only', 'closed', 'strike', 'threw', 'strausburg', 'ball', 'that', 'after', 'game', 'for', 'i', 'needing', 'the', u'national']
+- 308 [u'dhabi', u'finnish', u'win', u'driver', u'raikkonen', u'one', u'prix', u'kimi', u'abu', u'grand', u'formula', u'racing', u'2012']
+### Sat Nov 10 14:56:06 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events13_k5t2
+---- 1 471 set([u'a', u'the'])
+- 1 ['', 'a', 'mickey', 'pedrosa', 'dealers.', 'gp', 'the', u'take', 'japanese', 'drug', 'called', 'crossing', 'victory', 'they', 'at', 'become', 'escape.', 'mouse', 'comic', 'disney', '"mickey']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 79 set([u'not', u'do'])
+- 2 ['girardi', 'kind', 'his', 'is."', 'do', 'he', 'of', 'jeopardize', 'carry', "'no,", "won't", 'career,', 'not', 'the', "me.'", 'guy', "that's"]
+- 79 [u'do', u'discussion', u'team', u'see', u'game', u'other', u'homecoming', u'saint', u'night', u'not', u'vs.']
+---- 3 394 set([u'bet', u'show'])
+- 3 ["don't", 'into', 'pulla', 'it', '#trapgod', 'tonight.', 'show', 'tip', 'slick', 'to', 'gumball', 'is', 'his', 'get', 'can.', 'he', 'a', 'great', 'i', 'up', '10/17/12', 'wanna', 'bet']
+- 394 [u'televised', u'network', u'show', u'award', u'discussing', u'bet']
+---- 4 3 set([u'louis', u'cardinal'])
+- 4 ['ibanez', 'look', 'clutch', 'louis', 'is', 'in', 'up', u'cardinal', 'st', 'dictionary,', 'you', 'it', u'doe', 'funneled', 'raul', 'the', 'one', 'into', 'man.']
+- 3 [u'league', u'divisional', u'louis', u'st.', u'washington', u'cardinal', u'series', u'win', u'agains', u'national']
+### Sat Nov 10 14:57:03 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events14_k5t2
+---- 1 82 set([u'bus', u'driver'])
+- 1 ['', 'all', 'head-butting', 'brown', u'hoe', 'punching', 'dying', u'driver', 'acting', 'much', 'uppercutting', 'ochocinco', 'be', 'bus', 'gonne', "ain't", 'chris', 'attention.', 'for', 'these', 'up', 'the']
+- 82 [u'passenger', u'bus', u'driver', u'face', u'punched', u'female', u'cleveland']
+---- 4 421 set([u'desert', u'wa'])
+- 4 ['a', 'backpack.', 'hoe', 'that', 'i', 'island', 'could', 'tom', 'on', 'stranded', '1', 'bring', 'only', 'castaway', 'thing,', 'in', 'everything', u'hank', u'ha', u'wa', 'desert']
+- 421 [u'israel', u'ezbollah', u'iran', u'wa', u'belonged', u'desert', u'october', u'negev', u'supplied', u'drone', u'down', u'aircraft', u'nasrallah', u'6', u'hassan', u'organization', u'confirms', u'leader']
+---- 4 471 set([u'a', u'wa'])
+- 4 ['a', 'backpack.', 'hoe', 'that', 'i', 'island', 'could', 'tom', 'on', 'stranded', '1', 'bring', 'only', 'castaway', 'thing,', 'in', 'everything', u'hank', u'ha', u'wa', 'desert']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 14:58:01 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events15_k5t2
+---- 0 471 set(['a', 'from'])
+- 0 ['a', 'uncontrollably', 'sometimes', 'from', 'rabies', 'ejaculate', u'human', 'up', 'day.', 'to', 'suffering', 'can', 'male']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 14:59:07 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events16_k5t2
+---- 1 11 set([u'not', u'romney'])
+- 1 ['', 'be', 'about', 'chinese', 'would', 'to', 'is', 'romney', 'fuck', u'tax', 'it', 'firm', 'talking', 'a', 'learning', 'not', 'raising', 'subject']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 1 448 set(['firm', 'romney'])
+- 1 ['', 'be', 'about', 'chinese', 'would', 'to', 'is', 'romney', 'fuck', u'tax', 'it', 'firm', 'talking', 'a', 'learning', 'not', 'raising', 'subject']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+---- 2 471 set([u'a', u'the'])
+- 2 ['a', 'impact', 'libya', 'on', 'exchange,', 'west', 'is', u'prediction', 'you', "where's", 'this', 'moment', 'dramatic', 'should', 'interrupt', 'kanye', 'the', u'ha', "tonight's", 'debate', 'debate.']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 8 set([u'president', u'presidential'])
+- 4 ['', 'do', 'actual', "he's", u'teenager', 'watching', 'that!', 'an', 'to', 'presidential', 'president', 'the', '#debate2012', 'debate...', 'first']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 6 8 set([u'mitt', u'romney'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 6 11 set([u'mitt', u'romney'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 6 49 set([u'go', u'win', u'back', u'lost'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 49 [u'giant', u'lost', u'cowboy', u'almost', u'game.', u'apparently', u'back', u'reviewed', u"n't", u'go', u'second', u'way', u'v', u'touchdown', u'closing', u'win', u'discussing', u'came']
+---- 6 161 set([u'the', u'lost'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 6 256 set([u'mitt', u'romney'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 256 [u'mitt', u'romney', u'u.s.', u'endorses', u'michael', u'barack', u'york', u'bloomberg', u'president', u'new', u'mayor', u'obama']
+---- 6 410 set([u'mitt', u'romney'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 410 [u'barack', u'televised', u'constitution', u'candidate', u'justice', u'romney', u'u.s.', u'third-party', u'encounter', u'four', u'high-profile', u'green', u'election', u'excluded', u'libertarian', u'party', u'representing', u'mitt', u'presidential', u'obama']
+---- 6 448 set([u'mitt', u'romney'])
+- 6 ['romney', 'back', 'crib', 'hunnit', 'go', 'mill', 'car!', 'dere', 'cotton', 'win:', 'mil', 'fields!', '1', 'to', 'crib!', 'hundred', 'mitt', 'took', 'poof', 'they', u'win', 'lost', u'field', 'mill.', 'car', 'the']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+---- 9 278 set([u'price', u'oil'])
+- 9 ['rise,', 'money', 'production', 'at', 'in', 'even', 'opposes', 'increase', 'to', 'prices.', 'pump.', 'save', 'oil', 'vehicle', 'gas', "obama's", u'price', 'he', u'standard', 'will', 'continue', 'the']
+- 278 [u'living', u'oil', u'artist', u'german', u'painting', u'sold', u'work', u'artist.', u'price', u'auction', u'$34m', u'(', u'gerhard', u'ha', u'richter', u'f21m', u'record']
+### Sat Nov 10 15:00:05 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events17_k5t2
+---- 1 471 set([u'a', u'wa'])
+- 1 ['chopped', 'but...we', 'it', "pretendin'", 'said,', "trainin'", 'terrorist', 'camp,', 'her', 'no', "kid's", 'you', u'wa', 'jetplane.', 'hoe!!!', 'hoe!', 'hoe,', 'spoon', 'gal', "ain't", 'know', 'a', '"this', 'karate']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 471 set(['part', u'wa'])
+- 3 ['like', 'just', 'getting', 'started', u'wa', 'favorite', 'snow', 'part', 'cottonwood', 'falling', 'my', 'justin']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:01:01 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events18_k5t2
+---- 0 471 set(['a', 'the'])
+- 0 ['higher,', 'a', 'this', 'gas', 'floorboard', 'cutting', 'through', 'flintstoning', 'bitch.', "i'm", 'the', u'get', 'hole', 'any']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 385 set([u'three', u'have'])
+- 3 ['a', 'sticks.', 'lsd', 'just', 'i', 'of', 'is', 'in', 'two', 'three', 'life."', 'most', 'important', 'done', 'have', u'thing', 'my', 'an', u'wa', 'or', '"one']
+- 385 [u'defected', u'korea', u'august', u'three', u'militarised', u'soldier', u'have', u'korean', u'border', u'south']
+---- 3 471 set([u'a', u'wa'])
+- 3 ['a', 'sticks.', 'lsd', 'just', 'i', 'of', 'is', 'in', 'two', 'three', 'life."', 'most', 'important', 'done', 'have', u'thing', 'my', 'an', u'wa', 'or', '"one']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:01:58 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events19_k5t2
+---- 1 398 set([u'james', u'film', u'bond'])
+- 1 ['a', 'me', 'great', 'just', 'james', 'david', 'high', 'to', '@usr', 'are', 'craig', u'heel', 'plus,', 'enlightened', 'staring', 'film', 'bond']
+- 398 [u'premiere', u'albert', u'james', u'royal', u'skyfall', u'london', u'receives', u'23rd', u'hall', u'film', u'bond']
+---- 3 349 set([u'the', u'wa'])
+- 3 ['thrown', 'her', 'originally,', 'always', 'it', 'not', 'fertility.', 'bride.', 'at', 'eaten', 'wedding', 'cake', 'the', 'symbolize', u'wa', 'by']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 3 471 set([u'the', u'wa'])
+- 3 ['thrown', 'her', 'originally,', 'always', 'it', 'not', 'fertility.', 'bride.', 'at', 'eaten', 'wedding', 'cake', 'the', 'symbolize', u'wa', 'by']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 471 set([u'a', u'the'])
+- 4 ['help', 'it', 'dropped', 'russia,', 'your', 'hacky', 'punted', 'grabbed', 'hippyball,', 'fight', 'bacteria', 'to', "sackin'.", 'halfway', 'soap', 'chocolate', 'kid', 'a', 'bar', 'of', 'against', 'can', 'the', 'teeth.']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:02:47 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events20_k5t2
+---- 4 258 set([u'is', u'life'])
+- 4 ['', 'own', 'is', 'einstein', 'keep', 'your', 'said', 'to', 'probably', 'you', 'moving.', 'life', 'albert', 'like', 'balance,', 'riding', 'eat', 'must', 'a', '"mummy', 'boogers...', 'bicycle.']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 5 137 set([u'ha', u'one'])
+- 5 ['from', 'her', 'dancing', 'about,', 'one', 'released', 'finally', 'adele', 'pretty', 'thing', u'ha', 'baby.']
+- 137 [u'one', u'24', u'hour', u'lil', u'period', u'seizure', u'2nd', u'wayne', u'making', u'suffered', u'ha']
+### Sat Nov 10 15:03:38 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events21_k5t2
+---- 3 46 set([u'walt', u'disney'])
+- 3 ['a', 'aging', 'overeating', 'eating', 'may', 'molecule', 'disney', 'walt', 'brain', 'while', u'help', 'the', 'cause', 'you', 'unique.']
+- 46 [u'purchase', u'lucas', u'company', u'walt', u'lucasfilm', u'ltd.', u'george', u'disney']
+---- 3 471 set(['a', 'the'])
+- 3 ['a', 'aging', 'overeating', 'eating', 'may', 'molecule', 'disney', 'walt', 'brain', 'while', u'help', 'the', 'cause', 'you', 'unique.']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 32 set(['last', u'wa'])
+- 4 ['crowd', 'being', 'im', 'u!"', 'blow', 'cut', 'incredible', u'thing', 'to', u'wa', 'gonna', 'introduce', 'with', 'him', 'me', 'on', 'last', 'up', 'tour', '"scooter', u'mention', 'my', 'night.']
+- 32 [u'fair', u'tex', u'held', u'dallas', u')', u'jaw', u'destroyed', u'state', u'electrical', u'marketing', u'texas', u'2012', u'wa', u'fire', u'big', u'park', u'statue', u'weekend', u'icon', u'october', u'last', u'16', u'19', u'annual', u'm', u'tall', u'52-foot']
+---- 5 161 set([u'bad', u'the'])
+- 5 ['on', 'for', '&', 'pay', 'the', 'money,diamonds,cars', 'bitches!', 'now!', 'bad', 'can', 'turnstile', "i'm", 'you', 'cool']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+### Sat Nov 10 15:04:43 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events22_k5t2
+---- 1 124 set([u'nuclear', u'iran'])
+- 1 ['maine.', 'a', 'united', 'iran', 'get', 'states,', 'accidentally', '#strongerwithobama', 'will', 'weapon."', 'nuclear', 'not', 'the', 'invade']
+- 124 [u'negotiation', u'iran', u'have', u'usa', u'artical', u'nuclear', u'concerning', u'agreement', u'one', u'program', u'statement']
+---- 1 471 set(['a', 'the'])
+- 1 ['maine.', 'a', 'united', 'iran', 'get', 'states,', 'accidentally', '#strongerwithobama', 'will', 'weapon."', 'nuclear', 'not', 'the', 'invade']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 50 set([u'american', 'the'])
+- 3 [u'afghan', 'no', 'die', '"theres', 'reason', 'should', 'transition:', u'american', 'the', 'afghan']
+- 50 [u'basketball', u'based', u'dallas', u'tweet', u'lakers', u'angeles', u'los', u'american', u'team', u'professional', u'the', u'maverick']
+---- 5 8 set([u'barack', u'mitt', u'romney'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 5 11 set([u'barack', u'mitt', u'romney', u'business'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 5 60 set([u'being', u'job'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 60 [u'united', u'added', u'being', u'job', u'say', u'000', u'labor', u'hiring', u'state', u'october', u'picked', u'department', u'171']
+---- 5 67 set([u'voter', u'massachusetts'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 67 [u'use', u'voter', u'legalizing', u'colorado', u'ballot', u'medical', u'recreational', u'washington', u'marijuana', u'referendum', u'legalization', u'state', u'initiative', u'massachusetts', u'approve']
+---- 5 256 set([u'barack', u'mitt', u'romney'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 256 [u'mitt', u'romney', u'u.s.', u'endorses', u'michael', u'barack', u'york', u'bloomberg', u'president', u'new', u'mayor', u'obama']
+---- 5 410 set([u'barack', u'mitt', u'romney'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 410 [u'barack', u'televised', u'constitution', u'candidate', u'justice', u'romney', u'u.s.', u'third-party', u'encounter', u'four', u'high-profile', u'green', u'election', u'excluded', u'libertarian', u'party', u'representing', u'mitt', u'presidential', u'obama']
+---- 5 448 set([u'mitt', u'romney'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+---- 5 471 set([u'a', u'record', u'the'])
+- 5 ['gov.', 'created.', u'voter', 'being', 'is', 'romney', "romney's", u'business', 'in', 'obama.', 'support', 'office,', 'barack', 'mitt', 'job', 'massachusetts', 'such', 'a', 'great', 'did', 'of', 'proud', 'record', 'so', 'time', 'the', 'mass.', 'left']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:05:47 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events23_k5t2
+---- 0 427 set([u'ha', u'u'])
+- 0 ['and', 'follow', 'weight', "don't", 'lifts,', 'topless', 'see', 'in', 'our', 'just', 'for', 'sun', 'bite', 'twitcam', 'you', u'ha', 'officially', 'you.', 'draw', u'mosquito', 'twitter!', u'update', 'news', 'be', 'a', 'on', 'joined', u'u', '@usr', '#smtown', 'the', 'wanna', 'latest']
+- 427 [u'appeal', u'court', u'round', u'district', u'samsung', u'nexus', u'u.s.', u'winning', u'sale', u'delivering', u'google', u'banned', u'inc.', u'apple', u'u', u'overturned', u'ha', u'order', u'galaxy', u'android']
+---- 0 471 set([u'a', u'the', u'u'])
+- 0 ['and', 'follow', 'weight', "don't", 'lifts,', 'topless', 'see', 'in', 'our', 'just', 'for', 'sun', 'bite', 'twitcam', 'you', u'ha', 'officially', 'you.', 'draw', u'mosquito', 'twitter!', u'update', 'news', 'be', 'a', 'on', 'joined', u'u', '@usr', '#smtown', 'the', 'wanna', 'latest']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 1 471 set([u'a', 'the'])
+- 1 ['13th', u'penis', 'libya', 'century', 'in', 'destroyed', u'a', '13,250', 'trophies.', u'egyptian', 'conquered', 'the', 'b.c.', u'enemy']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 105 set([u'apple', u'event'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 105 [u'ipad', u'sending', u'23.', u'medium', u'apple', u'mini', u'new', u'oct.', u'computer', u'announce', u'probably', u'event', u'invite']
+---- 2 161 set([u'the', u'event'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 2 198 set([u'fire', u'two'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 198 [u'northeast', u'fire', u'moscow', u'two', u'killing', u'injuring', u'gunman', u'five', u'open']
+---- 2 274 set([u'fired', u'two'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 274 [u'militant', u'israel', u'multiple', u'fired', u'rocket', u'being', u'killed', u'jihadist', u'gaza', u'two', u'air', u'four', u'strip', u'northern', u'wounded', u'group', u'salafist', u'border', u'strikes.', u'launched']
+---- 2 338 set([u'employee', u'apple', u'people'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 338 [u'poultry', u'plant', u'shot', u'apple', u'people', u'farm', u'processing', u'reported', u'five', u'workplace', u'fresno', u'employee', u'central', u'valley', u'california', u'meat']
+---- 2 402 set([u'fire', u'people'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 402 [u'city', u'people', u'fire', u'southern', u'hospital', u'others', u'taiwanese', u'60', u'kill', u'injures', u'tainan']
+---- 2 435 set([u'fire', u'people'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 435 [u'25', u'badr', u'people', u'fire', u'region', u'village', u'al', u'courtyard', u'abqaiq', u'kill', u'saudi', u'wedding', u'home', u'electrical']
+---- 2 464 set([u'fire', u'people'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 464 [u'dogo', u'people', u'fire', u'mosque', u'killing', u'nigerian', u'state', u'gunman', u'dawa', u'village', u'kaduna', u'open']
+---- 2 471 set([u'a', u'the'])
+- 2 ['fired', 'just', 'people', 'over', 'out', 'them', u'fire', 'during', 'event', 'apple', 'their', 'giving', 'avoid', 'two', 'to', 'laid', '(incl.', 'hundred', 'keynote', u'hour', 'zynga', 'off', 'a', '100+', 'people,', u'employee', 'rumor:', 'friends)', 'desks.', 'the', 'my', 'clear', 'press.']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 17 set([u'today', u'announced'])
+- 3 ['fired', 'fidel', 'that', 'they', u'a', 'dismissed', u'marlin', 'manager', 'guillen', 'today', 'have', 'guillen.', 'ozzie', 'the', 'announced']
+- 17 [u'league', u'bridgestone', u'classic', u'nhl', u'national', u'winter', u'hockey', u'2013', u'cancellation', u'today', u'announced']
+---- 3 471 set([u'a', 'the'])
+- 3 ['fired', 'fidel', 'that', 'they', u'a', 'dismissed', u'marlin', 'manager', 'guillen', 'today', 'have', 'guillen.', 'ozzie', 'the', 'announced']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 1 set([u'debate', u'presidential'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 1 [u'managed', u'spoke', u'myth', u'vice', u'thursday', u'ryan', u'tell', u'time', u'40', u'night', u'90', u'paul', u'presidential', u'debate', u'minute']
+---- 4 8 set([u'last', u'debate', u'presidential'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 4 11 set([u'not', u'debate', u'presidential'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 4 22 set([u'u.s.', u'wa'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 22 [u'event.', u'then', u'world', u'breaking', u'baumgartner', u'wa', u'record', u'many', u'u.s.', u'felix', u'flew', u'air', u'jump', u'several', u'mile', u'jumped', u'southwestern', u'diving', u'stratos', u'redbull']
+---- 4 32 set([u'last', u'wa'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 32 [u'fair', u'tex', u'held', u'dallas', u')', u'jaw', u'destroyed', u'state', u'electrical', u'marketing', u'texas', u'2012', u'wa', u'fire', u'big', u'park', u'statue', u'weekend', u'icon', u'october', u'last', u'16', u'19', u'annual', u'm', u'tall', u'52-foot']
+---- 4 175 set([u'presidential', u'wa'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 175 [u'wa', u'election', u'obama-biden', u'voting', u'reasoning', u'presidential']
+---- 4 212 set([u'may', u'wa'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 212 [u'wa', u'police', u'working', u'metropolitan', u'counterterrorism', u'may', u'agent', u'officer']
+---- 4 292 set([u'not', u'u.s.'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 292 [u'central', u're-election', u'chairman', u'not', u'u.s.', u'bank']
+---- 4 410 set([u'u.s.', u'presidential'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 410 [u'barack', u'televised', u'constitution', u'candidate', u'justice', u'romney', u'u.s.', u'third-party', u'encounter', u'four', u'high-profile', u'green', u'election', u'excluded', u'libertarian', u'party', u'representing', u'mitt', u'presidential', u'obama']
+---- 4 448 set([u'u.s.', u'presidential'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+---- 4 471 set([u'a', u'wa'])
+- 4 ['', 'resting', 'is', 'something', 'doc,', 'debate', 'horse', 'election:', 'least-tweeted', 'would', 'to', 'panorama', 'savile.', 'few', 'recommend', 'white', 'question:', u'wa', 'raton', 'fairly', 'someone', 'monday', 'may', 'u.s.', 'not', 'be', 'presidential', 'he', 'a', 'on', 'about', 'last', 'like', "night's", 'i', 'of', 'ride', u'day', 'this', '#kamuscewek', 'making', 'my']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:06:53 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events24_k5t2
+---- 0 366 set([u'west', u'coast'])
+- 0 ['his', 'cuz', 'west', 'make', 'it', 'states...somebody', 'shyne', 'to', 'bac', u'pas', 'the', 'coast', 'ever', 'tell']
+- 366 [u'continue', u'west', u'rail', u'coast', u'virgin', u'running', u'train', u'uk', u'franchise', u'line', u'main', u'asked']
+---- 2 21 set([u'home', u'run'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 21 [u'run', u'walkoff', u'national', u'werth', u'game', u'hitting', u'playoff', u'cardinal', u'home', u'jason']
+---- 2 36 set([u'mlb', u'series', u'baseball', u'world'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 36 [u'mlb', u'league', u'major', u'championship', u'nl', u'champion', u'played', u')', u'series', u'tweet', u'annual', u'al', u'american', u'baseball', u'national', u'(', u'world', u'games.', u'1903', u'american-based']
+---- 2 108 set([u'world', u'series'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 108 [u'being', u'win', u'detriot', u'new', u'one', u'tiger', u'playoff', u'going', u'york', u'series', u'world', u'away', u'yankee']
+---- 2 126 set([u'3', u'man'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 126 [u'tweet', u'trailer', u'3', u'iron', u'man']
+---- 2 211 set([u'series', u'run', u'hit'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 211 [u'injured', u'arrested', u'woman', u'12', u'hit', u'people', u'series', u'van', u'driver', u'police', u'incident', u'other', u'31-year-old', u'cardiff', u'run', u'killed', u'south']
+---- 2 342 set([u'series', u'first'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 342 [u'television', u'serving', u'appear', u'series', u'decision', u'nadine', u'reality', u'suspended', u'party', u'become', u'dorries', u'first']
+---- 2 406 set([u'world', u'first'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 406 [u'turned', u'brought', u'teletext', u'year', u'analogue', u'information', u'end', u'northern', u'23', u'tv', u'also', u'permanently', u'ireland', u'digital', u'switchover.', u'final', u'bst', u'ceefax', u'world', u'stage', u'38', u'service', u'signal', u'30', u'uk', u'completing', u'first']
+---- 2 471 set([u'a', u'the'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 505 set([u'series', u'world'])
+- 2 ['series', 'is', 'pablo', 'player', 'in', 'home', 'lore.', 'game.', 'three', u'hr', '3', '7th.', 'ever', 'plate', 'his', 'hit', 'fu', u'appearance', 'sandoval', '4th', 'baseball', 'a', 'world', 'man', 'mlb', u'run', 'base', 'kung', 'the', 'history', 'first']
+- 505 [u'series', u'talking', u'world']
+---- 4 59 set([u'game', u'going'])
+- 4 ['is', 'deep', 'verlander.', 'are', 'in', 'kate', '24.1', 'er', u'inning', 'for', 'upton', u'thing', '1', 'him,', 'going', 'entered', 'dispatched', 'never', 'see:', 'upton.', 'sandoval', 'allowing', 'they', '2', 'on', 'ok', 'justin', 'game', 'verlander', "i'd", 'so...', 'the']
+- 59 [u'play', u'championship', u'discus', u'notre', u'national', u'game', u'going', u'event', u'fact', u'dame']
+---- 4 161 set([u'game', u'the'])
+- 4 ['is', 'deep', 'verlander.', 'are', 'in', 'kate', '24.1', 'er', u'inning', 'for', 'upton', u'thing', '1', 'him,', 'going', 'entered', 'dispatched', 'never', 'see:', 'upton.', 'sandoval', 'allowing', 'they', '2', 'on', 'ok', 'justin', 'game', 'verlander', "i'd", 'so...', 'the']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 5 126 set([u'3', u'man'])
+- 5 ['is', 'one', u'hoe', 'punching', 'message', 'up.', 'little', 'for', 'lil', 'brighten', 'day.', 'their', '3', 'rockin', 'immortalizing', 'combo.', 'she', 'beat', 'like', 'known', 'l2;', 'mullet', 'man', 'a', 'entire', 'stomped', 'reverse', 'mullet...', u'time', 'will', 'i', 'her', 'reese', 'the']
+- 126 [u'tweet', u'trailer', u'3', u'iron', u'man']
+---- 5 137 set([u'lil', u'one'])
+- 5 ['is', 'one', u'hoe', 'punching', 'message', 'up.', 'little', 'for', 'lil', 'brighten', 'day.', 'their', '3', 'rockin', 'immortalizing', 'combo.', 'she', 'beat', 'like', 'known', 'l2;', 'mullet', 'man', 'a', 'entire', 'stomped', 'reverse', 'mullet...', u'time', 'will', 'i', 'her', 'reese', 'the']
+- 137 [u'one', u'24', u'hour', u'lil', u'period', u'seizure', u'2nd', u'wayne', u'making', u'suffered', u'ha']
+---- 5 471 set([u'a', u'the'])
+- 5 ['is', 'one', u'hoe', 'punching', 'message', 'up.', 'little', 'for', 'lil', 'brighten', 'day.', 'their', '3', 'rockin', 'immortalizing', 'combo.', 'she', 'beat', 'like', 'known', 'l2;', 'mullet', 'man', 'a', 'entire', 'stomped', 'reverse', 'mullet...', u'time', 'will', 'i', 'her', 'reese', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 9 129 set([u'real', u'dortmund', u'madrid'])
+- 9 ['real', 'ronaldo.', 'dortmund', 'travel', 'to', 'they', 'madrid', u'ha', 'borussia']
+- 129 [u'real', u'lead', u'dortmund', u'quickly', u'score', u'take', u'madrid', u'tie', u'brings']
+---- 9 184 set(['real', 'dortmund', 'borussia', 'madrid'])
+- 9 ['real', 'ronaldo.', 'dortmund', 'travel', 'to', 'they', 'madrid', u'ha', 'borussia']
+- 184 [u'real', u'league', u'football', u'champion', u'madrid', u'borussia', u'v', u'6', u'dortmund', u'nov', u'2012']
+### Sat Nov 10 15:07:56 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events25_k5t2
+---- 2 211 set([u'hit', u'south'])
+- 2 ['a', 'on', 'hit', 'tire', 'rant', 'i', 'fender', 'deer', 'twitter', 'player', 'heartbreaking', '136', u'go', 'nba', 'hiway', 'pulled', 'rubbing', 'south']
+- 211 [u'injured', u'arrested', u'woman', u'12', u'hit', u'people', u'series', u'van', u'driver', u'police', u'incident', u'other', u'31-year-old', u'cardiff', u'run', u'killed', u'south']
+---- 3 471 set(['a', 'the'])
+- 3 ['a', u'push', 'marathon,', 'ocean,', 'way.', 'mom', 'atlantic', u'swim', 'the', 'out']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 5 471 set(['a', 'the'])
+- 5 ['a', 'severely', 'we', 'disaster', 'for', u'view', 'afford', 'house.', 'conservative', 'cant', 'are', 'in', 'the', 'white', u'woman']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 7 30 set([u'win', u'game'])
+- 7 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 30 [u'sanchez', u'patriot', u'england', u'29-26', u'jet', u'beat', u'win', u'recovers', u'overtime', u'game', u'fumble', u'new', u'mark']
+---- 7 129 set([u'take', u'lead'])
+- 7 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 129 [u'real', u'lead', u'dortmund', u'quickly', u'score', u'take', u'madrid', u'tie', u'brings']
+---- 7 161 set([u'game', u'the'])
+- 7 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 7 328 set([u'game', u'saturday'])
+- 7 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 328 [u'ivory', u'last', u'riot', u'cup', u'africa', u'game', u'nation', u'senegal', u'stadium', u'disqualified', u'coast', u'saturday', u'2013']
+---- 7 471 set([u'a', u'the'])
+- 7 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:08:53 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events26_k5t2
+---- 0 161 set([u'game', u'the'])
+- 0 ['me', 'about', '"we"', 'reporter', 'i', 'asked', 'thought', 'to', 'game', 'win.', 'have', 'him:', 'the', 'we?', 'ou', 'me:']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 2 258 set([u'is', u'life'])
+- 2 ['a', 'and', 'life', 'right', 'heather', 'with', 'my', 'is', 'makeup', 'day:)', 'hair', 'morris', 'guy', 'laughing', 'put', 'on.', 'you', u'make', 'the', 'highway']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 2 471 set([u'a', u'the'])
+- 2 ['a', 'and', 'life', 'right', 'heather', 'with', 'my', 'is', 'makeup', 'day:)', 'hair', 'morris', 'guy', 'laughing', 'put', 'on.', 'you', u'make', 'the', 'highway']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 87 set([u'see', 'george'])
+- 4 ['a', 'brown', 'that.', u'see', 'wtc', 'hit', 'hot', u'a', 'soon', 'chris', 'bush', 'plane', 'id', 'w', "f16's", 'chick', 'the', '2nd', 'george', 'launched']
+- 87 [u'point', u'divisional', u'contender', u'see', u'st-pierre', u'george', u'belief', u'silva', u'top', u'fight', u'anderson', u'belfort', u'champion', u'vitor', u'ufc', u'welterweight', u'jon', u'jones', u'dog', u'doe', u"n't", u'having']
+---- 4 471 set([u'a', u'the'])
+- 4 ['a', 'brown', 'that.', u'see', 'wtc', 'hit', 'hot', u'a', 'soon', 'chris', 'bush', 'plane', 'id', 'w', "f16's", 'chick', 'the', '2nd', 'george', 'launched']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:09:49 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events27_k5t2
+---- 0 55 set([u'city', u'oklahoma'])
+- 0 ['and', 'houston', 'deal', 'headlined', u'source', 'down,', u'talk', 'kevin', 'lamb', 'city', 'from', 'oklahoma', 'to', 'hou', 'draft', 'martin,', u'ha', 'rockets,', 'rockets.', 'break', 'okc', 'jeremy', 'by', 'league', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', u'rocket', 'the', 'traded']
+- 55 [u'buzzer', u'city', u'parker', u'shot', u'discus', u'thunder', u'tweet', u'westbrook', u'antonio', u'russell', u'beater', u'tony', u'shooting', u'spur', u'oklahoma', u'san']
+---- 0 152 set([u'harden', u'city', u'oklahoma', u'rocket', u'james'])
+- 0 ['and', 'houston', 'deal', 'headlined', u'source', 'down,', u'talk', 'kevin', 'lamb', 'city', 'from', 'oklahoma', 'to', 'hou', 'draft', 'martin,', u'ha', 'rockets,', 'rockets.', 'break', 'okc', 'jeremy', 'by', 'league', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', u'rocket', 'the', 'traded']
+- 152 [u'city', u'rocket', u'being', u'james', u'oklahoma', u'moved', u'harden', u'thunder', u'husten']
+---- 0 349 set([u'the', u'from'])
+- 0 ['and', 'houston', 'deal', 'headlined', u'source', 'down,', u'talk', 'kevin', 'lamb', 'city', 'from', 'oklahoma', 'to', 'hou', 'draft', 'martin,', u'ha', 'rockets,', 'rockets.', 'break', 'okc', 'jeremy', 'by', 'league', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', u'rocket', 'the', 'traded']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 0 471 set([u'the', u'from'])
+- 0 ['and', 'houston', 'deal', 'headlined', u'source', 'down,', u'talk', 'kevin', 'lamb', 'city', 'from', 'oklahoma', 'to', 'hou', 'draft', 'martin,', u'ha', 'rockets,', 'rockets.', 'break', 'okc', 'jeremy', 'by', 'league', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', u'rocket', 'the', 'traded']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 1 471 set([u'a', u'the', u'u'])
+- 1 ['gown', 'itl', 'gt', u'say', 'hoping', 'in', 'need', 'open"', 'open', '"easy', 'damn', 'lightsaber', 'dressing', 'you', 'it.', 'lift', 'scissors,', 'knife,', 'a', 'package', 'ur', 'u', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 5 47 set([u'lattimore', u'marcus'])
+- 5 ['lattimore', 'a', 'we', '&', '', 'on', u'warrior', u'prayer', 'understands', 'marcus', 'femur', 'broken', 'injured', 'are', 'field,', 'god', 'our', 'the', u'ha', 'others']
+- 47 [u'lattimore', u'marcus', u'playing', u'wa', u'hurt']
+---- 5 303 set([u'injured', u'others'])
+- 5 ['lattimore', 'a', 'we', '&', '', 'on', u'warrior', u'prayer', 'understands', 'marcus', 'femur', 'broken', 'injured', 'are', 'field,', 'god', 'our', 'the', u'ha', 'others']
+- 303 [u'11', u'injured', u'policeman', u'border', u'church', u'killed', u'town', u'attack', u'somalia', u'others', u'garissa', u'kenyan', u'grenade']
+---- 5 413 set([u'injured', u'others'])
+- 5 ['lattimore', 'a', 'we', '&', '', 'on', u'warrior', u'prayer', 'understands', 'marcus', 'femur', 'broken', 'injured', 'are', 'field,', 'god', 'our', 'the', u'ha', 'others']
+- 413 [u'injured', u'46', u'series', u'attack', u'123', u'kill', u'others', u'iraq']
+---- 5 471 set([u'a', u'the'])
+- 5 ['lattimore', 'a', 'we', '&', '', 'on', u'warrior', u'prayer', 'understands', 'marcus', 'femur', 'broken', 'injured', 'are', 'field,', 'god', 'our', 'the', u'ha', 'others']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:10:58 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events28_k5t2
+---- 0 349 set([u'king', u'the'])
+- 0 ['and', 'all', 'safe.', 'is', 'scoring,', u'official', 'proper', 'your', 'date', 'positive', 'uve', 'state', 'local', 'a', '-bo', 'king', 'stay', 'released', 'moment', 'focusing', u'chip', 'the', 'indicud', 'debut,', 'on', 'figured', 'ill', "i'm", 'out,']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 0 471 set([u'a', u'the'])
+- 0 ['and', 'all', 'safe.', 'is', 'scoring,', u'official', 'proper', 'your', 'date', 'positive', 'uve', 'state', 'local', 'a', '-bo', 'king', 'stay', 'released', 'moment', 'focusing', u'chip', 'the', 'indicud', 'debut,', 'on', 'figured', 'ill', "i'm", 'out,']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 108 set([u'win', u'one'])
+- 4 ['', 'the', 'tonight', u'assassin', 'oct.', 'this', 'win', 'creed', 're-tweet', 'up', 'one', 'will', '3', 'are', '30th!', '@usr', 'you', 'picking', 'if']
+- 108 [u'being', u'win', u'detriot', u'new', u'one', u'tiger', u'playoff', u'going', u'york', u'series', u'world', u'away', u'yankee']
+---- 4 308 set([u'win', u'one'])
+- 4 ['', 'the', 'tonight', u'assassin', 'oct.', 'this', 'win', 'creed', 're-tweet', 'up', 'one', 'will', '3', 'are', '30th!', '@usr', 'you', 'picking', 'if']
+- 308 [u'dhabi', u'finnish', u'win', u'driver', u'raikkonen', u'one', u'prix', u'kimi', u'abu', u'grand', u'formula', u'racing', u'2012']
+### Sat Nov 10 15:12:08 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events29_k5t2
+---- 1 4 set([u'south', u'carolina'])
+- 1 ['gov.', 'season-ending', 'people', '"marcus', 'haley', 'declared', 'in', '#oldsaybrook', 'lattimore', 'for', 'nikki', 'should', '(suffered', 'rb', 'injury).', 'today', 'carolina', 'category', 'evacuate', 'knee', 'immediately', 'a', 'day"', 'the', 'south']
+- 4 [u'beat', u'football', u'23-21', u'game', u'lsu', u'south', u'carolina']
+---- 1 211 set([u'south', u'people'])
+- 1 ['gov.', 'season-ending', 'people', '"marcus', 'haley', 'declared', 'in', '#oldsaybrook', 'lattimore', 'for', 'nikki', 'should', '(suffered', 'rb', 'injury).', 'today', 'carolina', 'category', 'evacuate', 'knee', 'immediately', 'a', 'day"', 'the', 'south']
+- 211 [u'injured', u'arrested', u'woman', u'12', u'hit', u'people', u'series', u'van', u'driver', u'police', u'incident', u'other', u'31-year-old', u'cardiff', u'run', u'killed', u'south']
+---- 1 471 set([u'a', u'the'])
+- 1 ['gov.', 'season-ending', 'people', '"marcus', 'haley', 'declared', 'in', '#oldsaybrook', 'lattimore', 'for', 'nikki', 'should', '(suffered', 'rb', 'injury).', 'today', 'carolina', 'category', 'evacuate', 'knee', 'immediately', 'a', 'day"', 'the', 'south']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sat Nov 10 15:12:53 2018 k = 5. Events detected are stored into ../ni_data/process_events2012/out.Events30_k5t2
+---- 4 46 set([u'lucasfilm', u'disney'])
+- 4 ['', 'seven', 'set', 'force', 'vii', '2015!', 'have', 'in', u'say', 'breaking:', '2015,', 'out', 'for', 'been', u'buy', 'disney', 'star', 'answered.', u'war', 'billion,', 'come', 'episode', '$4b', 'will', 'lucasfilm', '$4.05', 'the']
+- 46 [u'purchase', u'lucas', u'company', u'walt', u'lucasfilm', u'ltd.', u'george', u'disney']
+---- 4 207 set([u'say', u'set', u'episode'])
+- 4 ['', 'seven', 'set', 'force', 'vii', '2015!', 'have', 'in', u'say', 'breaking:', '2015,', 'out', 'for', 'been', u'buy', 'disney', 'star', 'answered.', u'war', 'billion,', 'come', 'episode', '$4b', 'will', 'lucasfilm', '$4.05', 'the']
+- 207 [u'pursue', u'set', u'episode', u'faddy', u'tv', u'series', u'u.s.', u'legal', u'maker', u'abboud', u'say', u'action', u'homeland', u'popular', u'beirut', u'misrepresented']
+---- 4 467 set([u'say', u'been'])
+- 4 ['', 'seven', 'set', 'force', 'vii', '2015!', 'have', 'in', u'say', 'breaking:', '2015,', 'out', 'for', 'been', u'buy', 'disney', 'star', 'answered.', u'war', 'billion,', 'come', 'episode', '$4b', 'will', 'lucasfilm', '$4.05', 'the']
+- 467 [u'defence', u'ministry', u'royal', u'been', u'say', u'murder', u'five', u'uk', u'marine', u'charged']
+[1, 3, 4, 8, 11, 17, 21, 22, 30, 32, 36, 46, 47, 49, 50, 55, 59, 60, 67, 79, 82, 87, 105, 108, 116, 124, 126, 129, 137, 152, 161, 175, 184, 198, 203, 207, 211, 212, 231, 256, 258, 274, 278, 292, 303, 308, 328, 338, 342, 349, 366, 382, 385, 394, 398, 402, 406, 410, 413, 421, 427, 435, 448, 464, 467, 471, 505]
+##Recall 13.2411 67 506
+##Precision 43.5115 57 131
+###program ends at Sat Nov 10 15:12:53 2018

@@ -1,0 +1,646 @@
+Usage python eventdetection.py -datadir datafiledir -psfile psfilepath
+###program starts at Sun Nov 11 05:16:36 2018
+### Sun Nov 11 05:17:23 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events09_k10t2
+---- 1 258 set([u'person', u'is'])
+- 1 ["y'all", "don't", 'is', 'lion', 'from', 'snoop', 'dogg', 'only', u'wa', 'quik', 'his', 'dj', 'that', 'dome', 'know', 'off', 'name', 'changed', 'freestyled', 'person', 'dmx', 'the', 'baltimore']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 1 349 set([u'the', u'from', u'wa'])
+- 1 ["y'all", "don't", 'is', 'lion', 'from', 'snoop', 'dogg', 'only', u'wa', 'quik', 'his', 'dj', 'that', 'dome', 'know', 'off', 'name', 'changed', 'freestyled', 'person', 'dmx', 'the', 'baltimore']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 1 471 set([u'person', u'the', u'from', u'wa'])
+- 1 ["y'all", "don't", 'is', 'lion', 'from', 'snoop', 'dogg', 'only', u'wa', 'quik', 'his', 'dj', 'that', 'dome', 'know', 'off', 'name', 'changed', 'freestyled', 'person', 'dmx', 'the', 'baltimore']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 349 set([u'the', u'wa'])
+- 2 ['', 'all', 'over', 'mine', 'one', 'ross,', 'are', 'on.', 'shirt', 'twerking', u'doe', 'place!', 'rick', 'under', 'you', 'main', u'wa', 'ross', 'be', 'his', 'stomach', 'on,', u'titty', 'nobody', u'boob', 'yours!', 'put', 'with', 'than', 'bigger', 'a', 'on', 'belly', 'will', 'the', "can't"]
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 2 471 set([u'a', u'the', u'wa'])
+- 2 ['', 'all', 'over', 'mine', 'one', 'ross,', 'are', 'on.', 'shirt', 'twerking', u'doe', 'place!', 'rick', 'under', 'you', 'main', u'wa', 'ross', 'be', 'his', 'stomach', 'on,', u'titty', 'nobody', u'boob', 'yours!', 'put', 'with', 'than', 'bigger', 'a', 'on', 'belly', 'will', 'the', "can't"]
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 191 set([u'french', u'year'])
+- 3 ["y'all", '', 'house', u'year', 'diddy', 'same', 'to', 'damn', 'got', 'told', 'lights!', 'that', 'lights.', 'french', 'montana', 'trying', 'he', 'ago', 'on', '18', 'cry', 'turn', '@usr', 'time', 'the']
+- 191 [u'wa', u'released', u'year', u'actress', u'emmanuelle', u'actressdutch', u'french', u'which', u'dutch', u'sylvia', u'kristel', u'film']
+---- 4 116 set([u'come', u'show'])
+- 4 ['', 'and', 'love', 'facebook.', 'show', 'is', 'laptop,', 'are', 'have', 'year', 'punching', 'meth', 'cole', u'old', 'hold', 'keisha', '&', 'true', u'gentleman', 'to', 'daniel', '9', 'got', 'you', 'keyshia', 'them', 'watching', 'muthaf*ckin', 'rain', 'babies.', 'smoking', 'an', 'come', 'cool', 'a', 'on', 'i', 'light', 'could', 'j', 'up', 'crystal', 'iphone,', 'so', 'the', 'gibson']
+- 116 [u'style', u'show', u'tv', u'strictly', u'dancing', u'discussed', u'bruce', u'forsyth', u'contestant', u'song', u'come', u'event', u'gangnam', u'dance']
+---- 4 172 set([u'year', u'show'])
+- 4 ['', 'and', 'love', 'facebook.', 'show', 'is', 'laptop,', 'are', 'have', 'year', 'punching', 'meth', 'cole', u'old', 'hold', 'keisha', '&', 'true', u'gentleman', 'to', 'daniel', '9', 'got', 'you', 'keyshia', 'them', 'watching', 'muthaf*ckin', 'rain', 'babies.', 'smoking', 'an', 'come', 'cool', 'a', 'on', 'i', 'light', 'could', 'j', 'up', 'crystal', 'iphone,', 'so', 'the', 'gibson']
+- 172 [u'someone', u'show', u'award', u'winning', u'music', u'year', u'male', u'vocalist']
+---- 4 471 set([u'a', u'the'])
+- 4 ['', 'and', 'love', 'facebook.', 'show', 'is', 'laptop,', 'are', 'have', 'year', 'punching', 'meth', 'cole', u'old', 'hold', 'keisha', '&', 'true', u'gentleman', 'to', 'daniel', '9', 'got', 'you', 'keyshia', 'them', 'watching', 'muthaf*ckin', 'rain', 'babies.', 'smoking', 'an', 'come', 'cool', 'a', 'on', 'i', 'light', 'could', 'j', 'up', 'crystal', 'iphone,', 'so', 'the', 'gibson']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:18:17 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events10_k10t2
+---- 3 8 set([u'u', u'mitt', u'romney', u'obama'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 3 11 set([u'mitt', u'romney', u'obama'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 3 32 set([u'big', u'2012'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 32 [u'fair', u'tex', u'held', u'dallas', u')', u'jaw', u'destroyed', u'state', u'electrical', u'marketing', u'texas', u'2012', u'wa', u'fire', u'big', u'park', u'statue', u'weekend', u'icon', u'october', u'last', u'16', u'19', u'annual', u'm', u'tall', u'52-foot']
+---- 3 127 set([u'2012', u'obama'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 127 [u'apology', u'tour', u'election', u'obama', u'called', u'2012']
+---- 3 184 set([u'real', u'2012'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 184 [u'real', u'league', u'football', u'champion', u'madrid', u'borussia', u'v', u'6', u'dortmund', u'nov', u'2012']
+---- 3 230 set([u'november', u'2012'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 230 [u'24', u'six', u'pope', u'benedict', u'announces', u'creation', u'xvi', u'consistory', u'cardinal', u'new', u'november', u'2012']
+---- 3 256 set([u'mitt', u'romney', u'obama'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 256 [u'mitt', u'romney', u'u.s.', u'endorses', u'michael', u'barack', u'york', u'bloomberg', u'president', u'new', u'mayor', u'obama']
+---- 3 410 set([u'mitt', u'romney', u'obama'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 410 [u'barack', u'televised', u'constitution', u'candidate', u'justice', u'romney', u'u.s.', u'third-party', u'encounter', u'four', u'high-profile', u'green', u'election', u'excluded', u'libertarian', u'party', u'representing', u'mitt', u'presidential', u'obama']
+---- 3 448 set([u'mitt', u'romney'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+---- 3 471 set([u'the', u'u'])
+- 3 ['', u'want', '#thereup', '19th,', 'romney', 'talking', 'say', 'slavery.', 'reup', '&', 'agreeing', 'to', 'win.', '2012', 'real', 'be', 'big', 'mitt', 'released', 'bird.', 'november', 'obama', 'on', 'about', 'anything', u'u', 'will', '#therealromney', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 349 set([u'the', u'wa'])
+- 4 ['reveals', 'loaf', 'childhood', u'investor', u'fear', 'it', 'one', u'a', 'growth', 'only', 'open', 'slew', '"discovered"', 'before', 'residue', 'popular.', 'thoughts.', 'positive', 'sidelined', 'negative', 'behind', 'call', 'whole', 'override', 'you', 'if', u'wa', 'destiny.', 'after', 'song', 'knew', 'dark', 'putty', 'wasted', 'by', 'bread', 'a', 'latex', u'condom', 'this', 'of', 'stocks:', 'produced.', 'thought', 'i', 'silly', 'were', 'the', 'left', 'my', 'voicemail', 'road', 'first']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 4 471 set([u'a', u'the', u'wa'])
+- 4 ['reveals', 'loaf', 'childhood', u'investor', u'fear', 'it', 'one', u'a', 'growth', 'only', 'open', 'slew', '"discovered"', 'before', 'residue', 'popular.', 'thoughts.', 'positive', 'sidelined', 'negative', 'behind', 'call', 'whole', 'override', 'you', 'if', u'wa', 'destiny.', 'after', 'song', 'knew', 'dark', 'putty', 'wasted', 'by', 'bread', 'a', 'latex', u'condom', 'this', 'of', 'stocks:', 'produced.', 'thought', 'i', 'silly', 'were', 'the', 'left', 'my', 'voicemail', 'road', 'first']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:18:51 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events11_k10t2
+---- 0 382 set([u'top', u'wa'])
+- 0 ['a', 'interscope', 'tank', 'dont', '', 'funny', 'i', 'come', 'top', 'there', 'herd', '@usr', 'wit', 'at', 'listening', 'party', 'da', u'wa']
+- 382 [u'lazcano', u'wa', u'top', u'killed', u'los', u'organization', u'zeta', u'criminal', u'leader', u'heriberto']
+---- 0 471 set([u'a', u'wa'])
+- 0 ['a', 'interscope', 'tank', 'dont', '', 'funny', 'i', 'come', 'top', 'there', 'herd', '@usr', 'wit', 'at', 'listening', 'party', 'da', u'wa']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:19:41 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events12_k10t2
+---- 1 8 set([u'tell', u'obama'])
+- 1 ['shot', 'fired', 'campaign', 'into', 'it', 'one', 'through', 'at', 'breaking:', 'your', 'puff,', 'have,', 'story', 'police', 'office', 'no', 'window', u'injury', 'to', 'time.', 'take', 'got', 'you', 'tell', 'life', 'on', 'not', 'say.', 'day', 'obama', 'a', 'boy', 'reported,', 'grind', '@usr', 'puff', 'my']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 1 11 set([u'not', u'obama'])
+- 1 ['shot', 'fired', 'campaign', 'into', 'it', 'one', 'through', 'at', 'breaking:', 'your', 'puff,', 'have,', 'story', 'police', 'office', 'no', 'window', u'injury', 'to', 'time.', 'take', 'got', 'you', 'tell', 'life', 'on', 'not', 'say.', 'day', 'obama', 'a', 'boy', 'reported,', 'grind', '@usr', 'puff', 'my']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 1 173 set([u'time.', u'day'])
+- 1 ['shot', 'fired', 'campaign', 'into', 'it', 'one', 'through', 'at', 'breaking:', 'your', 'puff,', 'have,', 'story', 'police', 'office', 'no', 'window', u'injury', 'to', 'time.', 'take', 'got', 'you', 'tell', 'life', 'on', 'not', 'say.', 'day', 'obama', 'a', 'boy', 'reported,', 'grind', '@usr', 'puff', 'my']
+- 173 [u'saving', u'discus', u'complaining', u'light', u'tweet', u'most', u'time.', u'day']
+---- 1 215 set([u'injury', u'fired'])
+- 1 ['shot', 'fired', 'campaign', 'into', 'it', 'one', 'through', 'at', 'breaking:', 'your', 'puff,', 'have,', 'story', 'police', 'office', 'no', 'window', u'injury', 'to', 'time.', 'take', 'got', 'you', 'tell', 'life', 'on', 'not', 'say.', 'day', 'obama', 'a', 'boy', 'reported,', 'grind', '@usr', 'puff', 'my']
+- 215 [u'israel', u'death', u'target', u'rocket', u'israeli', u'being', u'site', u'militant', u'causing', u'gaza', u'injury', u'territory', u'response', u'launching', u'fired']
+---- 1 275 set([u'office', u'one'])
+- 1 ['shot', 'fired', 'campaign', 'into', 'it', 'one', 'through', 'at', 'breaking:', 'your', 'puff,', 'have,', 'story', 'police', 'office', 'no', 'window', u'injury', 'to', 'time.', 'take', 'got', 'you', 'tell', 'life', 'on', 'not', 'say.', 'day', 'obama', 'a', 'boy', 'reported,', 'grind', '@usr', 'puff', 'my']
+- 275 [u'pakistan', u'office', u'move', u'back', u'one', u'bomber', u'suicide', u'group', u'area', u'millitant', u'peace', u'supported', u'khel', u'fata', u'darra', u'step', u'taliban', u'killed', u'15', u'target', u'30', u'adam', u'wounded']
+---- 2 8 set([u'china', u'u'])
+- 2 ['represent', 'deck', 'color', 'scared', 'for', 'young', 'four', 'issue.', '#justtruths', 'in', 'smell.', 'face', 'any', 'if', 'mercury', '100k', 'would', 'to', 'make', 'had', 'wen', u'suit', '(ratatouille)', 'other', 'pretty', 'guwap', 'you', 'seasons.', 'itd', 'lasted', u'as', 'a', 'we', 'his', 'invite', 'on,', 'beat', 'sucker', 'radric', 'never', '10years', 'taste,', 'jeezy', 'freddie', 'davis', u'wall', 'let', 'address', 'nothing', 'aka', 'is', 'voice!', 'change', 'he', 'sound', 'days.', 'about', 'unresolved', 'like', 'gusteau', 'i', 'of', '&', 'up', '52', 'will', 'u', 'can', 'teeth', u'card', 'china', 'the', 'my', 'playing', 'bet', 'typical']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 2 151 set([u'make', u'other'])
+- 2 ['represent', 'deck', 'color', 'scared', 'for', 'young', 'four', 'issue.', '#justtruths', 'in', 'smell.', 'face', 'any', 'if', 'mercury', '100k', 'would', 'to', 'make', 'had', 'wen', u'suit', '(ratatouille)', 'other', 'pretty', 'guwap', 'you', 'seasons.', 'itd', 'lasted', u'as', 'a', 'we', 'his', 'invite', 'on,', 'beat', 'sucker', 'radric', 'never', '10years', 'taste,', 'jeezy', 'freddie', 'davis', u'wall', 'let', 'address', 'nothing', 'aka', 'is', 'voice!', 'change', 'he', 'sound', 'days.', 'about', 'unresolved', 'like', 'gusteau', 'i', 'of', '&', 'up', '52', 'will', 'u', 'can', 'teeth', u'card', 'china', 'the', 'my', 'playing', 'bet', 'typical']
+- 151 [u'jones', u'cleanly', u'play', u'georgia', u'make', u'football', u'ball', u'other', u'defenseman', u'stripping', u'away', u'team', u'jarvis']
+---- 2 316 set([u'china', u'young'])
+- 2 ['represent', 'deck', 'color', 'scared', 'for', 'young', 'four', 'issue.', '#justtruths', 'in', 'smell.', 'face', 'any', 'if', 'mercury', '100k', 'would', 'to', 'make', 'had', 'wen', u'suit', '(ratatouille)', 'other', 'pretty', 'guwap', 'you', 'seasons.', 'itd', 'lasted', u'as', 'a', 'we', 'his', 'invite', 'on,', 'beat', 'sucker', 'radric', 'never', '10years', 'taste,', 'jeezy', 'freddie', 'davis', u'wall', 'let', 'address', 'nothing', 'aka', 'is', 'voice!', 'change', 'he', 'sound', 'days.', 'about', 'unresolved', 'like', 'gusteau', 'i', 'of', '&', 'up', '52', 'will', 'u', 'can', 'teeth', u'card', 'china', 'the', 'my', 'playing', 'bet', 'typical']
+- 316 [u'employ', u'old', u'apple', u'foxconn', u'young', u'admits', u'intern', u'china', u'supplier', u'main', u'14']
+---- 2 471 set([u'a', u'the', u'u'])
+- 2 ['represent', 'deck', 'color', 'scared', 'for', 'young', 'four', 'issue.', '#justtruths', 'in', 'smell.', 'face', 'any', 'if', 'mercury', '100k', 'would', 'to', 'make', 'had', 'wen', u'suit', '(ratatouille)', 'other', 'pretty', 'guwap', 'you', 'seasons.', 'itd', 'lasted', u'as', 'a', 'we', 'his', 'invite', 'on,', 'beat', 'sucker', 'radric', 'never', '10years', 'taste,', 'jeezy', 'freddie', 'davis', u'wall', 'let', 'address', 'nothing', 'aka', 'is', 'voice!', 'change', 'he', 'sound', 'days.', 'about', 'unresolved', 'like', 'gusteau', 'i', 'of', '&', 'up', '52', 'will', 'u', 'can', 'teeth', u'card', 'china', 'the', 'my', 'playing', 'bet', 'typical']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 266 set([u'meet', u'wa'])
+- 3 ['crazy', 'it', 'rip', 'an', 'have', 'todd', 'any', 'illegal!', 'heart.', 'i', 'would', '&', 'federal', 'young', 'to', 'other', 'pretty', 'you', u'wa', 'president...', 'invite', 'sucker', 'jeezy', 'bullying', 'crime!!!', 'people?"', 'a', 'like', 'these', 'ugly', 'without', 'meet', "i'm", 'amanda', 'think']
+- 266 [u'league', u'wa', u'muallem', u'envoy', u'foreign', u'arab', u'damascus', u'un', u'lakhdar', u'meet', u'walid', u'syrian', u'brahimi', u'special', u'minister']
+---- 3 471 set([u'a', u'wa'])
+- 3 ['crazy', 'it', 'rip', 'an', 'have', 'todd', 'any', 'illegal!', 'heart.', 'i', 'would', '&', 'federal', 'young', 'to', 'other', 'pretty', 'you', u'wa', 'president...', 'invite', 'sucker', 'jeezy', 'bullying', 'crime!!!', 'people?"', 'a', 'like', 'these', 'ugly', 'without', 'meet', "i'm", 'amanda', 'think']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:20:31 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events13_k10t2
+---- 1 471 set([u'a', u'the'])
+- 1 ['and', 'mickey', 'ipods..', 'gp', 'have:', 'japanese', 'at', 'comic', 'mouse', 'escape.', '', 'coloring', 'pedrosa', 'crayons,', 'had', 'facebook,', 'disney', 'victory', 'twitter,', 'dealers.', 'book,', 'they', 'iphones,', u'take', 'a', 'i', 'drug', 'today', 'crossing', 'become', 'the', 'called', '"mickey']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 471 set([u'a', u'the'])
+- 3 ['and', '', 'just', 'is', 'mind', 'bieber.', 'wit', 'boys.', 'are', 'still', 'your', 'if', 'family', 'sit', 'sarcasm', 'to', 'hot', 'place', 'you', "it's", 'filled', 'lowest', 'form', 'of', 'possible', 'dark', 'justin', 'they', 'with', 'first."', 'a', 'remember', 'always', 'gotta', 'keep', 'hollister.', 'god', 'the', '"anything']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 232 set([u'i', u'more'])
+- 4 ['', 'then', 'question', 'a', 'go...numbers', 'answer.', 'suspense', 'count', 'want', 'our', 'your', 'out', 'away.', u'vote', 'killin', 'be.', 'alcohol', '"you', u'thing', 'too!', 'able', 'long', 'should', 'to', 'take', '#sluttygirlproblems', 'you', 'care', 'is', 'more', 'crocs.', 'be', 'vevo', 'run', u'girl', 'couple', 'free', 'know', 'not', 'do..."', u'guy', 'the', 'boyfriend', 'me', 'fine.', "jordan's,", 'i', 'of', 'taking', 'us,', u'day', 'these', 'so', 'can', 'always', "i'm", 'my', 'talk']
+- 232 [u'iran', u'i', u'country', u'ruhollah', u'khomeini', u'ayatollah', u'sex-change', u'permit', u'thailand', u'operation', u'more']
+---- 4 378 set([u'then', u'girl'])
+- 4 ['', 'then', 'question', 'a', 'go...numbers', 'answer.', 'suspense', 'count', 'want', 'our', 'your', 'out', 'away.', u'vote', 'killin', 'be.', 'alcohol', '"you', u'thing', 'too!', 'able', 'long', 'should', 'to', 'take', '#sluttygirlproblems', 'you', 'care', 'is', 'more', 'crocs.', 'be', 'vevo', 'run', u'girl', 'couple', 'free', 'know', 'not', 'do..."', u'guy', 'the', 'boyfriend', 'me', 'fine.', "jordan's,", 'i', 'of', 'taking', 'us,', u'day', 'these', 'so', 'can', 'always', "i'm", 'my', 'talk']
+- 378 [u'homicide', u'then', u'justin', u'allegedly', u'witnessed', u'7-year-old', u'tuesday', u'time', u'dworakowski', u'son', u'babysitting', u'olivia', u'been', u'stabbing', u'night', u'100', u'killing', u'fatally', u'girl', u'5-year-old']
+---- 4 471 set([u'a', u'the'])
+- 4 ['', 'then', 'question', 'a', 'go...numbers', 'answer.', 'suspense', 'count', 'want', 'our', 'your', 'out', 'away.', u'vote', 'killin', 'be.', 'alcohol', '"you', u'thing', 'too!', 'able', 'long', 'should', 'to', 'take', '#sluttygirlproblems', 'you', 'care', 'is', 'more', 'crocs.', 'be', 'vevo', 'run', u'girl', 'couple', 'free', 'know', 'not', 'do..."', u'guy', 'the', 'boyfriend', 'me', 'fine.', "jordan's,", 'i', 'of', 'taking', 'us,', u'day', 'these', 'so', 'can', 'always', "i'm", 'my', 'talk']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:21:28 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events14_k10t2
+---- 1 82 set([u'bus', u'driver'])
+- 1 ['', 'all', 'head-butting', 'be', 'uppercut', u'hoe', 'punching', 'for', u'driver', 'start', 'acting', 'much', 'uppercutting', 'ochocinco', 'brown', 'movement.', 'bus', 'gonne', "driver's", "ain't", 'chris', 'bouta', 'attention.', 'dying', 'these', 'up', 'this', 'the']
+- 82 [u'passenger', u'bus', u'driver', u'face', u'punched', u'female', u'cleveland']
+---- 2 302 set([u'one', u'child'])
+- 2 ['just', 'am', 'one', 'born', 'im', u'child', 'lila', 'face!', 'thinking', 'to', 'assuming', 'you', '"saucy"', 'woman', 'handle', 'that', 'most', 'corduroy', 'me', 'reminds', 'i', 'of', 'gettin', 'youve', 'the', "can't"]
+- 302 [u'turkey', u'kurdish', u'terrorist', u'bomb', u'target', u'army', u'vehicle', u'one', u'innocent', u'child', u'belived', u'group', u'blast', u'killed', u'more']
+---- 4 143 set([u'tweet', u'talk'])
+- 4 ['', 'ive', 'show', 'fucking', 'over', 'me.', 'prefer', 'headphone', 'im', 'thanks', 'one', 'for', 'no', 'tweet', 'please', 'been', 'actually', '1', 'to', 'you', '=', 'twitter', 'more', 'then', 'helping', 'fb', 'trying', 'like', 'a', 'go,', 'sister', 'look', 'retweet,', u'headphone', 'rapper', 'can', 'my', 'talk']
+- 143 [u'celtic', u'basketball', u'tweet', u'heat', u'most', u'game', u'talk']
+---- 4 302 set([u'more', u'one'])
+- 4 ['', 'ive', 'show', 'fucking', 'over', 'me.', 'prefer', 'headphone', 'im', 'thanks', 'one', 'for', 'no', 'tweet', 'please', 'been', 'actually', '1', 'to', 'you', '=', 'twitter', 'more', 'then', 'helping', 'fb', 'trying', 'like', 'a', 'go,', 'sister', 'look', 'retweet,', u'headphone', 'rapper', 'can', 'my', 'talk']
+- 302 [u'turkey', u'kurdish', u'terrorist', u'bomb', u'target', u'army', u'vehicle', u'one', u'innocent', u'child', u'belived', u'group', u'blast', u'killed', u'more']
+---- 4 378 set([u'then', u'been'])
+- 4 ['', 'ive', 'show', 'fucking', 'over', 'me.', 'prefer', 'headphone', 'im', 'thanks', 'one', 'for', 'no', 'tweet', 'please', 'been', 'actually', '1', 'to', 'you', '=', 'twitter', 'more', 'then', 'helping', 'fb', 'trying', 'like', 'a', 'go,', 'sister', 'look', 'retweet,', u'headphone', 'rapper', 'can', 'my', 'talk']
+- 378 [u'homicide', u'then', u'justin', u'allegedly', u'witnessed', u'7-year-old', u'tuesday', u'time', u'dworakowski', u'son', u'babysitting', u'olivia', u'been', u'stabbing', u'night', u'100', u'killing', u'fatally', u'girl', u'5-year-old']
+---- 4 501 set([u'like', u'show'])
+- 4 ['', 'ive', 'show', 'fucking', 'over', 'me.', 'prefer', 'headphone', 'im', 'thanks', 'one', 'for', 'no', 'tweet', 'please', 'been', 'actually', '1', 'to', 'you', '=', 'twitter', 'more', 'then', 'helping', 'fb', 'trying', 'like', 'a', 'go,', 'sister', 'look', 'retweet,', u'headphone', 'rapper', 'can', 'my', 'talk']
+- 501 [u'show', u'watch', u'like', u'meek', u'millz']
+### Sun Nov 11 05:22:25 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events15_k10t2
+---- 0 349 set([u'body', u'the'])
+- 0 ['body', 'and', 'system.the', 'flu', 'it', '#mb', 'immune', 'colds.', u'help', 'the', 'boost', 'relaxes']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 1 377 set([u'use', u'free'])
+- 1 ["i'll", 'all,', '"dobby', 'just', 'be', 'is', 'people', 'karen', 'dobby', '#familyhustle', 'use', '&', 'god', 'that', 'tiny', 'to', 'only', u'parent', 'you', 'shekinah', 'master.', 'do', 'get', 'elf."', 'free', u'fault', 'reason', 'a', 't.i.', 'ordinary', 'me', u'ha', 'things.', 'like', 'extraordinary', 'no', 'try', u'love', 'white...?', 'the', 'my', 'something']
+- 377 [u'forced', u'use', u'word', u'proposed', u'title', u'free', u'public', u'floresiensis', u'homo', u'hobbit', u'organiser', u'nickname', u'event', u'change', u'creature']
+---- 1 471 set([u'a', u'the'])
+- 1 ["i'll", 'all,', '"dobby', 'just', 'be', 'is', 'people', 'karen', 'dobby', '#familyhustle', 'use', '&', 'god', 'that', 'tiny', 'to', 'only', u'parent', 'you', 'shekinah', 'master.', 'do', 'get', 'elf."', 'free', u'fault', 'reason', 'a', 't.i.', 'ordinary', 'me', u'ha', 'things.', 'like', 'extraordinary', 'no', 'try', u'love', 'white...?', 'the', 'my', 'something']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 24 set([u'super', u'bowl'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 24 [u'scheduled', u'show', u'perform', u'beyonce', u'bowl', u'halftime', u'xlvii', u'super']
+---- 2 44 set([u'ha', u'been'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 44 [u'prime', u'sentenced', u'fraud', u'silvio', u'prison', u'tax', u'been', u'four', u'minister', u'year', u'ha', u'former', u'berlusconi', u'italian']
+---- 2 50 set([u'the', u'team'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 50 [u'basketball', u'based', u'dallas', u'tweet', u'lakers', u'angeles', u'los', u'american', u'team', u'professional', u'the', u'maverick']
+---- 2 65 set([u'great', u'ha'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 65 [u'control', u'ha', u'good', u'great']
+---- 2 137 set([u'making', u'ha'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 137 [u'one', u'24', u'hour', u'lil', u'period', u'seizure', u'2nd', u'wayne', u'making', u'suffered', u'ha']
+---- 2 326 set([u'ha', u'been'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 326 [u'israeli', u'unanimously', u'knesset', u'been', u'dissolved', u'ha']
+---- 2 471 set([u'a', u'the'])
+- 2 ['', 'is', 'manning', 'half.', 'at', 'in', '20', 'pt', 'no', 'super', 'bowl', 'been', '2', 'speech', 'deficit', u'ha', 'overcome', 'more', 'vintage', 'indianapolis', '"there\'s', 'era.', 'great', '24+', 'foolish.', '4th', 'putting', u'colt', 'by', 'peyton', 'a', 'on', 'show.', 'look', 'trailed', 'involved', '@usr', u'point', 'team', 'making', 'the', 'or']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 132 set([u'life', u'family'])
+- 3 ['gathering', 'family', "didn't", 'it', 'held', 'metamorphosis', 'picked', 'in', 'thug', 'your', 'out', 'album', 'would', '"clean', 'hilary', 'choose', 'mum', 'be', 'life', 'room,', u'duff', 'mom', 'realize', 'me', 'for', 'i', 'didnt', 'bedroom.."', 'the', 'my']
+- 132 [u'television', u'family', u'show', u'life', u'dynasty', u'a&e.', u'duck', u'robertson', u'reality']
+---- 4 365 set([u'dalton', u'announces', u'ontario', u'mcguinty'])
+- 4 ['#onpoli', u'say', 'ontario', 'mcguinty', u'he', 'announces', 'is', 'down', u'a', 'stepping', 'resigning', 'dalton', 'premierhttp://natpo.st/rn2tyq', 'he']
+- 365 [u'ontario', u'mcguinty', u'announces', u'premier', u'dalton', u'resignation']
+### Sun Nov 11 05:23:31 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events16_k10t2
+---- 2 278 set([u'price', u'oil'])
+- 2 ['rise,', 'pump.', 'at', 'in', 'prices.', 'even', 'opposes', 'punches,', 'increase', 'to', 'production', 'money', 'save', 'oil', 'vehicle', 'gas', "obama's", u'price', "i'm", 'he', 'going', u'standard', 'will', 'continue', 'the']
+- 278 [u'living', u'oil', u'artist', u'german', u'painting', u'sold', u'work', u'artist.', u'price', u'auction', u'$34m', u'(', u'gerhard', u'ha', u'richter', u'f21m', u'record']
+---- 3 11 set([u'not', u'romney'])
+- 3 ['', 'chinese', 'is', 'romney', 'fuck', "romney's", 'talking', 'learning', 'in', 'bain', 'subject', 'would', 'to', 'capital,', 'china?', 'firm', 'be', 'it', 'invested', 'not', 'raising', 'a', 'about', 'fortune', u'company', u'tax']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 3 448 set([u'firm', u'romney'])
+- 3 ['', 'chinese', 'is', 'romney', 'fuck', "romney's", 'talking', 'learning', 'in', 'bain', 'subject', 'would', 'to', 'capital,', 'china?', 'firm', 'be', 'it', 'invested', 'not', 'raising', 'a', 'about', 'fortune', u'company', u'tax']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+### Sun Nov 11 05:24:28 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events17_k10t2
+---- 0 471 set([u'a', u'wa'])
+- 0 ['a', 'chopped', "trainin'", 'terrorist', 'camp,', 'her', 'no', u'wa', 'jetplane.', 'it', "kid's", 'karate', 'spoon', 'gal', "ain't", "pretendin'", '"this', 'said,']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 28 set([u'plot', u'terrorist', u'federal', u'alleged', u'fbi', u'reserve'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 28 [u'plot', u'terrorist', u'federal', u'alleged', u'arrest', u'involving', u'u', u'york', u'new', u'fbi', u'reserve', u'man']
+---- 3 112 set([u'a', u'bomb'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 112 [u'a', u'bomb', u'university', u'm', u'threat', u'texas']
+---- 3 248 set([u'say', u'ha'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 248 [u'google', u'edged', u'service', u'comscore', u'company', u'top', u'e-mail', u'analytics', u'say', u'hotmail', u'internet', u'world', u'ha', u'microsoft', u'gmail']
+---- 3 302 set([u'terrorist', u'bomb'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 302 [u'turkey', u'kurdish', u'terrorist', u'bomb', u'target', u'army', u'vehicle', u'one', u'innocent', u'child', u'belived', u'group', u'blast', u'killed', u'more']
+---- 3 347 set([u'arrested', u'alleged'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 347 [u'woman', u'u.s.', u'arrested', u'two', u'alleged', u'japanese', u'sailor', u'okinawa', u'rape']
+---- 3 427 set([u'android', u'ha'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 427 [u'appeal', u'court', u'round', u'district', u'samsung', u'nexus', u'u.s.', u'winning', u'sale', u'delivering', u'google', u'banned', u'inc.', u'apple', u'u', u'overturned', u'ha', u'order', u'galaxy', u'android']
+---- 3 471 set([u'a', u'the'])
+- 3 [u'say', 'thwarted', 'bomb', 'fbi', 'breaking:', 'plot', 'terrorist', 'for', 'federal', 'alleged', 'to', 'outside', 'learned', u'ha', 'suspected', 'android', 'a', 'smartphones', 'arrested', 'detonate', '@usr', 'massive', 'the', 'reserve']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 411 set([u'1', u'october'])
+- 4 ['cancer', 'do', 'donated', 'are', 'retweet', 'up.', 'for', 'giving', u'salary', 'research', '1', 'their', '#littlebigthings', 'you.', 'never', 'every', 'bit', "i'm", 'on', 'october', 'your', 'nfl', 'up', u'player', '@usr', 'axa', 'the']
+- 411 [u'october', u'office', u'keishu', u'justice', u'resigns', u'japanese', u'1', u'minister', u'tanaka', u'scandal']
+### Sun Nov 11 05:25:25 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events18_k10t2
+---- 0 471 set([u'a', u'the'])
+- 0 ['bitch.', 'through', 'disease.', 'any', u'get', 'loving', 'higher,', 'you,', 'get', 'gas', 'stop', 'floorboard', 'cutting', 'hole', 'the', 'a', 'this', 'well', 'will', 'i', 'soon,', 'flintstoning', "i'm"]
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 1 385 set([u'three', u'have'])
+- 1 ['lsd', 'i', 'of', 'in', 'two', 'three', 'life."', 'most', 'important', 'done', 'have', u'thing', 'my', u'wa', 'or', '"one']
+- 385 [u'defected', u'korea', u'august', u'three', u'militarised', u'soldier', u'have', u'korean', u'border', u'south']
+### Sun Nov 11 05:26:15 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events19_k10t2
+---- 1 398 set([u'james', u'film', u'bond'])
+- 1 ['just', 'craig', 'high', 'are', u'heel', 'recovery.', 'your', 'film', 'to', 'me', 'symbol', u'well', u'wish', 'such', 'enlightened', 'staring', 'a', 'great', 'james', 'david', '@usr', 'speedy', 'plus,', 'bond']
+- 398 [u'premiere', u'albert', u'james', u'royal', u'skyfall', u'london', u'receives', u'23rd', u'hall', u'film', u'bond']
+---- 2 17 set(['nhl', 'cancellation'])
+- 2 ['announces', 'schedule', 'nhl', 'regular-season', 'of', '2012-13', 'cancellation']
+- 17 [u'league', u'bridgestone', u'classic', u'nhl', u'national', u'winter', u'hockey', u'2013', u'cancellation', u'today', u'announced']
+---- 2 117 set([u'nhl', u'regular-season', u'cancellation'])
+- 2 ['announces', 'schedule', 'nhl', 'regular-season', 'of', '2012-13', 'cancellation']
+- 117 [u'nhl', u'regular-season', u'1', u'november', u'cancellation', u'2012-2013']
+---- 4 299 set([u'chris', u'fan', u'kirkland'])
+- 4 ['', 'kirkland.', 'lock', 'over', 'pitch', 'pushed', 'identify', 'in', 'utter', 'find', 'warnock', 'said', 'please', 'him,', 'kirkland', 'skysports', 'leeds', 'chris', 'now', 'him', 'on', 'assaulted', 'zooming', 'coward', 'up', 'this', 'fan', 'the']
+- 299 [u'goalkeeper', u'england', u'football', u'former', u'attack', u'fan', u'chris', u'international', u'jailed', u'kirkland']
+### Sun Nov 11 05:27:04 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events20_k10t2
+---- 1 8 set([u'last', u'get'])
+- 1 ['', 'love', 'just', 'is', 'fat.', 'at', 'sosa', 'battle', 'constant', 'tesco', 'to', '3', 'between', 'wanting', 'you', u'ha', 'dad', 'life', 'his', 'get', 'days.', 'not', 'a', 'last', 'i', 'up', 'looked', 'the', 'my']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 1 258 set([u'is', u'life'])
+- 1 ['', 'love', 'just', 'is', 'fat.', 'at', 'sosa', 'battle', 'constant', 'tesco', 'to', '3', 'between', 'wanting', 'you', u'ha', 'dad', 'life', 'his', 'get', 'days.', 'not', 'a', 'last', 'i', 'up', 'looked', 'the', 'my']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 1 471 set([u'a', u'the'])
+- 1 ['', 'love', 'just', 'is', 'fat.', 'at', 'sosa', 'battle', 'constant', 'tesco', 'to', '3', 'between', 'wanting', 'you', u'ha', 'dad', 'life', 'his', 'get', 'days.', 'not', 'a', 'last', 'i', 'up', 'looked', 'the', 'my']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 471 set([u'a', u'the'])
+- 3 ['', 'rad', 'right', 'seems', 'person...', 'squidward:', 'it', 'belongs.', '6months', 'rio', "'raising", 'have', 'in', 'rt!', 'should', 'perfect', 'walking', 'for', '&', 'fined', 'football,', 'racism', 'been', '#onwisconsin', 'got', 'you', 'excited', 'fight', 'pls', 'forever!', 'get', 'season', 'banned', 'stay', 'fa', "you've", 'terry', 'match.', 'him', 'a', "awareness',", 'like', 'stranger', 'tuned', "we've", 'patrick:', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 50 set([u'the', u'team'])
+- 4 ['be', 'right', 'get', 'took', u'butt', 'should', u'gator', 'behind', 'team', 'woodshed.', 'the', 'ur', '#1', u'cock', 'out']
+- 50 [u'basketball', u'based', u'dallas', u'tweet', u'lakers', u'angeles', u'los', u'american', u'team', u'professional', u'the', u'maverick']
+### Sun Nov 11 05:27:55 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events21_k10t2
+### Sun Nov 11 05:29:00 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events22_k10t2
+---- 0 124 set([u'nuclear', u'iran'])
+- 0 ['maine.', 'a', 'united', 'iran', 'get', 'states,', 'accidentally', '#strongerwithobama', 'will', 'weapon."', 'nuclear', 'not', 'the', 'invade']
+- 124 [u'negotiation', u'iran', u'have', u'usa', u'artical', u'nuclear', u'concerning', u'agreement', u'one', u'program', u'statement']
+---- 0 471 set(['a', 'the'])
+- 0 ['maine.', 'a', 'united', 'iran', 'get', 'states,', 'accidentally', '#strongerwithobama', 'will', 'weapon."', 'nuclear', 'not', 'the', 'invade']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 50 set([u'american', 'the'])
+- 2 [u'afghan', 'no', 'die', '"theres', 'reason', 'should', 'transition:', u'american', 'the', 'afghan']
+- 50 [u'basketball', u'based', u'dallas', u'tweet', u'lakers', u'angeles', u'los', u'american', u'team', u'professional', u'the', u'maverick']
+---- 4 471 set([u'a', u'the'])
+- 4 ['a', 'and', 'controlled', 'simply', 'tone', 'armed', 'romney', 'gonna', 'him', 'to', 'say', 'tagg', 'ton', 'tenor', 'potus', 'the', 'let', 'with', 'debate,', 'came']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:29:58 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events23_k10t2
+---- 0 38 set([u'apple', u'wa'])
+- 0 ['all', 'apple', 'just', 'show', 'over', 'keynote', 'out', 'their', 'giving', 'avoid', 'two', 'to', 'laid', 'hundred', u'wa', 'them', 'that', u'hour', 'zynga', '100+', 'a', 'off', 'people,', 'clear', 'place', 'desks.', 'the', u'employee', 'press.']
+- 38 [u'ipad', u'mini', u'october', u'apple', u'tablet', u'23', u')', u'(', u'wa', u'marketed', u'stylized', u'designed', u'developed', u'2012', u'inc.', u'announced']
+---- 0 338 set([u'employee', u'apple'])
+- 0 ['all', 'apple', 'just', 'show', 'over', 'keynote', 'out', 'their', 'giving', 'avoid', 'two', 'to', 'laid', 'hundred', u'wa', 'them', 'that', u'hour', 'zynga', '100+', 'a', 'off', 'people,', 'clear', 'place', 'desks.', 'the', u'employee', 'press.']
+- 338 [u'poultry', u'plant', u'shot', u'apple', u'people', u'farm', u'processing', u'reported', u'five', u'workplace', u'fresno', u'employee', u'central', u'valley', u'california', u'meat']
+---- 0 349 set([u'the', u'wa'])
+- 0 ['all', 'apple', 'just', 'show', 'over', 'keynote', 'out', 'their', 'giving', 'avoid', 'two', 'to', 'laid', 'hundred', u'wa', 'them', 'that', u'hour', 'zynga', '100+', 'a', 'off', 'people,', 'clear', 'place', 'desks.', 'the', u'employee', 'press.']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 0 471 set([u'a', u'the', u'wa'])
+- 0 ['all', 'apple', 'just', 'show', 'over', 'keynote', 'out', 'their', 'giving', 'avoid', 'two', 'to', 'laid', 'hundred', u'wa', 'them', 'that', u'hour', 'zynga', '100+', 'a', 'off', 'people,', 'clear', 'place', 'desks.', 'the', u'employee', 'press.']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 1 172 set([u'someone', u'show'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 172 [u'someone', u'show', u'award', u'winning', u'music', u'year', u'male', u'vocalist']
+---- 1 274 set([u'militant', u'killed'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 274 [u'militant', u'israel', u'multiple', u'fired', u'rocket', u'being', u'killed', u'jihadist', u'gaza', u'two', u'air', u'four', u'strip', u'northern', u'wounded', u'group', u'salafist', u'border', u'strikes.', u'launched']
+---- 1 303 set([u'attack', u'killed'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 303 [u'11', u'injured', u'policeman', u'border', u'church', u'killed', u'town', u'attack', u'somalia', u'others', u'garissa', u'kenyan', u'grenade']
+---- 1 312 set([u'militant', u'attack', u'killed'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 312 [u'city', u'suspected', u'set', u'boko', u'militant', u'nigerian', u'attack', u'haram', u'were', u'maiduguri', u'ablaze', u'several', u'killed', u'structure', u'bombing']
+---- 1 313 set([u'militant', u'killed'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 313 [u'four', u'acitvities', u'shootout', u'infested', u'army', u'clear', u'southern', u'fight', u'militant', u'terrorist', u'ongoing', u'al-queda', u'yemen', u'killed', u'al-qaeda']
+---- 1 395 set([u'attack', u'killed'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 395 [u'gaza', u'israeli', u'northern', u'artillery', u'two', u'strip', u'person', u'attack', u'others', u'wounded', u'killed']
+---- 1 405 set([u'shark', u'white', u'attack', u'killed', u'surfer'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 405 [u'great', u'southern', u'shark', u'surfer', u'attack', u'california', u'following', u'white', u'killed']
+---- 1 471 set([u'a', u'the'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 1 484 set([u'attack', u'killed'])
+- 1 ['', 'fork', 'shark', 'because', 'show', 'house', 'are', 'in', 'to', 'administration', u'email', 'militant', 'suck.', 'attack', 'white', 'killed', 'told', '#yourewelcome', 'someone', 'surfer', 'mad', 'put', 'you', 'obama', 'a', 'of', u'suck', 'truth', 'the']
+- 484 [u'injured', u'catholic', u'northern', u'ten', u'people', u'kaduna', u'nigeria', u'reprisal', u'attack', u'church', u'close', u'100', u'killed']
+---- 3 8 set([u'u', u'obama'])
+- 3 ['whats', 'fired', 'headed', 'is', 'an', 'manager', 'have', 'out', 'fidel', 'mess.president', 'dismissed', u'samara', 'guillen', 'free-kick', 'guillen.', u'wa', 'announced', 'that', 'they', "mulgrew's", u'marlin', 'effort', 'by', 'obama', 'on', 'getting', 'this', 'of', u'a', u'u', 'celtic.', 'outstanding', 'today', 'the', 'ozzie']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 3 17 set([u'today', u'announced'])
+- 3 ['whats', 'fired', 'headed', 'is', 'an', 'manager', 'have', 'out', 'fidel', 'mess.president', 'dismissed', u'samara', 'guillen', 'free-kick', 'guillen.', u'wa', 'announced', 'that', 'they', "mulgrew's", u'marlin', 'effort', 'by', 'obama', 'on', 'getting', 'this', 'of', u'a', u'u', 'celtic.', 'outstanding', 'today', 'the', 'ozzie']
+- 17 [u'league', u'bridgestone', u'classic', u'nhl', u'national', u'winter', u'hockey', u'2013', u'cancellation', u'today', u'announced']
+---- 3 38 set([u'announced', u'wa'])
+- 3 ['whats', 'fired', 'headed', 'is', 'an', 'manager', 'have', 'out', 'fidel', 'mess.president', 'dismissed', u'samara', 'guillen', 'free-kick', 'guillen.', u'wa', 'announced', 'that', 'they', "mulgrew's", u'marlin', 'effort', 'by', 'obama', 'on', 'getting', 'this', 'of', u'a', u'u', 'celtic.', 'outstanding', 'today', 'the', 'ozzie']
+- 38 [u'ipad', u'mini', u'october', u'apple', u'tablet', u'23', u')', u'(', u'wa', u'marketed', u'stylized', u'designed', u'developed', u'2012', u'inc.', u'announced']
+---- 3 349 set([u'the', u'wa'])
+- 3 ['whats', 'fired', 'headed', 'is', 'an', 'manager', 'have', 'out', 'fidel', 'mess.president', 'dismissed', u'samara', 'guillen', 'free-kick', 'guillen.', u'wa', 'announced', 'that', 'they', "mulgrew's", u'marlin', 'effort', 'by', 'obama', 'on', 'getting', 'this', 'of', u'a', u'u', 'celtic.', 'outstanding', 'today', 'the', 'ozzie']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 3 471 set([u'a', u'the', u'u', u'wa'])
+- 3 ['whats', 'fired', 'headed', 'is', 'an', 'manager', 'have', 'out', 'fidel', 'mess.president', 'dismissed', u'samara', 'guillen', 'free-kick', 'guillen.', u'wa', 'announced', 'that', 'they', "mulgrew's", u'marlin', 'effort', 'by', 'obama', 'on', 'getting', 'this', 'of', u'a', u'u', 'celtic.', 'outstanding', 'today', 'the', 'ozzie']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 38 set([u'ipad', u'mini'])
+- 4 ['', 'mini', 'thinner', 'almost', 'is', 'it', 'penelope', u'a', 'ever.', 'album', '"as', 'apple.', '#kourtsgotthegenes', 'actually', 'pad', 'new', 'you', 'a', 'imac', 'most', 'worst', 'pretending', 'baby', "i'm", 'ipad', 'about', 'light', '80%', 'thinking', 'mars.', 'so', 'the', 'feeling', 'beautiful']
+- 38 [u'ipad', u'mini', u'october', u'apple', u'tablet', u'23', u')', u'(', u'wa', u'marketed', u'stylized', u'designed', u'developed', u'2012', u'inc.', u'announced']
+---- 4 105 set([u'ipad', u'mini', u'new'])
+- 4 ['', 'mini', 'thinner', 'almost', 'is', 'it', 'penelope', u'a', 'ever.', 'album', '"as', 'apple.', '#kourtsgotthegenes', 'actually', 'pad', 'new', 'you', 'a', 'imac', 'most', 'worst', 'pretending', 'baby', "i'm", 'ipad', 'about', 'light', '80%', 'thinking', 'mars.', 'so', 'the', 'feeling', 'beautiful']
+- 105 [u'ipad', u'sending', u'23.', u'medium', u'apple', u'mini', u'new', u'oct.', u'computer', u'announce', u'probably', u'event', u'invite']
+---- 4 173 set([u'light', u'most'])
+- 4 ['', 'mini', 'thinner', 'almost', 'is', 'it', 'penelope', u'a', 'ever.', 'album', '"as', 'apple.', '#kourtsgotthegenes', 'actually', 'pad', 'new', 'you', 'a', 'imac', 'most', 'worst', 'pretending', 'baby', "i'm", 'ipad', 'about', 'light', '80%', 'thinking', 'mars.', 'so', 'the', 'feeling', 'beautiful']
+- 173 [u'saving', u'discus', u'complaining', u'light', u'tweet', u'most', u'time.', u'day']
+---- 4 471 set([u'a', u'the'])
+- 4 ['', 'mini', 'thinner', 'almost', 'is', 'it', 'penelope', u'a', 'ever.', 'album', '"as', 'apple.', '#kourtsgotthegenes', 'actually', 'pad', 'new', 'you', 'a', 'imac', 'most', 'worst', 'pretending', 'baby', "i'm", 'ipad', 'about', 'light', '80%', 'thinking', 'mars.', 'so', 'the', 'feeling', 'beautiful']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 5 49 set([u'go', u'way'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 49 [u'giant', u'lost', u'cowboy', u'almost', u'game.', u'apparently', u'back', u'reviewed', u"n't", u'go', u'second', u'way', u'v', u'touchdown', u'closing', u'win', u'discussing', u'came']
+---- 5 84 set([u'little', u'girl'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 84 [u'little', u'pageant', u'beauty', u'show', u'honey', u'boo', u'girl', u'discussing']
+---- 5 108 set([u'going', u'one'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 108 [u'being', u'win', u'detriot', u'new', u'one', u'tiger', u'playoff', u'going', u'york', u'series', u'world', u'away', u'yankee']
+---- 5 258 set([u'is', u'life'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 5 349 set([u'body', u'the'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 5 378 set([u'girl', u'been', u'time'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 378 [u'homicide', u'then', u'justin', u'allegedly', u'witnessed', u'7-year-old', u'tuesday', u'time', u'dworakowski', u'son', u'babysitting', u'olivia', u'been', u'stabbing', u'night', u'100', u'killing', u'fatally', u'girl', u'5-year-old']
+---- 5 446 set([u'say', u'sexual'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 446 [u'jimmy', u'yard', u'risen', u'300', u'sexual', u'scotland', u'number', u'abuse', u'say', u'potential', u'victim', u'scandal', u'savile']
+---- 5 467 set([u'say', u'been'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 467 [u'defence', u'ministry', u'royal', u'been', u'say', u'murder', u'five', u'uk', u'marine', u'charged']
+---- 5 471 set([u'a', u'the'])
+- 5 ['', 'all', 'go', 'still', 'find', 'asleep.', 'now', 'thinking', 'to', 'only', 'going', 'pretty', 'dead,', 'someone', '"no."', 'get', 'process,', 'smarter,', u'word', 'calmer,', u'liar', 'guy', "isn't", 'because', u'say', 'people', u'bust', '#atrain', 'we', 'are', 'girl', 'sexual', 'best', 'voice?"', 'tend', '"try', 'behind', 'garret', "alli's", 'body', 'be', 'bitches.', 'prettier,', 'hogwarts', 'easily,', 'hiding', 'of', "wouldn't", "i'm", u'make', u'yell', 'one', 'fantasy', 'skinnier,', 'know,', 'singing', 'sense.', 'poem', 'little', 'would', 'taller,', 'been', 'fucking', 'too', 'way', 'stronger,', 'biggest', 'today', 'life', 'on.', 'that', 'hurt', 'those', 'nicer,', 'shower', 'my', 'beautiful', 'hears', 'is', 'caleb', 'it', u'a', 'die.', 'in', 'if', 'gorgeous...', 'awkward', 'rather', "you'll", 'hot', 'you', '#yourewelcome', 'phantom', "'fucking'", 'quote', 'most', 'jealous', 'see,', 'tune', 'a', 'i', '"girl,', 'time', "she's", 'the', 'having']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 7 8 set([u'president', u'obama'])
+- 7 ['aisle.', 'ending', 'down', 'in', 'afghanistan', 'use', 'would', 'pay', 'war', 'condemning', 'fact:', 'half', 'president', 'america', 'obama', 'a', 'work', 'across', 'will', u'saving', 'debt,', 'the']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 7 133 set([u'president', u'obama'])
+- 7 ['aisle.', 'ending', 'down', 'in', 'afghanistan', 'use', 'would', 'pay', 'war', 'condemning', 'fact:', 'half', 'president', 'america', 'obama', 'a', 'work', 'across', 'will', u'saving', 'debt,', 'the']
+- 133 [u'trump', u'provide', u'offered', u'million', u'dollar', u'record', u'donald', u'president', u'obama']
+---- 7 136 set([u'president', u'obama'])
+- 7 ['aisle.', 'ending', 'down', 'in', 'afghanistan', 'use', 'would', 'pay', 'war', 'condemning', 'fact:', 'half', 'president', 'america', 'obama', 'a', 'work', 'across', 'will', u'saving', 'debt,', 'the']
+- 136 [u'usa', u'endorses', u'barack', u'colin', u'president', u'powell', u'obama']
+---- 7 256 set([u'president', u'obama'])
+- 7 ['aisle.', 'ending', 'down', 'in', 'afghanistan', 'use', 'would', 'pay', 'war', 'condemning', 'fact:', 'half', 'president', 'america', 'obama', 'a', 'work', 'across', 'will', u'saving', 'debt,', 'the']
+- 256 [u'mitt', u'romney', u'u.s.', u'endorses', u'michael', u'barack', u'york', u'bloomberg', u'president', u'new', u'mayor', u'obama']
+---- 7 471 set([u'a', u'the'])
+- 7 ['aisle.', 'ending', 'down', 'in', 'afghanistan', 'use', 'would', 'pay', 'war', 'condemning', 'fact:', 'half', 'president', 'america', 'obama', 'a', 'work', 'across', 'will', u'saving', 'debt,', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:30:55 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events24_k10t2
+---- 0 76 set([u'make', u'public'])
+- 0 ['"hello"', 'simple', 'any', '"god\'s', 'do.', 'thank', 'would', 'office.', 'justifies', 'should', 'doing', u'doe', 'policy', 'you', 'public', 'be', 'his', 'me', 'job', 'joe', 'immediately', 'he', 'a', 'buck', 'politician', 'for', 'properly,', 'were', 'position', 'disqualified', 'will"', u'make']
+- 76 [u'television', u'jockey', u'family', u'disgraced', u'make', u'presenter', u'disc', u'statement', u'jimmy', u'savile', u'public', u'first']
+---- 0 393 set([u'doing', u'public'])
+- 0 ['"hello"', 'simple', 'any', '"god\'s', 'do.', 'thank', 'would', 'office.', 'justifies', 'should', 'doing', u'doe', 'policy', 'you', 'public', 'be', 'his', 'me', 'job', 'joe', 'immediately', 'he', 'a', 'buck', 'politician', 'for', 'properly,', 'were', 'position', 'disqualified', 'will"', u'make']
+- 393 [u'revolutionary', u'leader', u'cuban', u'fidel', u'doing', u'photo', u'show', u'appears', u'very', u'casto', u'public']
+---- 1 8 set([u'mitt', u'romney', u'tell'])
+- 1 ['tax', 'states...somebody', 'shyne', 'at', u'pas', 'your', 'claires', 'west', 'make', 'cuz', 'to', u'return', 'ever', 'tell', 'his', u'release', 'romney', 'mitt', 'it', 'pierced', 'coast', 'bac', 'cartilage', 'the']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 1 11 set([u'mitt', u'romney'])
+- 1 ['tax', 'states...somebody', 'shyne', 'at', u'pas', 'your', 'claires', 'west', 'make', 'cuz', 'to', u'return', 'ever', 'tell', 'his', u'release', 'romney', 'mitt', 'it', 'pierced', 'coast', 'bac', 'cartilage', 'the']
+- 11 [u'said', u'business', u'government', u'successful', u'mitt', u'romney', u'debate', u'barack', u'not', u'went', u'obama', u'final', u'presidential', u'head-to-head']
+---- 1 256 set([u'mitt', u'romney'])
+- 1 ['tax', 'states...somebody', 'shyne', 'at', u'pas', 'your', 'claires', 'west', 'make', 'cuz', 'to', u'return', 'ever', 'tell', 'his', u'release', 'romney', 'mitt', 'it', 'pierced', 'coast', 'bac', 'cartilage', 'the']
+- 256 [u'mitt', u'romney', u'u.s.', u'endorses', u'michael', u'barack', u'york', u'bloomberg', u'president', u'new', u'mayor', u'obama']
+---- 1 366 set([u'west', u'coast'])
+- 1 ['tax', 'states...somebody', 'shyne', 'at', u'pas', 'your', 'claires', 'west', 'make', 'cuz', 'to', u'return', 'ever', 'tell', 'his', u'release', 'romney', 'mitt', 'it', 'pierced', 'coast', 'bac', 'cartilage', 'the']
+- 366 [u'continue', u'west', u'rail', u'coast', u'virgin', u'running', u'train', u'uk', u'franchise', u'line', u'main', u'asked']
+---- 1 410 set([u'mitt', u'romney'])
+- 1 ['tax', 'states...somebody', 'shyne', 'at', u'pas', 'your', 'claires', 'west', 'make', 'cuz', 'to', u'return', 'ever', 'tell', 'his', u'release', 'romney', 'mitt', 'it', 'pierced', 'coast', 'bac', 'cartilage', 'the']
+- 410 [u'barack', u'televised', u'constitution', u'candidate', u'justice', u'romney', u'u.s.', u'third-party', u'encounter', u'four', u'high-profile', u'green', u'election', u'excluded', u'libertarian', u'party', u'representing', u'mitt', u'presidential', u'obama']
+---- 1 448 set([u'mitt', u'romney'])
+- 1 ['tax', 'states...somebody', 'shyne', 'at', u'pas', 'your', 'claires', 'west', 'make', 'cuz', 'to', u'return', 'ever', 'tell', 'his', u'release', 'romney', 'mitt', 'it', 'pierced', 'coast', 'bac', 'cartilage', 'the']
+- 448 [u'firm', u'intercivic', u'providing', u'candidate', u'campaign', u'crucial', u'mitt', u'tally', u'romney', u'linked', u'machine', u'state', u'used', u'voting', u'ohio', u'hart', u'ballot', u'u.s.', u'presidential']
+---- 2 161 set([u'game', u'the'])
+- 2 ['', 'all', '"bisexual"?', 'done', 'wishes.', 'in', 'er', u'inning', 'thank', 'for', '&', 'willow', 'since', 'smith', 'shaved', '1', '2', 'lip', 'you', u'ha', 'run,', 'head', 'piercing,', 'game', 'birthday', 'allowing', 'entered', 'a', '1993', 'justin', 'michael', '24.1', 'verlander', 'she', 'the', 'myers']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 2 471 set([u'a', u'the'])
+- 2 ['', 'all', '"bisexual"?', 'done', 'wishes.', 'in', 'er', u'inning', 'thank', 'for', '&', 'willow', 'since', 'smith', 'shaved', '1', '2', 'lip', 'you', u'ha', 'run,', 'head', 'piercing,', 'game', 'birthday', 'allowing', 'entered', 'a', '1993', 'justin', 'michael', '24.1', 'verlander', 'she', 'the', 'myers']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 36 set([u'series', u'baseball', u'world'])
+- 4 ['series', 'is', 'deep', 'verlander.', 'are', 'in', 'kate', 'lore.', 'for', 'upton', u'thing', 'him,', u'hr', '3', 'going', 'ever', 'never', 'hit', 'dispatched', 'see:', 'upton.', 'sandoval', '4th', 'baseball', 'they', 'world', 'man', 'a', 'on', 'ok', 'verlander', "i'd", 'so...', 'game.', 'the']
+- 36 [u'mlb', u'league', u'major', u'championship', u'nl', u'champion', u'played', u')', u'series', u'tweet', u'annual', u'al', u'american', u'baseball', u'national', u'(', u'world', u'games.', u'1903', u'american-based']
+---- 4 108 set([u'world', u'going', u'series'])
+- 4 ['series', 'is', 'deep', 'verlander.', 'are', 'in', 'kate', 'lore.', 'for', 'upton', u'thing', 'him,', u'hr', '3', 'going', 'ever', 'never', 'hit', 'dispatched', 'see:', 'upton.', 'sandoval', '4th', 'baseball', 'they', 'world', 'man', 'a', 'on', 'ok', 'verlander', "i'd", 'so...', 'game.', 'the']
+- 108 [u'being', u'win', u'detriot', u'new', u'one', u'tiger', u'playoff', u'going', u'york', u'series', u'world', u'away', u'yankee']
+---- 4 126 set([u'3', u'man'])
+- 4 ['series', 'is', 'deep', 'verlander.', 'are', 'in', 'kate', 'lore.', 'for', 'upton', u'thing', 'him,', u'hr', '3', 'going', 'ever', 'never', 'hit', 'dispatched', 'see:', 'upton.', 'sandoval', '4th', 'baseball', 'they', 'world', 'man', 'a', 'on', 'ok', 'verlander', "i'd", 'so...', 'game.', 'the']
+- 126 [u'tweet', u'trailer', u'3', u'iron', u'man']
+---- 4 211 set([u'series', u'hit'])
+- 4 ['series', 'is', 'deep', 'verlander.', 'are', 'in', 'kate', 'lore.', 'for', 'upton', u'thing', 'him,', u'hr', '3', 'going', 'ever', 'never', 'hit', 'dispatched', 'see:', 'upton.', 'sandoval', '4th', 'baseball', 'they', 'world', 'man', 'a', 'on', 'ok', 'verlander', "i'd", 'so...', 'game.', 'the']
+- 211 [u'injured', u'arrested', u'woman', u'12', u'hit', u'people', u'series', u'van', u'driver', u'police', u'incident', u'other', u'31-year-old', u'cardiff', u'run', u'killed', u'south']
+---- 4 471 set([u'a', u'the'])
+- 4 ['series', 'is', 'deep', 'verlander.', 'are', 'in', 'kate', 'lore.', 'for', 'upton', u'thing', 'him,', u'hr', '3', 'going', 'ever', 'never', 'hit', 'dispatched', 'see:', 'upton.', 'sandoval', '4th', 'baseball', 'they', 'world', 'man', 'a', 'on', 'ok', 'verlander', "i'd", 'so...', 'game.', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 505 set([u'series', u'world'])
+- 4 ['series', 'is', 'deep', 'verlander.', 'are', 'in', 'kate', 'lore.', 'for', 'upton', u'thing', 'him,', u'hr', '3', 'going', 'ever', 'never', 'hit', 'dispatched', 'see:', 'upton.', 'sandoval', '4th', 'baseball', 'they', 'world', 'man', 'a', 'on', 'ok', 'verlander', "i'd", 'so...', 'game.', 'the']
+- 505 [u'series', u'talking', u'world']
+### Sun Nov 11 05:31:50 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events25_k10t2
+---- 1 211 set([u'hit', u'south'])
+- 1 ['a', 'on', 'hit', 'tire', 'rant', 'i', 'fender', 'deer', 'twitter', 'player', 'heartbreaking', '136', u'go', 'nba', 'hiway', 'pulled', 'rubbing', 'south']
+- 211 [u'injured', u'arrested', u'woman', u'12', u'hit', u'people', u'series', u'van', u'driver', u'police', u'incident', u'other', u'31-year-old', u'cardiff', u'run', u'killed', u'south']
+---- 3 30 set([u'win', u'game'])
+- 3 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 30 [u'sanchez', u'patriot', u'england', u'29-26', u'jet', u'beat', u'win', u'recovers', u'overtime', u'game', u'fumble', u'new', u'mark']
+---- 3 129 set([u'take', u'lead'])
+- 3 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 129 [u'real', u'lead', u'dortmund', u'quickly', u'score', u'take', u'madrid', u'tie', u'brings']
+---- 3 161 set([u'game', u'the'])
+- 3 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 3 328 set([u'game', u'saturday'])
+- 3 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 328 [u'ivory', u'last', u'riot', u'cup', u'africa', u'game', u'nation', u'senegal', u'stadium', u'disqualified', u'coast', u'saturday', u'2013']
+---- 3 471 set([u'a', u'the'])
+- 3 ['a', 'scheduled', '2-0', 'for', 'lead', 'win', 'is', 'none', 'ws...game', 'to', '3', '2', u'game', 'take', 'the', 'saturday']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:32:39 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events26_k10t2
+---- 1 471 set([u'a', u'the'])
+- 1 ['a', 'brown', 'that.', 'himself', u'see', 'pours', 'of', 'head', 'shower', 'hot', 'chick', 'chris', 'hit', 'the', 'id', 'out']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 52 set([u'not', u'people'])
+- 2 ['', 'people', 'it', 'are', 'in', 'interrogated', 'from', 'to', 'love,', 'able', 'find', 'solution.', 'taken', 'mathematics', u'ha', u'wa', 'hope', u'give', 'be', 'that', 'may', 'sentence.', 'immigration', 'questioning', 'reason', 'plane', 'every', 'not', 'khan', 'teach', 'with', 'by', 'a', 'off', 'i', 'of', u'u', 'honest', 'yourself.', 'dirty', 'imran', 'problem', 'respect,', 'something']
+- 52 [u'leave', u'incoming', u'candidate', u'people', u'favored', u'country', u'threatening', u'react', u'result', u'win', u'not', u'election']
+---- 2 212 set([u'may', u'wa'])
+- 2 ['', 'people', 'it', 'are', 'in', 'interrogated', 'from', 'to', 'love,', 'able', 'find', 'solution.', 'taken', 'mathematics', u'ha', u'wa', 'hope', u'give', 'be', 'that', 'may', 'sentence.', 'immigration', 'questioning', 'reason', 'plane', 'every', 'not', 'khan', 'teach', 'with', 'by', 'a', 'off', 'i', 'of', u'u', 'honest', 'yourself.', 'dirty', 'imran', 'problem', 'respect,', 'something']
+- 212 [u'wa', u'police', u'working', u'metropolitan', u'counterterrorism', u'may', u'agent', u'officer']
+---- 2 349 set([u'from', u'wa'])
+- 2 ['', 'people', 'it', 'are', 'in', 'interrogated', 'from', 'to', 'love,', 'able', 'find', 'solution.', 'taken', 'mathematics', u'ha', u'wa', 'hope', u'give', 'be', 'that', 'may', 'sentence.', 'immigration', 'questioning', 'reason', 'plane', 'every', 'not', 'khan', 'teach', 'with', 'by', 'a', 'off', 'i', 'of', u'u', 'honest', 'yourself.', 'dirty', 'imran', 'problem', 'respect,', 'something']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 2 427 set([u'ha', u'u'])
+- 2 ['', 'people', 'it', 'are', 'in', 'interrogated', 'from', 'to', 'love,', 'able', 'find', 'solution.', 'taken', 'mathematics', u'ha', u'wa', 'hope', u'give', 'be', 'that', 'may', 'sentence.', 'immigration', 'questioning', 'reason', 'plane', 'every', 'not', 'khan', 'teach', 'with', 'by', 'a', 'off', 'i', 'of', u'u', 'honest', 'yourself.', 'dirty', 'imran', 'problem', 'respect,', 'something']
+- 427 [u'appeal', u'court', u'round', u'district', u'samsung', u'nexus', u'u.s.', u'winning', u'sale', u'delivering', u'google', u'banned', u'inc.', u'apple', u'u', u'overturned', u'ha', u'order', u'galaxy', u'android']
+---- 2 471 set([u'a', u'u', u'from', u'wa'])
+- 2 ['', 'people', 'it', 'are', 'in', 'interrogated', 'from', 'to', 'love,', 'able', 'find', 'solution.', 'taken', 'mathematics', u'ha', u'wa', 'hope', u'give', 'be', 'that', 'may', 'sentence.', 'immigration', 'questioning', 'reason', 'plane', 'every', 'not', 'khan', 'teach', 'with', 'by', 'a', 'off', 'i', 'of', u'u', 'honest', 'yourself.', 'dirty', 'imran', 'problem', 'respect,', 'something']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 137 set([u'lil', u'wayne', u'seizure'])
+- 3 ['serving', 'is', 'seizure', 'jet:', 'second', 'billboard', 'tupac', 'lil', 'since', u'chart', 'only', 'wayne', 'in-flight', 'prison', '#breaking', 'hospitalized', 'sentence.', 'after', 'private', 'a', 'artist', 'seizurehttp://tmz.me/s1qfbu', 'having', '@usr', 'scarehttp://tmz.me/pujxsi', 'aboard', 'the', 'medical']
+- 137 [u'one', u'24', u'hour', u'lil', u'period', u'seizure', u'2nd', u'wayne', u'making', u'suffered', u'ha']
+---- 3 471 set([u'a', u'the'])
+- 3 ['serving', 'is', 'seizure', 'jet:', 'second', 'billboard', 'tupac', 'lil', 'since', u'chart', 'only', 'wayne', 'in-flight', 'prison', '#breaking', 'hospitalized', 'sentence.', 'after', 'private', 'a', 'artist', 'seizurehttp://tmz.me/s1qfbu', 'having', '@usr', 'scarehttp://tmz.me/pujxsi', 'aboard', 'the', 'medical']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+### Sun Nov 11 05:33:28 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events27_k10t2
+---- 0 55 set([u'city', u'oklahoma'])
+- 0 ['and', 'houston', 'down,', 'in', u'talk', 'confirms', 'kevin', 'lamb', 'city', 'jeremy', 'source', 'oklahoma', 'send', 'to', 'hurry.', 'hou', 'draft', 'martin,', 'rockets.', 'adopted', 'break', 'okc', 'from', 'him', 'a', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', '@usr', u'rocket', 'the']
+- 55 [u'buzzer', u'city', u'parker', u'shot', u'discus', u'thunder', u'tweet', u'westbrook', u'antonio', u'russell', u'beater', u'tony', u'shooting', u'spur', u'oklahoma', u'san']
+---- 0 152 set([u'harden', u'city', u'oklahoma', u'rocket', u'james'])
+- 0 ['and', 'houston', 'down,', 'in', u'talk', 'confirms', 'kevin', 'lamb', 'city', 'jeremy', 'source', 'oklahoma', 'send', 'to', 'hurry.', 'hou', 'draft', 'martin,', 'rockets.', 'adopted', 'break', 'okc', 'from', 'him', 'a', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', '@usr', u'rocket', 'the']
+- 152 [u'city', u'rocket', u'being', u'james', u'oklahoma', u'moved', u'harden', u'thunder', u'husten']
+---- 0 349 set([u'the', u'from'])
+- 0 ['and', 'houston', 'down,', 'in', u'talk', 'confirms', 'kevin', 'lamb', 'city', 'jeremy', 'source', 'oklahoma', 'send', 'to', 'hurry.', 'hou', 'draft', 'martin,', 'rockets.', 'adopted', 'break', 'okc', 'from', 'him', 'a', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', '@usr', u'rocket', 'the']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 0 471 set([u'a', u'the', u'from'])
+- 0 ['and', 'houston', 'down,', 'in', u'talk', 'confirms', 'kevin', 'lamb', 'city', 'jeremy', 'source', 'oklahoma', 'send', 'to', 'hurry.', 'hou', 'draft', 'martin,', 'rockets.', 'adopted', 'break', 'okc', 'from', 'him', 'a', 'acquiring', 'james', u'trade', 'contract', u'pick', 'harden', '@usr', u'rocket', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 2 471 set([u'a', u'the', u'u'])
+- 2 ['honesty', 'gown', 'itl', 'gt', u'say', 'hoping', u'pay', 'in', 'need', 'open"', 'open', '"easy', 'absolute', 'knife,', 'for', 'no', 'your', 'to', 'damn', 'lightsaber', 'dressing', 'got', 'you', 'it.', 'relationship', 'that', 'doin', 'genius.', 'lift', 'scissors,', 'trust', u'hater', 'tribute', 'a', 'wrong!', 'package', 'best!', 'sumptin', 'ur', 'u', 'were', 'mediocrity', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 258 set([u'person', u'is'])
+- 3 ['', 'offered.', 'old', 'is', 'it', 'an', 'see', 'in', 'touch', 'still', 'saved', 'perfect', 'restaurant.', 'for', 'god', '..but', 'per', 'looking', 'mind,', '9', u'ha', '11', 'pls', 'sitting', 'ipod', 'bear', 'they', 'alone', 'yr', 'day', 'man', 'a', u'erection', 'her', 'this', 'engraved', 'average', 'person', 'she', 'herself.', 'the', 'reward', 'my', 'left']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+---- 3 471 set([u'a', u'person', u'the'])
+- 3 ['', 'offered.', 'old', 'is', 'it', 'an', 'see', 'in', 'touch', 'still', 'saved', 'perfect', 'restaurant.', 'for', 'god', '..but', 'per', 'looking', 'mind,', '9', u'ha', '11', 'pls', 'sitting', 'ipod', 'bear', 'they', 'alone', 'yr', 'day', 'man', 'a', u'erection', 'her', 'this', 'engraved', 'average', 'person', 'she', 'herself.', 'the', 'reward', 'my', 'left']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 232 set([u'i', u'more'])
+- 4 ['', 'all', 'replying', 'give', 'is', "girl's", 'have', 'in', 'love', 'still', 'your', 'shit', 'out', 'smiling?', "you're", 'said.', 'afraid', "he's", 'ex.', 'love,', "don't", 'should', 'hesitation.', 'increase', 'to', u'help', u'cry', 'you', 'he', 'more', 'you.', 'life', 'clever', 'pain', 'our', 'every', 'know', 'they', 'language:', 'losing', 'oxytocin', 'come', 'than', "i'm", 'man', 'go.', 'back.', 'i', 'of', 'okay.', 'something.', 'without', 'can', 'learn', 'tolerance,', 'the', 'think']
+- 232 [u'iran', u'i', u'country', u'ruhollah', u'khomeini', u'ayatollah', u'sex-change', u'permit', u'thailand', u'operation', u'more']
+---- 4 258 set([u'is', u'life'])
+- 4 ['', 'all', 'replying', 'give', 'is', "girl's", 'have', 'in', 'love', 'still', 'your', 'shit', 'out', 'smiling?', "you're", 'said.', 'afraid', "he's", 'ex.', 'love,', "don't", 'should', 'hesitation.', 'increase', 'to', u'help', u'cry', 'you', 'he', 'more', 'you.', 'life', 'clever', 'pain', 'our', 'every', 'know', 'they', 'language:', 'losing', 'oxytocin', 'come', 'than', "i'm", 'man', 'go.', 'back.', 'i', 'of', 'okay.', 'something.', 'without', 'can', 'learn', 'tolerance,', 'the', 'think']
+- 258 [u'available', u'burma', u'keeping', u'clash', u'loss', u'is', u'peace', u'life', u'person', u'human', u'protecting', u'secterian', u'property']
+### Sun Nov 11 05:34:27 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events28_k10t2
+---- 2 108 set([u'win', u'one'])
+- 2 ['', 'win', 'creed', 'one', 'oct.', 'are', 'if', 'luckiest', '3', 'you', 'is', 'advice', 're-tweet', 'picking', 'man', u'assassin', 'this', 'of', '30th!', 'up', 'will', 'the', 'piece']
+- 108 [u'being', u'win', u'detriot', u'new', u'one', u'tiger', u'playoff', u'going', u'york', u'series', u'world', u'away', u'yankee']
+---- 2 126 set([u'3', u'man'])
+- 2 ['', 'win', 'creed', 'one', 'oct.', 'are', 'if', 'luckiest', '3', 'you', 'is', 'advice', 're-tweet', 'picking', 'man', u'assassin', 'this', 'of', '30th!', 'up', 'will', 'the', 'piece']
+- 126 [u'tweet', u'trailer', u'3', u'iron', u'man']
+---- 2 308 set([u'win', u'one'])
+- 2 ['', 'win', 'creed', 'one', 'oct.', 'are', 'if', 'luckiest', '3', 'you', 'is', 'advice', 're-tweet', 'picking', 'man', u'assassin', 'this', 'of', '30th!', 'up', 'will', 'the', 'piece']
+- 308 [u'dhabi', u'finnish', u'win', u'driver', u'raikkonen', u'one', u'prix', u'kimi', u'abu', u'grand', u'formula', u'racing', u'2012']
+---- 2 315 set([u'win', u'man'])
+- 2 ['', 'win', 'creed', 'one', 'oct.', 'are', 'if', 'luckiest', '3', 'you', 'is', 'advice', 're-tweet', 'picking', 'man', u'assassin', 'this', 'of', '30th!', 'up', 'will', 'the', 'piece']
+- 315 [u'body', u'novel', u'mantel', u'win', u'hilary', u'bring', u'booker', u'man', u'prize', u'2012']
+---- 3 349 set([u'king', u'the'])
+- 3 ['and', 'all', 'lied', 'be', 'is', 'tho!"', 'scoring,', 'party!', 'proper', 'your', 'out', u'official', 'safe.', 'truth.', 'not', "it's", 'n*gga', 'uve', 'to', 'state', 'way', 'finding', 'you', 'local', 'then', '-bo', 'hit', 'on', 'stay', 'released', 'moment', 'a', 'date', 'focusing', u'chip', "i'm", 'indicud', 'debut,', 'king', 'figured', 'getting', 'this', 'double', 'ill', 'greet', 'will', 'disc', 'truth', 'positive', 'the', 'out,']
+- 349 [u'body', u'king', u'from', u'wa', u'norodom', u'dead', u'brought', u'cambodia', u'the', u'where']
+---- 3 471 set([u'a', u'the'])
+- 3 ['and', 'all', 'lied', 'be', 'is', 'tho!"', 'scoring,', 'party!', 'proper', 'your', 'out', u'official', 'safe.', 'truth.', 'not', "it's", 'n*gga', 'uve', 'to', 'state', 'way', 'finding', 'you', 'local', 'then', '-bo', 'hit', 'on', 'stay', 'released', 'moment', 'a', 'date', 'focusing', u'chip', "i'm", 'indicud', 'debut,', 'king', 'figured', 'getting', 'this', 'double', 'ill', 'greet', 'will', 'disc', 'truth', 'positive', 'the', 'out,']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 5 378 set(['girl', 'justin'])
+- 5 ['on', 'trying', 'apple', 'justin', 'her', 'picture', 'make', 'some', 'number', 'biebers', 'to', 'put', 'girl', 'blender', "juice.''", 'the', 'instagram']
+- 378 [u'homicide', u'then', u'justin', u'allegedly', u'witnessed', u'7-year-old', u'tuesday', u'time', u'dworakowski', u'son', u'babysitting', u'olivia', u'been', u'stabbing', u'night', u'100', u'killing', u'fatally', u'girl', u'5-year-old']
+### Sun Nov 11 05:35:30 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events29_k10t2
+---- 1 471 set([u'a', u'the'])
+- 1 ['and', 'is', 'it', u'subway', 'reopening', 'for', 'announces', 'damage', 'confirming', 'too', 'way', 'nyc', 'entered', u'ha', 'until', 'tuesday.', 'that', 'auto', 'tunnels.', 'early', 'seawater', 'cannot', 'now', 'a', u'ass', 'wsj', 'wrong.', 'subway', 'timetable.', 'the', 'mta']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 3 16 set([u'united', u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 16 [u'death', u'rise', u'hurricane', u'united', u'state', u'mid-atlantic', u'toll', u'aftermath', u'sandy']
+---- 3 40 set([u'united', u'manchester'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 40 [u'scored', u'united', u'game', u'someone', u'manchester', u'were', u'liverpool.', u'soccer']
+---- 3 42 set([u'united', u'hurricane', u'sandy', u'people'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 42 [u'united', u'caribbean', u'people', u'caused', u'hurricane', u'damage', u'coast', u'state', u'prepares', u'widespread', u'east', u'killed', u'sandy']
+---- 3 43 set([u'united', u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 43 [u'city', u'death', u'landfall', u'make', u'northeastern', u'hurricane', u'state', u'united', u'atlantic', u'jersey', u'new', u'widespread', u'flooding', u'sandy']
+---- 3 44 set([u'ha', u'been'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 44 [u'prime', u'sentenced', u'fraud', u'silvio', u'prison', u'tax', u'been', u'four', u'minister', u'year', u'ha', u'former', u'berlusconi', u'italian']
+---- 3 54 set([u'united', u'manchester'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 54 [u'manchester', u'soccer', u'chelsea', u'united', u'match']
+---- 3 56 set([u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 56 [u'city', u'sandy', u'hurricane', u'due', u'cancelation', u'york', u'new', u'mayor', u'marathon']
+---- 3 61 set([u'united', u'manchester', u'arsenal', u'v'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 61 [u'united', u'van', u')', u'football', u'arsenal', u'game', u'score', u'manchester', u'v', u'soccer', u'persie', u'robin']
+---- 3 63 set([u'united', u'v'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 63 [u'liverpool', u'v', u'sport.', u'united', u'result', u'newcastle', u'match', u'euro']
+---- 3 66 set([u'manchester', u'people'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 66 [u'city', u'people', u'game', u'talking', u'ajax', u'manchester', u'soccer']
+---- 3 69 set([u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 69 [u'death', u'u.s.', u'rise', u'hurricane', u'attributed', u'toll', u'90', u'sandy']
+---- 3 80 set([u'united', u'manchester'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 80 [u'sanmarino', u'united', u'manchester', u'match']
+---- 3 110 set([u'united', u'manchester'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 110 [u'stoke', u'2-1', u'united', u'manchester', u'city']
+---- 3 131 set([u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 131 [u'bahamas', u'hurricane', u'sandy']
+---- 3 147 set([u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 147 [u'arrival', u'anticipation', u'service', u')', u'transit', u'cuomo', u'hurricane', u'governor', u'mario', u'sunday', u'pm', u'mass', u'york', u'7', u'suspension', u'new', u'mta', u'beginning', u'sandy', u'announced']
+---- 3 156 set([u'hurricane', u'sandy', u'people'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 156 [u'affected', u'people', u'tweet', u'hurricane', u'praying', u'sandy']
+---- 3 326 set([u'ha', u'been'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 326 [u'israeli', u'unanimously', u'knesset', u'been', u'dissolved', u'ha']
+---- 3 432 set([u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 432 [u'lower', u'exchange', u'hurricane', u'ny', u'trading', u'open', u'day', u'sandy', u'stock']
+---- 3 443 set([u'hurricane', u'sandy'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 443 [u'jamaica', u'head', u'cuba', u'landfall', u'hurricane', u'bahamas', u'making', u'sandy']
+---- 3 490 set([u'united', u'manchester'])
+- 3 ['all', 'dean', u'le', 'referee', 'it', 'likely', 'doesnt', 'manchester', 'are', 'extinct', u'specie', 'sandy', 'united', 'arsenal', 'for', 'people', 'hurricane', 'been', 'to', u'preacher', 'include', 'ever', 'america!', 'you.', 'mike', 'lived', 'depressed.', 'blaming', 'be', 'now', 'appointed', 'gays.', 'on', u'ha', 'r', 'v', 'the']
+- 490 [u'league', u'united', u'bridge', u'3-2', u'unbeaten', u'record', u'manchester', u'lose', u'stamford', u'chelsea']
+### Sun Nov 11 05:36:13 2018 k = 10. Events detected are stored into ../ni_data/process_events2012/out.Events30_k10t2
+---- 0 8 set([u'u', u'get'])
+- 0 ['', 'now', 'on', u'shoe', 'lebron', 'jeff', 'is', 'hard', 'fuck', 'nigga', 'are', 'in', 'go', 'ballin', 'u', 'pink', 'said', 'fined', 'rondo', 's', 'better', 'fade', 'got', 't', 'wearing', 'get', 'gonna', 'heat', 'tonight.', 'bosh', 'was.', u'foam', 'than', 'those', 'a', 'hoopin', 'f', 'chalmers', '@usr', 'green', 'd.wade', 'jordan', 'the']
+- 8 [u'last', u'candidate', u'get', u'mitt', u'romney', u'tell', u'barack', u'u', u'china', u'president', u'debate', u'presidential', u'obama']
+---- 0 164 set([u'heat', u'lebron'])
+- 0 ['', 'now', 'on', u'shoe', 'lebron', 'jeff', 'is', 'hard', 'fuck', 'nigga', 'are', 'in', 'go', 'ballin', 'u', 'pink', 'said', 'fined', 'rondo', 's', 'better', 'fade', 'got', 't', 'wearing', 'get', 'gonna', 'heat', 'tonight.', 'bosh', 'was.', u'foam', 'than', 'those', 'a', 'hoopin', 'f', 'chalmers', '@usr', 'green', 'd.wade', 'jordan', 'the']
+- 164 [u'championship', u'getting', u'heat', u'nba', u'lebron', u'ring']
+---- 0 165 set([u'heat', u'lebron'])
+- 0 ['', 'now', 'on', u'shoe', 'lebron', 'jeff', 'is', 'hard', 'fuck', 'nigga', 'are', 'in', 'go', 'ballin', 'u', 'pink', 'said', 'fined', 'rondo', 's', 'better', 'fade', 'got', 't', 'wearing', 'get', 'gonna', 'heat', 'tonight.', 'bosh', 'was.', u'foam', 'than', 'those', 'a', 'hoopin', 'f', 'chalmers', '@usr', 'green', 'd.wade', 'jordan', 'the']
+- 165 [u'ranking', u'miami', u'james', u'heat', u'5', u'become', u'lebron', u'best']
+---- 0 471 set([u'a', u'the', u'u'])
+- 0 ['', 'now', 'on', u'shoe', 'lebron', 'jeff', 'is', 'hard', 'fuck', 'nigga', 'are', 'in', 'go', 'ballin', 'u', 'pink', 'said', 'fined', 'rondo', 's', 'better', 'fade', 'got', 't', 'wearing', 'get', 'gonna', 'heat', 'tonight.', 'bosh', 'was.', u'foam', 'than', 'those', 'a', 'hoopin', 'f', 'chalmers', '@usr', 'green', 'd.wade', 'jordan', 'the']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 1 161 set([u'celtic', u'the'])
+- 1 ['pink', 'on', 'court', 'be', 'rondo', 'will', 'not', u'celtic', 'got', 'the', u'foam']
+- 161 [u'buck', u'celtic', u'lost', u'bad', u'the', u'game', u'nba', u'celtics.', u'event']
+---- 2 44 set([u'ha', u'been'])
+- 2 ['', 'seeing', 'love', 'same', 'in', 'allen', 'garnett', 'ray', 'for', 'no', 'been', 'chewing', 'kevin', u'ha', 'gave', 'that', 'heat', 'a', 'on', 'kg', 'piece', 'jersey']
+- 44 [u'prime', u'sentenced', u'fraud', u'silvio', u'prison', u'tax', u'been', u'four', u'minister', u'year', u'ha', u'former', u'berlusconi', u'italian']
+---- 2 326 set([u'ha', u'been'])
+- 2 ['', 'seeing', 'love', 'same', 'in', 'allen', 'garnett', 'ray', 'for', 'no', 'been', 'chewing', 'kevin', u'ha', 'gave', 'that', 'heat', 'a', 'on', 'kg', 'piece', 'jersey']
+- 326 [u'israeli', u'unanimously', u'knesset', u'been', u'dissolved', u'ha']
+---- 3 421 set([u'wa', u'6'])
+- 3 ['', 'a', 'boss?', 'couch', 'offender', 'this', 'of', 'scared', 'took', 'bath', 'their', 'afraid', '8?', '7', '6', '7?', 'sex', u'wa', 'registered', u'salt']
+- 421 [u'israel', u'ezbollah', u'iran', u'wa', u'belonged', u'desert', u'october', u'negev', u'supplied', u'drone', u'down', u'aircraft', u'nasrallah', u'6', u'hassan', u'organization', u'confirms', u'leader']
+---- 3 461 set([u'sex', u'offender'])
+- 3 ['', 'a', 'boss?', 'couch', 'offender', 'this', 'of', 'scared', 'took', 'bath', 'their', 'afraid', '8?', '7', '6', '7?', 'sex', u'wa', 'registered', u'salt']
+- 461 [u'reading', u'offender', u'halloween', u'sign', u'candy', u'sex', u'part', u'have', u'child', u'not', u'home', u'simi', u'valley', u'post']
+---- 3 471 set([u'a', u'wa'])
+- 3 ['', 'a', 'boss?', 'couch', 'offender', 'this', 'of', 'scared', 'took', 'bath', 'their', 'afraid', '8?', '7', '6', '7?', 'sex', u'wa', 'registered', u'salt']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+---- 4 44 set([u'ha', u'been'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 44 [u'prime', u'sentenced', u'fraud', u'silvio', u'prison', u'tax', u'been', u'four', u'minister', u'year', u'ha', u'former', u'berlusconi', u'italian']
+---- 4 46 set([u'walt', u'company', u'lucasfilm', u'disney'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 46 [u'purchase', u'lucas', u'company', u'walt', u'lucasfilm', u'ltd.', u'george', u'disney']
+---- 4 65 set([u'great', u'ha'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 65 [u'control', u'ha', u'good', u'great']
+---- 4 137 set([u'making', u'ha'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 137 [u'one', u'24', u'hour', u'lil', u'period', u'seizure', u'2nd', u'wayne', u'making', u'suffered', u'ha']
+---- 4 207 set([u'say', u'episode'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 207 [u'pursue', u'set', u'episode', u'faddy', u'tv', u'series', u'u.s.', u'legal', u'maker', u'abboud', u'say', u'action', u'homeland', u'popular', u'beirut', u'misrepresented']
+---- 4 248 set([u'company', u'ha', u'say'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 248 [u'google', u'edged', u'service', u'comscore', u'company', u'top', u'e-mail', u'analytics', u'say', u'hotmail', u'internet', u'world', u'ha', u'microsoft', u'gmail']
+---- 4 326 set([u'ha', u'been'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 326 [u'israeli', u'unanimously', u'knesset', u'been', u'dissolved', u'ha']
+---- 4 467 set([u'say', u'been'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 467 [u'defence', u'ministry', u'royal', u'been', u'say', u'murder', u'five', u'uk', u'marine', u'charged']
+---- 4 471 set([u'a', u'the'])
+- 4 ['', 'seven', 'force', 'berlin-based', 'feel', 'princess?', 'a', '2015:', 'acquires', 'lucasfilm.', '2015!', 'have', 'in', 'princess.', u'say', 'breaking:', '2015,', '2015.', 'disturbance', 'competitor', 'for', 'merger', 'acquire', 'disney/lucasfilm', 'been', 'read', 'music', 'buying', '7', '#starwars', 'wahwah.fm', 'wars...', u'ha', '#lucasfilm', 'disney', 'bought', 'be', 'felt', 'star', '$4.05', '7!', 'that', 'lucasfilm,', 'startup', 'company', u'buy', 'answered.', u'war', 'walt', 'slated', 'released', 'announced:', 'coming', 'now', 'come', 'princess', 'is', '#disney', 'senzari', 'great', 'leia', 'episode', 'billion,', 'i', '$4b', 'force.', 'more:', 'will', 'lucasfilm', 'pandora', 'force,', 'making', 'the', 'out', 'mean']
+- 471 [u'a', u'from', u'airforce', u'wa', u'record', u'foot', u'breaking', u'1960', u'mission', u'person', u'part', u'u', u'fall', u'102', u'the', u'800']
+[8, 11, 16, 17, 24, 28, 30, 32, 36, 38, 40, 42, 43, 44, 46, 49, 50, 52, 54, 55, 56, 61, 63, 65, 66, 69, 76, 80, 82, 84, 105, 108, 110, 112, 116, 117, 124, 126, 127, 129, 131, 132, 133, 136, 137, 143, 147, 151, 152, 156, 161, 164, 165, 172, 173, 184, 191, 207, 211, 212, 215, 230, 232, 248, 256, 258, 266, 274, 275, 278, 299, 302, 303, 308, 312, 313, 315, 316, 326, 328, 338, 347, 349, 365, 366, 377, 378, 382, 385, 393, 395, 398, 405, 410, 411, 421, 427, 432, 443, 446, 448, 461, 467, 471, 484, 490, 501, 505]
+##Recall 21.3439 108 506
+##Precision 56.8966 66 116
+###program ends at Sun Nov 11 05:36:14 2018
